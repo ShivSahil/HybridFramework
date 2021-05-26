@@ -19,6 +19,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.personal.utilities.ExtentReporter;
 
 
@@ -110,13 +111,13 @@ public class BaseClass {
 	
 	
 	
-	// ---------------------------REUSEABLE METHODS --------------------------------------------------------------
+// ---------------------------REUSEABLE METHODS --------------------------------------------------------------
 		
 	
-	public void click(String key)
+	public void click(String key)  // REUSEABLE CLICK METHOD
 	{
 		
-		// can't use switch here. can't be used for contains
+		// can't use switch here. switch can't be used for contains
 		if(key.toLowerCase().contains("_css"))
 		{
 			
@@ -157,35 +158,45 @@ public class BaseClass {
 		}
 		
 		
-		logger.debug("locator(" +key+ ") on page with title '" + driver.getTitle()+ "' clicked successfully");
+		logger.debug("locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] clicked successfully");
+		test.log(Status.PASS, "locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] clicked successfully");
+	
 	}
 	
 	
-	
-	public void checkPageTitle(String expectedtitle)
+	public void checkPageTitle(String expectedtitle)  //REUSEABLE METHOD FOR CHECKING TITLE 
 	{
 		/*
-		 * facing a logical problem with commented section 
-		 * in happy scenario, logger.info is getting printed. where to place logger.error to
-		 * NOT so happy path.
+		 * facing a logical problem with commented section code
+		 * in happy scenario, logger.info is getting printed. where and how to place logger.error
+		 * in unhappy path.
 		 * I see no way out, restored to using if-else
 		 */
-		
-		
-		
+
 		//Assert.assertEquals(driver.getTitle(), expectedtitle, expectedtitle, "title of Page is different, Actual title is"+driver.getTitle());
 		//logger.info( "ASSERTED that title of Page :- '"+driver.getTitle()+ "' is correct");
 		
 		
 		
+		
 		if (driver.getTitle().equals(expectedtitle)) {
 
-			logger.info( "ASSERTED that title of Page :- '"+driver.getTitle()+ "' is correct");
+			logger.info( "ASSERT :- '"+driver.getTitle()+ "' is correct title");
+			test.log(Status.PASS,"ASSERT :- '"+driver.getTitle()+ "' is correct title");
 		}
 		else
 		{
-			Assert.fail("title of Page :- '"+driver.getTitle()+ "' is INCORRECT");
-			logger.error( "ASSERTED that title of Page :- '"+driver.getTitle()+ "' is INCORRECT");
+			
+			//SOME OBSERVATION WHEN THINGS FAIL
+			// keep Assert.fail as last statement**
+			// no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
+			
+			
+			logger.error( "ASSERT :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
+			
+			
+			//test.log(Status.FAIL,"ASSERTED that title of Page :- '"+driver.getTitle()+ "' is INCORRECT");
+			Assert.fail("ASSERT :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
 		}
 			
 		
@@ -193,7 +204,7 @@ public class BaseClass {
 	}
 	
 	
-	public void isElementPresent(String key) {
+	public void isElementPresent(String key) { // REUSEABLE ELEMENT AVAILABILITY METHOD
 		
 		try {
 				if(key.toLowerCase().contains("_css"))
@@ -228,19 +239,30 @@ public class BaseClass {
 				
 				
 				
-		logger.info("ASSERTED that locator(" +key+ ") is present on page with title '" + driver.getTitle()+"'");
+		logger.info("ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
+		test.log(Status.PASS, "ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
+		
 		
 		}
 		 catch (NoSuchElementException e) { // NoSuchElementException is apt for here
-			 
-		 logger.error("ASSERTED that locator(" +key+ ") is NOT present on page with title '" + driver.getTitle()+"'");
-			 
-		 //ItestListeners will catch Assert.fail
-		 Assert.fail("locator(" +key+ ") is NOT present on page with title '" + driver.getTitle()+"'");
-		}
-	}
+			
 
-		public boolean doesAlertContains(String message) {
+				//SOME OBSERVATION WHEN THINGS FAIL
+				// keep Assert.fail as last statement**
+				// no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
+			 
+			 
+		 logger.error("ASSERT :- locator(" +key+ ") is NOT present on page [title '" + driver.getTitle()+"']");
+		 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page [title '" + driver.getTitle()+"']");
+		 }
+	}
+	
+	
+	
+	// WORK ON THESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSEEEEEEEEEEEEEEEE
+
+	
+	public boolean doesAlertContains(String message) { // REUSEABLE ALERT TEXT AVAILABILITY METHOD
 
 			try {
 				if (driver.switchTo().alert().getText().contains(message)) {
@@ -260,8 +282,8 @@ public class BaseClass {
 			
 		}
 
-		//use overloading to produce more of this method
-		public WebElement ExplicitlyWaiting(int waitPeriod, String nameOfCondition, By byVariableOfElement) {
+	
+	public WebElement ExplicitlyWaiting(int waitPeriod, String nameOfCondition, By byVariableOfElement) {
 
 			d = new WebDriverWait(driver, waitPeriod);
 			//here we wouldn't be needing breaks, rare situations, i think

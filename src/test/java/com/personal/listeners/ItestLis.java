@@ -27,8 +27,14 @@ public class ItestLis extends BaseClass implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		logger.error("$$$$$$$ " + result.getMethod().getMethodName() + " HAS PASSED DUE TO " + result.getThrowable());
-		test.fail( result.getMethod().getMethodName() + " HAS PASSED DUE TO " + result.getThrowable());
+		
+		// keep these getMethodName and getThrowable seperate
+		logger.error("$$$$$$$ " + result.getMethod().getMethodName() + " HAS FAILED " );
+		logger.error(result.getThrowable());
+		
+		test.fail( result.getMethod().getMethodName() + " HAS FAILED ");
+		test.fail(result.getThrowable());
+		
 		extent.flush();
 	}
 

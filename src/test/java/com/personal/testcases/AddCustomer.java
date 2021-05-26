@@ -1,10 +1,7 @@
 package com.personal.testcases;
 
 
-import java.io.IOException;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.*;
 
 import com.personal.base.BaseClass;

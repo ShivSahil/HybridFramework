@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.personal.listeners.ItestLis"/>
+  </listeners>
   <test thread-count="5" name="Add Customers(failed)">
     <classes>
       <class name="com.personal.testcases.AddCustomer">
