@@ -3,8 +3,9 @@ package com.personal.utilities;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.personal.base.BaseClass;
 
-public class ExtentReporter {
+public class ExtentReporter extends BaseClass{
 
 	
 	

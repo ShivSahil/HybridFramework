@@ -1,42 +1,10 @@
-14:18:18.156 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
-14:18:18.175 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
-14:18:23.548 [main] DEBUG com.personal.base.BaseClass - window maximized
-14:18:23.754 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page with title 'Protractor practice website - Banking App' clicked successfully
-14:18:23.772 [main] INFO  com.personal.base.BaseClass - ASSERTED that title of Page :- 'Protractor practice website - Banking App' is correct
-14:18:23.783 [main] INFO  com.personal.base.BaseClass - ASSERTED that locator(AddCustomerButton_xpath) is present on page with title 'Protractor practice website - Banking App'
-14:18:23.928 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page with title 'Protractor practice website - Banking App' clicked successfully
-14:18:24.553 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
-14:18:52.405 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
-14:18:52.423 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
-14:18:52.429 [main] DEBUG com.personal.base.BaseClass - window maximized
-14:18:52.722 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page with title 'Protractor practice website - Banking App' clicked successfully
-14:18:53.382 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
-14:19:33.754 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
-14:19:33.771 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
-14:19:33.777 [main] DEBUG com.personal.base.BaseClass - window maximized
-14:19:35.613 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page with title 'Protractor practice website - Banking App' clicked successfully
-14:19:35.622 [main] INFO  com.personal.base.BaseClass - ASSERTED that title of Page :- 'Protractor practice website - Banking App' is correct
-14:19:39.665 [main] ERROR com.personal.base.BaseClass - ASSERTED that locator(AddCustomerButton_xpath) is NOT present on page with title 'Protractor practice website - Banking App'
-14:19:40.335 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
-14:30:10.279 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
-14:30:10.294 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
-14:30:10.300 [main] DEBUG com.personal.base.BaseClass - window maximized
-14:30:11.727 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page with title 'Protractor practice website - Banking App' clicked successfully
-14:30:11.732 [main] ERROR com.personal.base.BaseClass - ASSERTED that title of Page :- 'Protractor practice website - Banking App' is INCORRECT
-14:30:12.436 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
-14:30:40.294 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
-14:30:40.311 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
-14:30:40.317 [main] DEBUG com.personal.base.BaseClass - window maximized
-14:30:40.704 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page with title 'Protractor practice website - Banking App' clicked successfully
-14:30:40.706 [main] ERROR com.personal.base.BaseClass - ASSERTED that title of Page :- 'Protractor practice website - Banking App' is INCORRECT
-14:30:40.713 [main] INFO  com.personal.base.BaseClass - ASSERTED that title of Page :- 'Protractor practice website - Banking App' is correct
-14:30:44.762 [main] ERROR com.personal.base.BaseClass - ASSERTED that locator(AddCustomerButton_xpath) is NOT present on page with title 'Protractor practice website - Banking App'
-14:30:45.501 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
-14:33:24.289 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
-14:33:24.312 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
-14:33:24.319 [main] DEBUG com.personal.base.BaseClass - window maximized
-14:33:26.183 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page with title 'Protractor practice website - Banking App' clicked successfully
-14:33:26.188 [main] INFO  com.personal.base.BaseClass - ASSERTED that title of Page :- 'Protractor practice website - Banking App' is correct
-14:33:26.196 [main] INFO  com.personal.base.BaseClass - ASSERTED that locator(AddCustomerButton_xpath) is present on page with title 'Protractor practice website - Banking App'
-14:33:26.323 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page with title 'Protractor practice website - Banking App' clicked successfully
-14:33:26.973 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+18:16:55.058 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+18:16:55.084 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+18:16:55.090 [main] DEBUG com.personal.base.BaseClass - window maximized
+18:16:55.123 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanager HAS BEGUN
+18:16:56.154 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page with title 'Protractor practice website - Banking App' clicked successfully
+18:16:56.159 [main] INFO  com.personal.base.BaseClass - ASSERTED that title of Page :- 'Protractor practice website - Banking App' is correct
+18:16:56.167 [main] INFO  com.personal.base.BaseClass - ASSERTED that locator(AddCustomerButton_xpath) is present on page with title 'Protractor practice website - Banking App'
+18:16:56.266 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page with title 'Protractor practice website - Banking App' clicked successfully
+18:16:56.269 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanager HAS PASSED
+18:16:57.303 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED

@@ -3,7 +3,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -18,6 +17,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.personal.utilities.ExtentReporter;
 
 
 public class BaseClass {
@@ -30,6 +32,10 @@ public class BaseClass {
 	public static Properties configuration = new Properties();
 	public static Properties objRepo = new Properties();
 	public static String baseLoc = System.getProperty("user.dir");
+	
+	public static ExtentTest test;
+	public static ExtentReports extent = ExtentReporter.configuration();
+	
 	
 	@BeforeSuite
 	public void setUp() throws IOException
