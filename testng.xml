@@ -6,6 +6,10 @@
 <test name="Add Customers"> 
 	<classes>
 		<class name="com.personal.base.BaseClass"/>
+		<class name="com.personal.testcases.AddCustomer"/>
 	</classes>
+</test>
+<test name="Open Account"> 
+	
 </test>
 </suite> <!-- Suite -->
