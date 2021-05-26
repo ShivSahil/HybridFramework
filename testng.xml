@@ -3,9 +3,9 @@
 
 <suite name="Suite">
 
-<test name="Loan_type"> 
+<test name="Add Customers"> 
 	<classes>
-		<class name="com.personal.rough.RoughWork"/>
+		<class name="com.personal.base.BaseClass"/>
 	</classes>
 </test>
 </suite> <!-- Suite -->

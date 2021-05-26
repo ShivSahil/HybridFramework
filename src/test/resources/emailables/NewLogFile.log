@@ -1,0 +1,20 @@
+12:32:24.532 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+12:32:24.549 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - nullseconds
+12:32:24.556 [main] DEBUG com.personal.base.BaseClass - window maximized
+12:32:25.226 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+12:33:41.962 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+12:33:41.977 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+12:33:41.983 [main] DEBUG com.personal.base.BaseClass - window maximized
+12:33:42.644 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+12:34:18.901 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+12:34:18.937 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+12:34:18.942 [main] DEBUG com.personal.base.BaseClass - window maximized
+12:34:19.627 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+12:38:59.880 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+12:38:59.907 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+12:38:59.914 [main] DEBUG com.personal.base.BaseClass - window maximized
+12:39:00.726 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+12:39:42.442 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+12:39:42.463 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+12:39:42.469 [main] DEBUG com.personal.base.BaseClass - window maximized
+12:39:43.145 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-26T04:12:46Z" name="Suite" finished-at="2021-05-26T04:12:47Z" duration-ms="1629">
+  <suite name="Suite" duration-ms="5" started-at="2021-05-26T07:08:59Z" finished-at="2021-05-26T07:08:59Z">
     <groups>
     </groups>
-    <test started-at="2021-05-26T04:12:46Z" name="Loan_type" finished-at="2021-05-26T04:12:47Z" duration-ms="1629">
-      <class name="com.personal.rough.RoughWork">
-        <test-method signature="method1()[pri:0, instance:com.personal.rough.RoughWork@71e9ddb4]" started-at="2021-05-26T04:12:46Z" name="method1" finished-at="2021-05-26T04:12:47Z" duration-ms="1610" status="PASS">
+    <test name="Loan_type" duration-ms="5" started-at="2021-05-26T07:08:59Z" finished-at="2021-05-26T07:08:59Z">
+      <class name="com.personal.base.BaseClass">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@175c2241]" name="setUp" is-config="true" duration-ms="4816" started-at="2021-05-26T07:08:55Z" finished-at="2021-05-26T07:08:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method1 -->
-      </class> <!-- com.personal.rough.RoughWork -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@175c2241]" name="tearDown" is-config="true" duration-ms="794" started-at="2021-05-26T07:08:59Z" finished-at="2021-05-26T07:09:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.personal.base.BaseClass -->
     </test> <!-- Loan_type -->
   </suite> <!-- Suite -->
 </testng-results>

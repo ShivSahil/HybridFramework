@@ -6,7 +6,7 @@ import org.testng.annotations.*;
 
 public class RoughWork {
 
-	@Test
+	
 	public void method1() {
 		   System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		   WebDriver driver=new ChromeDriver();
