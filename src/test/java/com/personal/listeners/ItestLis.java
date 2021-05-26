@@ -1,10 +1,12 @@
 package com.personal.listeners;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import com.personal.base.BaseClass;
+import com.personal.utilities.ScreenshotUtility;
 
 public class ItestLis extends BaseClass implements ITestListener{
 	
@@ -28,13 +30,30 @@ public class ItestLis extends BaseClass implements ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
-		// keep these getMethodName and getThrowable seperate
+		// Note:- keep these getMethodName and getThrowable separate
 		logger.error("$$$$$$$ " + result.getMethod().getMethodName() + " HAS FAILED " );
 		logger.error(result.getThrowable());
 		
+		try {
+			screenshotPath = ScreenshotUtility.screenshot(driver,result.getMethod().getMethodName());
+		
+		} catch (IOException e) {
+			logger.error("unable to take screenshot of "+result.getMethod().getMethodName()+" method" );
+			e.printStackTrace();
+		}
+		try {
+			test.addScreenCaptureFromPath(screenshotPath, result.getMethod().getMethodName());
+			logger.debug("Screenshot of "+result.getMethod().getMethodName()+" method successfully attached to report ");
+		
+		} catch (IOException e) {
+			logger.error("unable to attach screenshot to "+ result.getMethod().getMethodName()+ " method");
+			e.printStackTrace();
+		}
+
+		
+		
 		test.fail( result.getMethod().getMethodName() + " HAS FAILED ");
 		test.fail(result.getThrowable());
-		
 		extent.flush();
 	}
 

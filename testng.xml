@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Suite">
+<suite name="Customer Suite">
 <listeners>
 	<listener class-name="com.personal.listeners.ItestLis"/> 
 </listeners>
+
 <test name="Add Customers"> 
 	<classes>
 		<class name="com.personal.base.BaseClass"/>
 		<class name="com.personal.testcases.AddCustomer"/>
 	</classes>
 </test>
+
+
 <test name="Open Account"> 
 	
 </test>
