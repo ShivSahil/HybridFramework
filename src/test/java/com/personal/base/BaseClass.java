@@ -136,8 +136,9 @@ public class BaseClass {
 		}
 		else if (key.toLowerCase().contains("_xpath"))
 		{
-			driver.findElement(By.xpath(objRepo.getProperty(key))).click();
 			
+			driver.findElement(By.xpath(objRepo.getProperty(key))).click();
+						
 		}
 		else if (key.toLowerCase().contains("_id"))
 		{
@@ -166,11 +167,11 @@ public class BaseClass {
 			
 		}
 		
+		// **** DON'T WRITE driver.getTitle(), in case there is a alert box. you will get error on driver.getTitle()
 		
-		logger.debug("locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] clicked successfully");
-		test.log(Status.INFO, "locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] clicked successfully");
+		logger.debug("locator(" +key+ ") clicked successfully");
+		test.log(Status.INFO, "locator(" +key+ ") clicked successfully");
 
-		
 	}
 	
 	public void type(String key, String data)  // REUSEABLE TYPE METHOD
@@ -217,8 +218,8 @@ public class BaseClass {
 		}
 		
 		
-		logger.debug("locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] filled with value '"+ data+"' successfully");
-		test.log(Status.INFO, "locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] filled with value '"+ data+"' successfully");
+		logger.debug("locator(" +key+ ") filled with value '"+ data+"' successfully");
+		test.log(Status.INFO, "locator(" +key+ ") filled with value '"+ data+"' successfully");
 
 		
 	}
@@ -226,7 +227,7 @@ public class BaseClass {
 	public void checkPageTitle(String expectedtitle)  //REUSEABLE METHOD FOR CHECKING TITLE 
 	{
 		/*
-		 * facing a logical problem with commented section code
+		 * "facing a logical problem" with commented section code
 		 * in happy scenario, logger.info is getting printed. where and how to place logger.error
 		 * in unhappy path.
 		 * I see no way out, restored to using if-else
@@ -246,13 +247,12 @@ public class BaseClass {
 		else
 		{
 			
-			//SOME OBSERVATION WHEN THINGS FAIL
-			// keep Assert.fail as last statement**
-			// no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
+		
+			// **** keep Assert.fail as last statement**
+			//**** no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
 			
 			
 			logger.error( "ASSERT :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
-			
 			
 			//test.log(Status.FAIL,"ASSERTED that title of Page :- '"+driver.getTitle()+ "' is INCORRECT");
 			Assert.fail("ASSERT :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
@@ -298,21 +298,21 @@ public class BaseClass {
 				
 				
 				
-		logger.info("ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
-		test.log(Status.PASS, "ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
+		logger.info("ASSERT :- locator(" +key+ ") is present on page");
+		test.log(Status.PASS, "ASSERT :- locator(" +key+ ") is present on page");
 		
 		
 		}
 		 catch (NoSuchElementException e) { // NoSuchElementException is apt for here
 			
 
-				//SOME OBSERVATION WHEN THINGS FAIL
-				// keep Assert.fail as last statement**
-				// no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
+			
+		// **** keep Assert.fail as last statement**
+		// **** no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
 			 
 			 
-		 logger.error("ASSERT :- locator(" +key+ ") is NOT present on page [title '" + driver.getTitle()+"']");
-		 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page [title '" + driver.getTitle()+"']");
+		 logger.error("ASSERT :- locator(" +key+ ") is NOT present on page ]");
+		 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page");
 		 }
 	}
 	
@@ -322,23 +322,27 @@ public class BaseClass {
 
 	
 	public void doesAlertContainsText(String message) { // REUSEABLE ALERT TEXT AVAILABILITY METHOD
-
+		
 			try {
 				if (driver.switchTo().alert().getText().contains(message)) {
+				
+					logger.info("ASSERT :- text(" +message+ ") is present in Alert Box on");
 					
-					logger.info("ASSERT :- text(" +message+ ") is present in Alert Box on Page [title '" + driver.getTitle()+"']");
-					test.log(Status.PASS, "ASSERT :- text(" +message+ ") is present in Alert Box on Page [title '" + driver.getTitle()+"']");
+					test.log(Status.PASS, "ASSERT :- text(" +message+ ") is present in Alert Box on Page");
 					
 				} else {
 					
-					logger.error("ASSERT :- text(" +message+ ") is NOT present in Alert Box on Page [title '" + driver.getTitle()+"']");
-					Assert.fail("ASSERT :- text(" +message+ ") is NOT present in Alert Box on Page [title '" + driver.getTitle()+"']");
+					logger.error("ASSERT :- text(" +message+ ") is NOT present in Alert Box ");
+					Assert.fail("ASSERT :- text(" +message+ ") is NOT present in Alert Box ");
 				}
 
 				
 				
 			} catch (NoAlertPresentException e) { // ****NoAlertPresentException is apt for here
+				
+				
 				logger.error("NO alert is present on screen");
+				
 				Assert.fail("NO alert is present on screen");
 				
 			}
@@ -366,9 +370,13 @@ public class BaseClass {
 		System.out.println(al.getText());
 		
 		
-		logger.debug(" Action("+ action +") successfully taken on alert, present on page [title '" + driver.getTitle()+"']");
-		test.log(Status.INFO, (" Action("+ action +") successfully taken on alert, present on page [title '" + driver.getTitle()+"']"));
+		logger.debug(" Action("+ action +") successfully taken on alert, present on page");
+		test.log(Status.INFO, (" Action("+ action +") successfully taken on alert, present on page "));
 	}
+	
+	
+	
+	
 	
 	
 	// WORK ON THESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSEEEEEEEEEEEEEEEE

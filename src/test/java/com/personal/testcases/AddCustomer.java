@@ -21,7 +21,7 @@ public class AddCustomer extends BaseClass{
 	{
 		Thread.sleep(4000);
 		click("BankMangLogin_css");
-		checkPageTitle("Protractor practice website - Banking App");
+		checkPageTitle("1Protractor practice website - Banking App");
 		
 		isElementPresent("AddCustomerButton_xpath");
 		click("AddCustomerButton_xpath");
@@ -29,12 +29,13 @@ public class AddCustomer extends BaseClass{
 	
 	 
 	@Test(dataProviderClass=ExcelRead.class, dataProvider = "excelData", dependsOnMethods ="loginAsmanagerTest", description = "adding multiple customers from excel")  
-	public void addMultipleCustomerTest(String firstName, String lastName, String pincode)
+	public void addMultipleCustomerTest(String firstName, String lastName, String pincode) throws InterruptedException
 	{
 		type("FirstName_css", firstName );
 		type("LastName_css", lastName );
 		type("PinCode_css", pincode );
-		click("AddCustomer_css");
+		Thread.sleep(4000);
+		click("AddCustomer_xpath");
 		doesAlertContainsText("Customer added successfully with customer id :");
 		alert("accept");
 	}

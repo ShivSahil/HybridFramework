@@ -18,9 +18,9 @@ public class ItestLis extends BaseClass implements ITestListener{
 		
 		test = extentVar.createTest(result.getMethod().getMethodName());
 		logger.info("##### EXECUTION OF " + result.getMethod().getMethodName() + " HAS BEGUN");
+		logger.info("description of testcase:- "+result.getMethod().getDescription());
 		
-		
-		test.log(Status.INFO, "description:- "+result.getMethod().getDescription());
+		test.log(Status.INFO, "description of testcase:- "+result.getMethod().getDescription());
 		
 	}
 
@@ -35,7 +35,7 @@ public class ItestLis extends BaseClass implements ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
-		// Note:- keep these getMethodName and getThrowable separate
+		//***** keep  getMethodName and getThrowable separate
 		logger.error("$$$$$$$ " + result.getMethod().getMethodName() + " HAS FAILED " );
 		logger.error(result.getThrowable());
 		
@@ -64,25 +64,25 @@ public class ItestLis extends BaseClass implements ITestListener{
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 

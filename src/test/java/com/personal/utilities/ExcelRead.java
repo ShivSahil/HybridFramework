@@ -20,12 +20,12 @@ public class ExcelRead extends BaseClass{
 		
 		File f= new File(baseLoc+ "\\src\\test\\resources\\excel\\testdata.xlsx"); 
 
-	    // for reading we are using FileInputStream, and writing using FileOutputStream 
-	    FileInputStream fi = new FileInputStream(f);
-	    XSSFWorkbook workbook = new XSSFWorkbook(fi);  // in writing; we used XSSFWorkbook 
 	    
-	    XSSFSheet sheet = workbook.getSheet(sheetName);// in writing; we used XSSFSheet 
-	    // .getSheetAt(0) mean first sheet 
+	    FileInputStream fi = new FileInputStream(f);
+	    XSSFWorkbook workbook = new XSSFWorkbook(fi); 
+	    
+	    XSSFSheet sheet = workbook.getSheet(sheetName);
+	   
 	    XSSFRow row = sheet.getRow(0);
 
 	    
