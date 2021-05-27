@@ -5,6 +5,8 @@ import java.io.IOException;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import com.aventstack.extentreports.Status;
 import com.personal.base.BaseClass;
 import com.personal.utilities.ScreenshotUtility;
 
@@ -14,8 +16,11 @@ public class ItestLis extends BaseClass implements ITestListener{
 	@Override
 	public void onTestStart(ITestResult result) {
 		
-		test = extent.createTest(result.getMethod().getMethodName());
+		test = extentVar.createTest(result.getMethod().getMethodName());
 		logger.info("##### EXECUTION OF " + result.getMethod().getMethodName() + " HAS BEGUN");
+		
+		
+		test.log(Status.INFO, "description:- "+result.getMethod().getDescription());
 		
 	}
 
@@ -24,7 +29,7 @@ public class ItestLis extends BaseClass implements ITestListener{
 		
 		logger.info("@@@@ " + result.getMethod().getMethodName() + " HAS PASSED");
 		test.pass(result.getMethod().getMethodName() + " HAS PASSED");
-		extent.flush();
+		extentVar.flush();
 	}
 
 	@Override
@@ -54,7 +59,7 @@ public class ItestLis extends BaseClass implements ITestListener{
 		
 		test.fail( result.getMethod().getMethodName() + " HAS FAILED ");
 		test.fail(result.getThrowable());
-		extent.flush();
+		extentVar.flush();
 	}
 
 	@Override

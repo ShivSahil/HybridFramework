@@ -20,6 +20,9 @@ import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.personal.utilities.ExtentReporter;
 
 
@@ -35,7 +38,7 @@ public class BaseClass {
 	public static String baseLoc = System.getProperty("user.dir");
 	
 	public static ExtentTest test;
-	public static ExtentReports extent = ExtentReporter.configuration();
+	public static ExtentReports extentVar = ExtentReporter.configuration();
 	
 	
 	@BeforeSuite
@@ -159,8 +162,9 @@ public class BaseClass {
 		
 		
 		logger.debug("locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] clicked successfully");
-		test.log(Status.PASS, "locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] clicked successfully");
-	
+		test.log(Status.INFO, "locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] clicked successfully");
+
+		
 	}
 	
 	
@@ -182,7 +186,7 @@ public class BaseClass {
 		if (driver.getTitle().equals(expectedtitle)) {
 
 			logger.info( "ASSERT :- '"+driver.getTitle()+ "' is correct title");
-			test.log(Status.PASS,"ASSERT :- '"+driver.getTitle()+ "' is correct title");
+			test.log(Status.INFO,"ASSERT :- '"+driver.getTitle()+ "' is correct title");
 		}
 		else
 		{
@@ -240,7 +244,7 @@ public class BaseClass {
 				
 				
 		logger.info("ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
-		test.log(Status.PASS, "ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
+		test.log(Status.INFO, "ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
 		
 		
 		}

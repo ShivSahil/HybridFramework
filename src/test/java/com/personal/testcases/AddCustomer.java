@@ -12,16 +12,21 @@ public class AddCustomer extends BaseClass{
 	
 	
 	
-	@Test
+	@Test(description="clicking on login button and checkeding availability of buttons on screen")
 	public void loginAsmanager() throws InterruptedException
 	{
 		click("BankMangLogin_css");
-		checkPageTitle("1Protractor practice website - Banking App");
+		checkPageTitle("Protractor practice website - Banking App");
 		
 		isElementPresent("AddCustomerButton_xpath");
 		click("AddCustomerButton_xpath");
 	}
 	
+	@Test
+	public void AddMultipleCustomer()
+	{
+		
+	}
 	
 	
 
