@@ -9,16 +9,76 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Customer Suite</th></tr>
-<tr><td><a href="#t0">Add Customers</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">17,570</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Add Customers</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">17,495</td><td></td><td></td></tr>
 <tr class="stripe"><td><a href="#t1">Open Account</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num">17,571</th><th colspan="2"></th></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">3</th><th class="num">17,496</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Customer Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Add Customers &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.personal.testcases.AddCustomer</td><td><a href="#m0">addMultipleCustomerTest</a></td><td rowspan="3">1622110248938</td><td rowspan="3">4185</td></tr><tr class="passedeven"><td><a href="#m1">addMultipleCustomerTest</a></td></tr><tr class="passedeven"><td><a href="#m2">addMultipleCustomerTest</a></td></tr><tr class="passedeven"><td><a href="#m3">loginAsmanagerTest</a></td><td rowspan="1">1622110243915</td><td rowspan="1">4273</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Customer Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Add Customers &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.personal.testcases.AddCustomer</td><td><a href="#m0">addMultipleCustomerTest</a></td><td rowspan="3">1622112850940</td><td rowspan="3">4042</td></tr><tr class="failedeven"><td><a href="#m1">addMultipleCustomerTest</a></td></tr><tr class="failedeven"><td><a href="#m2">addMultipleCustomerTest</a></td></tr><tr><th colspan="4">Add Customers &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.personal.testcases.AddCustomer</td><td><a href="#m3">loginAsmanagerTest</a></td><td rowspan="1">1622112837554</td><td rowspan="1">4380</td></tr></tbody>
 <tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
 </table>
-<h2>Add Customers</h2><h3 id="m0">com.personal.testcases.AddCustomer#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Shiv</td><td>Sahil</td><td>160014</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.personal.testcases.AddCustomer#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Guleri</td><td>Rahul</td><td>176033</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.personal.testcases.AddCustomer#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>xyz</td><td>sample</td><td>00001</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Add Customers</h2><h3 id="m0">com.personal.testcases.AddCustomer#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>xyz</td><td>sample</td><td>00001</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: input[placeholder=&apos;Post Code11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 3288, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 85dbe7e9-5273-4c5e-a4c6-dbabcff9c205
+*** Element info: {Using=css selector, value=input[placeholder=&apos;Post Code11&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.personal.base.BaseClass.type(BaseClass.java:184)
+	at com.personal.testcases.AddCustomer.addMultipleCustomerTest(AddCustomer.java:36)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.personal.testcases.AddCustomer#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Shiv</td><td>Sahil</td><td>160014</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: input[placeholder=&apos;Post Code11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 3288, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 85dbe7e9-5273-4c5e-a4c6-dbabcff9c205
+*** Element info: {Using=css selector, value=input[placeholder=&apos;Post Code11&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.personal.base.BaseClass.type(BaseClass.java:184)
+	at com.personal.testcases.AddCustomer.addMultipleCustomerTest(AddCustomer.java:36)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.personal.testcases.AddCustomer#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Guleri</td><td>Rahul</td><td>176033</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: input[placeholder=&apos;Post Code11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 3288, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 85dbe7e9-5273-4c5e-a4c6-dbabcff9c205
+*** Element info: {Using=css selector, value=input[placeholder=&apos;Post Code11&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.personal.base.BaseClass.type(BaseClass.java:184)
+	at com.personal.testcases.AddCustomer.addMultipleCustomerTest(AddCustomer.java:36)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.personal.testcases.AddCustomer#loginAsmanagerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>Open Account</h2></body>
 </html>

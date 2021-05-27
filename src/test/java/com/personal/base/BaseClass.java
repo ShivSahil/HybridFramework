@@ -326,9 +326,9 @@ public class BaseClass {
 			try {
 				if (driver.switchTo().alert().getText().contains(message)) {
 				
-					logger.info("ASSERT :- text(" +message+ ") is present in Alert Box on");
+					logger.info("ASSERT :- text(" +message+ ") is present in Alert Box");
 					
-					test.log(Status.PASS, "ASSERT :- text(" +message+ ") is present in Alert Box on Page");
+					test.log(Status.PASS, "ASSERT :- text(" +message+ ") is present in Alert Box");
 					
 				} else {
 					

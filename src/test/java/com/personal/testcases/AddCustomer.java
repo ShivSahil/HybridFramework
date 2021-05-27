@@ -21,7 +21,7 @@ public class AddCustomer extends BaseClass{
 	{
 		Thread.sleep(4000);
 		click("BankMangLogin_css");
-		checkPageTitle("1Protractor practice website - Banking App");
+		checkPageTitle("Protractor practice website - Banking App");
 		
 		isElementPresent("AddCustomerButton_xpath");
 		click("AddCustomerButton_xpath");
@@ -34,9 +34,14 @@ public class AddCustomer extends BaseClass{
 		type("FirstName_css", firstName );
 		type("LastName_css", lastName );
 		type("PinCode_css", pincode );
-		Thread.sleep(4000);
+	
+		// EXPLCIIT WAITTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+		Thread.sleep(4000);  
+		
+		
 		click("AddCustomer_xpath");
 		doesAlertContainsText("Customer added successfully with customer id :");
+		
 		alert("accept");
 	}
 	
