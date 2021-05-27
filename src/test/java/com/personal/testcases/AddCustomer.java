@@ -2,9 +2,13 @@ package com.personal.testcases;
 
 
 
+import java.io.IOException;
+import java.lang.reflect.Method;
+
 import org.testng.annotations.*;
 
 import com.personal.base.BaseClass;
+import com.personal.utilities.ExcelRead;
 
 
 
@@ -13,8 +17,9 @@ public class AddCustomer extends BaseClass{
 	
 	
 	@Test(description="clicking on login button and checkeding availability of buttons on screen")
-	public void loginAsmanager() throws InterruptedException
+	public void loginAsmanagerTest() throws InterruptedException
 	{
+		Thread.sleep(4000);
 		click("BankMangLogin_css");
 		checkPageTitle("Protractor practice website - Banking App");
 		
@@ -22,11 +27,22 @@ public class AddCustomer extends BaseClass{
 		click("AddCustomerButton_xpath");
 	}
 	
-	@Test
-	public void AddMultipleCustomer()
+	 
+	@Test(dataProviderClass=ExcelRead.class, dataProvider = "excelData", dependsOnMethods ="loginAsmanagerTest", description = "adding multiple customers from excel")  
+	public void addMultipleCustomerTest(String firstName, String lastName, String pincode)
 	{
-		
+		type("FirstName_css", firstName );
+		type("LastName_css", lastName );
+		type("PinCode_css", pincode );
+		click("AddCustomer_css");
+		doesAlertContainsText("Customer added successfully with customer id :");
+		alert("accept");
 	}
+	
+	
+	
+	
+
 	
 	
 

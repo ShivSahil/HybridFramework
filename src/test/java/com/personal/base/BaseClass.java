@@ -3,8 +3,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import javax.sound.midi.MidiDevice.Info;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
@@ -109,6 +113,8 @@ public class BaseClass {
 			logger.info(configuration.getProperty("browser").toUpperCase() + 
 					" BROWSER CLOSED");
 			
+			logger.info("-------------------------------------------------------------------------------------------------");
+			
 		}
 	}
 	
@@ -167,6 +173,55 @@ public class BaseClass {
 		
 	}
 	
+	public void type(String key, String data)  // REUSEABLE TYPE METHOD
+	{
+		
+		// can't use switch here. switch can't be used for contains
+		if(key.toLowerCase().contains("_css"))
+		{
+			
+			driver.findElement(By.cssSelector(objRepo.getProperty(key))).sendKeys(data);
+			
+			
+		}
+		else if (key.toLowerCase().contains("_xpath"))
+		{
+			driver.findElement(By.xpath(objRepo.getProperty(key))).sendKeys(data);
+			
+		}
+		else if (key.toLowerCase().contains("_id"))
+		{
+			driver.findElement(By.id(objRepo.getProperty(key))).sendKeys(data);
+			
+		}
+		else if (key.toLowerCase().contains("_link"))
+		{
+			driver.findElement(By.linkText(objRepo.getProperty(key))).sendKeys(data);
+			
+		}
+		
+		else if (key.toLowerCase().contains("_partiallink"))
+		{
+			driver.findElement(By.partialLinkText(objRepo.getProperty(key))).sendKeys(data);
+			
+		}
+		else if (key.toLowerCase().contains("_name"))
+		{
+			driver.findElement(By.name(objRepo.getProperty(key))).sendKeys(data);
+			
+		}
+		else if (key.toLowerCase().contains("_class"))
+		{
+			driver.findElement(By.className(objRepo.getProperty(key))).sendKeys(data);
+			
+		}
+		
+		
+		logger.debug("locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] filled with value '"+ data+"' successfully");
+		test.log(Status.INFO, "locator(" +key+ ") on page [title '" + driver.getTitle()+ "'] filled with value '"+ data+"' successfully");
+
+		
+	}
 	
 	public void checkPageTitle(String expectedtitle)  //REUSEABLE METHOD FOR CHECKING TITLE 
 	{
@@ -186,7 +241,7 @@ public class BaseClass {
 		if (driver.getTitle().equals(expectedtitle)) {
 
 			logger.info( "ASSERT :- '"+driver.getTitle()+ "' is correct title");
-			test.log(Status.INFO,"ASSERT :- '"+driver.getTitle()+ "' is correct title");
+			test.log(Status.PASS,"ASSERT :- '"+driver.getTitle()+ "' is correct title");
 		}
 		else
 		{
@@ -244,7 +299,7 @@ public class BaseClass {
 				
 				
 		logger.info("ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
-		test.log(Status.INFO, "ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
+		test.log(Status.PASS, "ASSERT :- locator(" +key+ ") is present on page [title '" + driver.getTitle()+"']");
 		
 		
 		}
@@ -263,29 +318,60 @@ public class BaseClass {
 	
 	
 	
-	// WORK ON THESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSEEEEEEEEEEEEEEEE
+	
 
 	
-	public boolean doesAlertContains(String message) { // REUSEABLE ALERT TEXT AVAILABILITY METHOD
+	public void doesAlertContainsText(String message) { // REUSEABLE ALERT TEXT AVAILABILITY METHOD
 
 			try {
 				if (driver.switchTo().alert().getText().contains(message)) {
-					logger.info("customer added successfuly");
-					return true;
+					
+					logger.info("ASSERT :- text(" +message+ ") is present in Alert Box on Page [title '" + driver.getTitle()+"']");
+					test.log(Status.PASS, "ASSERT :- text(" +message+ ") is present in Alert Box on Page [title '" + driver.getTitle()+"']");
+					
 				} else {
-					logger.debug("customer NOT added as alert text is different");
-					return false;
+					
+					logger.error("ASSERT :- text(" +message+ ") is NOT present in Alert Box on Page [title '" + driver.getTitle()+"']");
+					Assert.fail("ASSERT :- text(" +message+ ") is NOT present in Alert Box on Page [title '" + driver.getTitle()+"']");
 				}
 
 				
 				
 			} catch (NoAlertPresentException e) { // ****NoAlertPresentException is apt for here
-				logger.error("no alert present on screen");
-				return false;
+				logger.error("NO alert is present on screen");
+				Assert.fail("NO alert is present on screen");
+				
 			}
 			
 		}
 
+	public void  alert(String action)  // RESUABLE ACTION METHOD
+	{
+		Alert al= driver.switchTo().alert();
+		
+		if (action.toLowerCase().contains("accept")) {
+			al.accept();
+			
+		}
+		else if (action.toLowerCase().contains("dismiss")) {
+			al.dismiss();
+			
+		}
+		
+		else if (action.toLowerCase().contains("sendKeys")) {
+			al.sendKeys(action);
+			
+		}
+		else if(action.toLowerCase().contains("getText"))
+		System.out.println(al.getText());
+		
+		
+		logger.debug(" Action("+ action +") successfully taken on alert, present on page [title '" + driver.getTitle()+"']");
+		test.log(Status.INFO, (" Action("+ action +") successfully taken on alert, present on page [title '" + driver.getTitle()+"']"));
+	}
+	
+	
+	// WORK ON THESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSEEEEEEEEEEEEEEEE
 	
 	public WebElement ExplicitlyWaiting(int waitPeriod, String nameOfCondition, By byVariableOfElement) {
 

@@ -9,7 +9,8 @@
       <class name="com.personal.testcases.AddCustomer">
         <methods>
           <include name="tearDown"/>
-          <include name="loginAsmanager"/>
+          <include name="addMultipleCustomerTest" invocation-numbers="0 1 2"/>
+          <include name="loginAsmanagerTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.AddCustomer -->

@@ -1,0 +1,259 @@
+13:14:01.024 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:14:01.041 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:14:01.048 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:14:01.072 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:14:05.205 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:14:05.213 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:14:05.223 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:14:05.484 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:14:05.491 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:14:07.165 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:14:07.165 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:16:09.678 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:16:09.696 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:16:09.702 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:16:09.727 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:16:14.010 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:16:14.018 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:16:14.027 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:16:14.179 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:16:14.193 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:16:15.806 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:16:15.806 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:18:56.901 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:18:56.916 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:18:56.922 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:18:56.949 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:19:01.241 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:19:01.249 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:19:01.259 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:19:01.420 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:19:01.426 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:19:03.026 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:19:03.026 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:21:03.933 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:21:03.950 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:21:03.955 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:21:03.977 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:21:08.213 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:21:08.222 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:21:08.233 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:21:08.357 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:21:08.364 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:21:09.758 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:21:09.758 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:21:50.411 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:21:50.426 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:21:50.434 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:21:50.464 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:21:54.642 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:21:54.649 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:21:54.659 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:21:54.754 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:21:54.759 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:21:56.324 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:21:56.324 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:24:23.038 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:24:23.053 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:24:23.058 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:24:23.083 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:24:27.245 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:24:27.254 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:24:27.266 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:24:27.364 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:24:27.370 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:24:29.223 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:24:29.223 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:27:05.899 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:27:05.921 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:27:05.928 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:27:05.963 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:27:10.137 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:27:10.144 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:27:10.154 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:27:10.251 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:27:10.256 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:27:11.819 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:27:11.819 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:28:48.140 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:28:48.158 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:28:48.164 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:28:48.197 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:28:52.419 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:28:52.426 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:28:52.437 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:28:52.534 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:28:52.538 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:28:53.261 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:28:53.314 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Shiv' successfully
+13:28:53.340 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Sahil' successfully
+13:28:53.366 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value '160014' successfully
+13:28:57.418 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:28:57.420 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.NoSuchElementException: Unable to locate element: button[type='submit1']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12552, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b3512bc5-edf9-48b5-b2ca-e016ac36157e
+*** Element info: {Using=css selector, value=button[type='submit1']}
+13:28:57.480 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_28_57_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:28:57.481 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:28:57.497 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:28:57.524 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'null' successfully
+13:28:57.548 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'null' successfully
+13:28:57.574 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value 'null' successfully
+13:29:01.595 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:29:01.597 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.NoSuchElementException: Unable to locate element: button[type='submit1']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12552, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b3512bc5-edf9-48b5-b2ca-e016ac36157e
+*** Element info: {Using=css selector, value=button[type='submit1']}
+13:29:01.662 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_29_01_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:29:01.662 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:29:02.579 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:29:02.579 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:29:54.054 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:29:54.072 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:29:54.078 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:29:54.104 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:29:58.300 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:29:58.308 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:29:58.317 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:29:58.414 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:29:58.419 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:29:59.115 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:29:59.147 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Shiv' successfully
+13:29:59.176 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Sahil' successfully
+13:29:59.204 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value '160014' successfully
+13:30:03.243 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:30:03.244 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.NoSuchElementException: Unable to locate element: button[type='submit1']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12120, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 25a2a869-48a3-4d68-925e-99a52aef3af8
+*** Element info: {Using=css selector, value=button[type='submit1']}
+13:30:03.297 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_30_03_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:30:03.297 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:30:03.314 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:30:03.342 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Guleri' successfully
+13:30:03.366 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Rahul' successfully
+13:30:03.391 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value '176033' successfully
+13:30:07.409 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:30:07.410 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.NoSuchElementException: Unable to locate element: button[type='submit1']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12120, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 25a2a869-48a3-4d68-925e-99a52aef3af8
+*** Element info: {Using=css selector, value=button[type='submit1']}
+13:30:07.477 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_30_07_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:30:07.478 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:30:08.222 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:30:08.222 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:31:47.951 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:31:47.966 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:31:47.970 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:31:47.995 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:31:52.282 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:31:52.289 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:31:52.300 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:31:52.409 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:31:52.415 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:31:53.122 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:31:53.153 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Shiv' successfully
+13:31:53.182 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Sahil' successfully
+13:31:53.211 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value '160014' successfully
+13:31:53.278 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:31:53.279 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 6804, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 230783eb-fc2e-4fbb-bf3d-78f6fb688242
+13:31:53.328 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_31_53_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:31:53.329 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:31:53.345 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:31:53.368 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Guleri' successfully
+13:31:53.394 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Rahul' successfully
+13:31:53.422 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value '176033' successfully
+13:31:53.459 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:31:53.459 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :7: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 6804, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 230783eb-fc2e-4fbb-bf3d-78f6fb688242
+13:31:53.491 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_31_53_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:31:53.491 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:31:53.499 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:31:53.518 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'xyz' successfully
+13:31:53.540 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'sample' successfully
+13:31:53.561 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value '00001' successfully
+13:31:53.600 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:31:53.601 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :8: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 6804, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 230783eb-fc2e-4fbb-bf3d-78f6fb688242
+13:31:53.635 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_31_53_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:31:53.635 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:31:54.387 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:31:54.387 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+13:33:30.333 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+13:33:30.351 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+13:33:30.357 [main] DEBUG com.personal.base.BaseClass - window maximized
+13:33:30.380 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+13:33:34.613 [main] DEBUG com.personal.base.BaseClass - locator(BankMangLogin_css) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:33:34.621 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+13:33:34.631 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page [title 'Protractor practice website - Banking App']
+13:33:34.808 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) on page [title 'Protractor practice website - Banking App'] clicked successfully
+13:33:34.812 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+13:33:35.482 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:33:35.513 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Shiv' successfully
+13:33:35.538 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Sahil' successfully
+13:33:35.567 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value '160014' successfully
+13:33:35.634 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:33:35.636 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9400, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ebc42352-75e6-4b5b-8867-e0aab7e76a86
+13:33:35.683 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_33_35_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:33:35.684 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:33:35.700 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:33:35.728 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Guleri' successfully
+13:33:35.764 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'Rahul' successfully
+13:33:35.797 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value '176033' successfully
+13:33:35.840 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:33:35.840 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :7: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9400, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ebc42352-75e6-4b5b-8867-e0aab7e76a86
+13:33:35.879 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_33_35_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:33:35.879 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:33:35.896 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+13:33:35.914 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'xyz' successfully
+13:33:35.938 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) on page [title 'Protractor practice website - Banking App'] filled with value 'sample' successfully
+13:33:35.959 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) on page [title 'Protractor practice website - Banking App'] filled with value '00001' successfully
+13:33:35.992 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+13:33:35.992 [main] ERROR com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :8: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9400, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ebc42352-75e6-4b5b-8867-e0aab7e76a86
+13:33:36.026 [main] DEBUG com.personal.base.BaseClass - Screenshot[27_May_01_PM_33_35_ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+13:33:36.026 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+13:33:36.793 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+13:33:36.793 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
