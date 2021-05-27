@@ -1,29 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2019" started-at="2021-05-26T09:03:24Z" finished-at="2021-05-26T09:03:26Z">
+  <suite name="Customer Suite" duration-ms="17608" started-at="2021-05-27T12:11:15Z" finished-at="2021-05-27T12:11:33Z">
     <groups>
     </groups>
-    <test name="Add Customers" duration-ms="2005" started-at="2021-05-26T09:03:24Z" finished-at="2021-05-26T09:03:26Z">
+    <test name="Add Customers" duration-ms="17591" started-at="2021-05-27T12:11:15Z" finished-at="2021-05-27T12:11:33Z">
       <class name="com.personal.testcases.AddCustomer">
-        <test-method status="PASS" signature="loginAsmanager()[pri:0, instance:com.personal.testcases.AddCustomer@5b12b668]" name="loginAsmanager" duration-ms="1989" started-at="2021-05-26T09:03:24Z" finished-at="2021-05-26T09:03:26Z">
+        <test-method status="PASS" signature="loginAsmanagerTest()[pri:0, instance:com.personal.testcases.AddCustomer@6631f5ca]" name="loginAsmanagerTest" duration-ms="4291" started-at="2021-05-27T12:11:15Z" description="clicking on login button and checkeding availability of buttons on screen" finished-at="2021-05-27T12:11:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAsmanager -->
+        </test-method> <!-- loginAsmanagerTest -->
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomer@6631f5ca]" status="PASS" duration-ms="4191" finished-at="2021-05-27T12:11:25Z" started-at="2021-05-27T12:11:21Z" depends-on-methods="com.personal.testcases.AddCustomer.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shiv]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sahil]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[160014]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleCustomerTest -->
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomer@6631f5ca]" status="PASS" duration-ms="4157" finished-at="2021-05-27T12:11:29Z" started-at="2021-05-27T12:11:25Z" depends-on-methods="com.personal.testcases.AddCustomer.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Guleri]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rahul]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[176033]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleCustomerTest -->
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomer@6631f5ca]" status="PASS" duration-ms="4127" finished-at="2021-05-27T12:11:33Z" started-at="2021-05-27T12:11:29Z" depends-on-methods="com.personal.testcases.AddCustomer.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sample]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[00001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleCustomerTest -->
       </class> <!-- com.personal.testcases.AddCustomer -->
     </test> <!-- Add Customers -->
-    <test name="Open Account" duration-ms="0" started-at="2021-05-26T09:03:26Z" finished-at="2021-05-26T09:03:26Z">
+    <test name="Open Account" duration-ms="0" started-at="2021-05-27T12:11:33Z" finished-at="2021-05-27T12:11:33Z">
       <class name="com.personal.base.BaseClass">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@327514f]" name="setUp" is-config="true" duration-ms="4293" started-at="2021-05-26T09:03:20Z" finished-at="2021-05-26T09:03:24Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@b62d79]" name="setUp" is-config="true" duration-ms="4912" started-at="2021-05-27T12:11:11Z" finished-at="2021-05-27T12:11:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@327514f]" name="tearDown" is-config="true" duration-ms="631" started-at="2021-05-26T09:03:26Z" finished-at="2021-05-26T09:03:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@b62d79]" name="tearDown" is-config="true" duration-ms="679" started-at="2021-05-27T12:11:33Z" finished-at="2021-05-27T12:11:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.personal.base.BaseClass -->
     </test> <!-- Open Account -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Customer Suite -->
 </testng-results>
