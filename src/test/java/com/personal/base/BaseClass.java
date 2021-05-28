@@ -10,11 +10,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -25,11 +23,12 @@ import com.aventstack.extentreports.Status;
 import com.personal.utilities.ExtentReporter;
 
 
+
 public class BaseClass {
 
 	public static WebDriver driver;
 	public static Logger logger = LogManager.getLogger(BaseClass.class);
-
+	
 	public static FileInputStream fis;
 	public static Properties configuration = new Properties();
 	public static Properties objRepo = new Properties();
@@ -133,35 +132,28 @@ public class BaseClass {
 		
 		else if (key.toLowerCase().contains("_xpath"))
 		{
-			
-			driver.findElement(By.xpath(objRepo.getProperty(key))).click();
-						
+			driver.findElement(By.xpath(objRepo.getProperty(key))).click();			
 		}
 		else if (key.toLowerCase().contains("_id"))
 		{
 			driver.findElement(By.id(objRepo.getProperty(key))).click();
-			
 		}
 		else if (key.toLowerCase().contains("_link"))
 		{
 			driver.findElement(By.linkText(objRepo.getProperty(key))).click();
-			
 		}
 		
 		else if (key.toLowerCase().contains("_partiallink"))
 		{
 			driver.findElement(By.partialLinkText(objRepo.getProperty(key))).click();
-			
 		}
 		else if (key.toLowerCase().contains("_name"))
 		{
 			driver.findElement(By.name(objRepo.getProperty(key))).click();
-			
 		}
 		else if (key.toLowerCase().contains("_class"))
 		{
 			driver.findElement(By.className(objRepo.getProperty(key))).click();
-			
 		}
 		
 		// **** DON'T WRITE driver.getTitle(), in case there is a alert box. you will get error on driver.getTitle()
@@ -306,8 +298,8 @@ public class BaseClass {
 			
 		// **** keep Assert.fail as last statement**
 		// **** no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
-			 
-			 
+			
+	   
 		 logger.error("ASSERT :- locator(" +key+ ") is NOT present on page ]");
 		 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page");
 		 }

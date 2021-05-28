@@ -3,12 +3,10 @@ package com.personal.utilities;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
 import com.personal.base.BaseClass;
@@ -16,7 +14,7 @@ import com.personal.base.BaseClass;
 public class ScreenshotUtility extends BaseClass{
 	static String name;
 
-	public static String screenshot( WebDriver driver ,String methodName) throws IOException {
+	public static String screenshot(String methodName) throws IOException {
 
 		// no space in name, No colans etc etc
 		Date date = new Date();  		    

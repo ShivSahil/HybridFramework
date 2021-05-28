@@ -5,8 +5,11 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
+import org.apache.poi.util.SystemOutLogger;
 
 import com.personal.base.BaseClass;
 
@@ -14,11 +17,24 @@ import com.personal.base.BaseClass;
 public class ZipUtility extends BaseClass {
 
 
-
-	public static void zipFolder(String filepath) {
+	static String path;
+	static String Reports;
+	public static void zipFolder() {
 		try {
-			File inFolder = new File(filepath);
-			File outFolder = new File("Reports.zip");
+			
+			
+			Date date = new Date();  		    
+			SimpleDateFormat simpledate=new SimpleDateFormat("dd_MMMM_hh_a_mm_");
+			String Reports="Report_"+simpledate.format(date);
+			
+
+			path =System.getProperty("user.dir")+"\\src\\test\\resources\\"+Reports+".zip";
+			
+			
+			
+			
+			File inFolder = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\emailables");
+			File outFolder = new File(path);
 			ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(outFolder)));
 			BufferedInputStream in = null;
 			byte[] data = new byte[1000];
@@ -34,10 +50,15 @@ public class ZipUtility extends BaseClass {
 			}
 			out.flush();
 			out.close();
+			logger.info("Report generated with name "+Reports+".zip");
 
 		} catch (Exception e) {
+			logger.error("Exception occured for Report generated with name "+Reports+".zip");
 			e.printStackTrace();
 		}
+		
+		
+		
 	}
 }
 

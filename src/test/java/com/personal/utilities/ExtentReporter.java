@@ -11,9 +11,6 @@ import com.personal.base.BaseClass;
 public class ExtentReporter extends BaseClass{
 
 	
-	
-	
-	
     public static ExtentReports configuration() 
     {
     	

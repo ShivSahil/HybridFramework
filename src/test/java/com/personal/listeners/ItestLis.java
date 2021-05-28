@@ -9,6 +9,7 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.Status;
 import com.personal.base.BaseClass;
 import com.personal.utilities.ScreenshotUtility;
+import com.personal.utilities.ZipUtility;
 
 public class ItestLis extends BaseClass implements ITestListener{
 	
@@ -40,7 +41,7 @@ public class ItestLis extends BaseClass implements ITestListener{
 		logger.error(result.getThrowable());
 		
 		try {
-			screenshotPath = ScreenshotUtility.screenshot(driver,result.getMethod().getMethodName());
+			screenshotPath = ScreenshotUtility.screenshot(result.getMethod().getMethodName());
 		
 		} catch (IOException e) {
 			logger.error("unable to take screenshot of "+result.getMethod().getMethodName()+" method" );
@@ -82,7 +83,7 @@ public class ItestLis extends BaseClass implements ITestListener{
 
 	@Override
 	public void onFinish(ITestContext context) {
-		
+		ZipUtility.zipFolder();
 		
 	}
 
