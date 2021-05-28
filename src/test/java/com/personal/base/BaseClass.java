@@ -3,9 +3,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import javax.sound.midi.MidiDevice.Info;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
@@ -17,6 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -24,9 +22,6 @@ import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.Markup;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.personal.utilities.ExtentReporter;
 
 
@@ -34,8 +29,7 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public static Logger logger = LogManager.getLogger(BaseClass.class);
-	public static WebDriverWait d;
-	
+
 	public static FileInputStream fis;
 	public static Properties configuration = new Properties();
 	public static Properties objRepo = new Properties();
@@ -43,6 +37,7 @@ public class BaseClass {
 	
 	public static ExtentTest test;
 	public static ExtentReports extentVar = ExtentReporter.configuration();
+	
 	
 	
 	@BeforeSuite
@@ -127,13 +122,15 @@ public class BaseClass {
 	{
 		
 		// can't use switch here. switch can't be used for contains
-		if(key.toLowerCase().contains("_css"))
+		if(key.toLowerCase().contains("_css") )
 		{
 			
 			driver.findElement(By.cssSelector(objRepo.getProperty(key))).click();
 			
 			
 		}
+		
+		
 		else if (key.toLowerCase().contains("_xpath"))
 		{
 			
@@ -173,7 +170,7 @@ public class BaseClass {
 		test.log(Status.INFO, "locator(" +key+ ") clicked successfully");
 
 	}
-	
+
 	public void type(String key, String data)  // REUSEABLE TYPE METHOD
 	{
 		
@@ -262,8 +259,8 @@ public class BaseClass {
 		
 	}
 	
-	
 	public void isElementPresent(String key) { // REUSEABLE ELEMENT AVAILABILITY METHOD
+		
 		
 		try {
 				if(key.toLowerCase().contains("_css"))
@@ -315,11 +312,6 @@ public class BaseClass {
 		 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page");
 		 }
 	}
-	
-	
-	
-	
-
 	
 	public void doesAlertContainsText(String message) { // REUSEABLE ALERT TEXT AVAILABILITY METHOD
 		
@@ -376,42 +368,224 @@ public class BaseClass {
 	
 	
 	
+// -------------------------------EXPLCIT WAIT REUSEABLE METHODS---------------------------	
 	
 	
-	
-	// WORK ON THESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSEEEEEEEEEEEEEEEE
-	
-	public WebElement ExplicitlyWaiting(int waitPeriod, String nameOfCondition, By byVariableOfElement) {
+			
 
-			d = new WebDriverWait(driver, waitPeriod);
-			//here we wouldn't be needing breaks, rare situations, i think
+	public void click(String key, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT CLICK METHOD
+	{
+		
+		WebDriverWait d = new WebDriverWait(driver, waitPeriod);
+		By byVar=null;
+		
+		
+		if(key.toLowerCase().contains("_css"))
+		{
 			
-			switch (nameOfCondition) {
-			case "elementToBeClickable": {
-				WebElement element=d.until(ExpectedConditions.elementToBeClickable(byVariableOfElement));
-				logger.debug("gave elementToBeClickable timeout as "+ waitPeriod);
-				return element;
-			}
-			
-			case "presenceOfElementLocated": {
-				WebElement element=d.until(ExpectedConditions.presenceOfElementLocated(byVariableOfElement));
-				logger.debug("gave presenceOfElementLocated timeout as "+ waitPeriod);
-				return element;
-				
-			}
-			case "alertIsPresent": {
-				d.until(ExpectedConditions.alertIsPresent());	
-				logger.debug("gave alertIsPresent timeout as "+ waitPeriod);
-				return null;
-			}
-			default:{
-				logger.error(" You provided wrong condition \n In ExplicitlyWaiting(int waitPeriod, String nameOfCondition, By byVariableOfElement) following conditions are used :- \n 1.elementToBeClickable \n 2.presenceOfElementLocated \n 3.alertIsPresent");
-				break;}
-
-			}
-			return null;
-			
+			byVar=By.cssSelector(objRepo.getProperty(key));
 			
 		}
+		else if (key.toLowerCase().contains("_xpath"))
+		{
+			byVar=By.xpath(objRepo.getProperty(key));
+		}
+		else if (key.toLowerCase().contains("_id"))
+		{
+			byVar=By.id(objRepo.getProperty(key));
+		}
+		else if (key.toLowerCase().contains("_link"))
+		{
+			byVar=By.linkText(objRepo.getProperty(key));
+		}
+		
+		else if (key.toLowerCase().contains("_partiallink"))
+		{
+			byVar=By.partialLinkText(objRepo.getProperty(key));
+		}
+		else if (key.toLowerCase().contains("_name"))
+		{
+			byVar=By.name(objRepo.getProperty(key));
+		}
+		else if (key.toLowerCase().contains("_class"))
+		{
+			byVar=By.className(objRepo.getProperty(key));
+		}
+		
+		
+		
+		switch (nameOfCondition) {
+		case "elementToBeClickable": {
+			 d.until(ExpectedConditions.elementToBeClickable(byVar)).click();
+			 
+			logger.debug("elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+			test.log(Status.INFO, "elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+			break;
+			
+		}
+		
+		case "visibilityOfElementLocated": {
+			
+			
+			d.until(ExpectedConditions.visibilityOfElementLocated(byVar)).click();		
+			logger.debug("visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+			test.log(Status.INFO, "visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+			
+			break;
+		}
+		
+		case "presenceOfElementLocated": {
+			 d.until(ExpectedConditions.presenceOfElementLocated(byVar)).click();
+			 
+			logger.debug("presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+			test.log(Status.INFO, "presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+			
+			break;
+		}
+		
+		
+		default:{
+			logger.error(" user provided wrong condition \n for click(String key, int waitPeriod, String nameOfCondition). Following conditions are used :- \n 1.elementToBeClickable \n 2.presenceOfElementLocated \n 3.visibilityOfElementLocated");
+			Assert.fail(" user provided wrong condition \n for click(String key, int waitPeriod, String nameOfCondition). Following conditions are used :- \n 1.elementToBeClickable \n 2.presenceOfElementLocated \n 3.visibilityOfElementLocated");
+			
+			break;}
+
+		}
+		
+		
+
+	}
+			
+	public void TYPE(String key, String data, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT TYPE METHOD
+	{
+		
+		WebDriverWait d = new WebDriverWait(driver, waitPeriod);
+		By byVar=null;
+		
+		
+		if(key.toLowerCase().contains("_css"))
+		{
+			
+			byVar=By.cssSelector(objRepo.getProperty(key));
+			
+		}
+		else if (key.toLowerCase().contains("_xpath"))
+		{
+			byVar=By.xpath(objRepo.getProperty(key));
+		}
+		else if (key.toLowerCase().contains("_id"))
+		{
+			byVar=By.id(objRepo.getProperty(key));
+		}
+		else if (key.toLowerCase().contains("_link"))
+		{
+			byVar=By.linkText(objRepo.getProperty(key));
+		}
+		
+		else if (key.toLowerCase().contains("_partiallink"))
+		{
+			byVar=By.partialLinkText(objRepo.getProperty(key));
+		}
+		else if (key.toLowerCase().contains("_name"))
+		{
+			byVar=By.name(objRepo.getProperty(key));
+		}
+		else if (key.toLowerCase().contains("_class"))
+		{
+			byVar=By.className(objRepo.getProperty(key));
+		}
+		
+		
+		
+		switch (nameOfCondition) {
+		case "elementToBeClickable": {
+			 d.until(ExpectedConditions.elementToBeClickable(byVar)).sendKeys(data);
+			
+			
+			logger.debug("elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+			test.log(Status.INFO,"elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+			
+			break;
+			
+		}
+		
+		case "visibilityOfElementLocated": {
+			
+			
+			d.until(ExpectedConditions.visibilityOfElementLocated(byVar)).sendKeys(data);
+			
+			
+			logger.debug("visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+			test.log(Status.INFO,"visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+			
+			break;
+		}
+		
+		case "presenceOfElementLocated": {
+			 d.until(ExpectedConditions.presenceOfElementLocated(byVar)).sendKeys(data);
+
+			 logger.debug("presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+			 test.log(Status.INFO,"presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+				
+			break;
+		}
+		
+		
+		default:{
+			logger.error(" user provided wrong condition \n for type(String key, String data, int waitPeriod, String nameOfCondition). Following conditions are used :- \n 1.elementToBeClickable \n 2.presenceOfElementLocated \n 3.visibilityOfElementLocated");
+			Assert.fail(" user provided wrong condition \n for type(String key, String data, int waitPeriod, String nameOfCondition). Following conditions are used :- \n 1.elementToBeClickable \n 2.presenceOfElementLocated \n 3.visibilityOfElementLocated");
+			
+			break;}
+
+		}
+
+	}
+
+	public void alert(String action, int waitPeriod)  // REUSEABLE EXPLICIT WAIT ALERT METHOD
+	{
+		
+		WebDriverWait d = new WebDriverWait(driver, waitPeriod);
+
+		
+		
+		if (action.toLowerCase().contains("accept")) {
+			 d.until(ExpectedConditions.alertIsPresent()).accept();
+			 
+			 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+			 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+			
+		}
+		else if (action.toLowerCase().contains("dismiss")) {
+			d.until(ExpectedConditions.alertIsPresent()).dismiss();
+			 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+			 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+			
+		}
+		
+		else if (action.toLowerCase().contains("sendKeys")) {
+			d.until(ExpectedConditions.alertIsPresent()).sendKeys(action);
+			 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+			 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+			
+		}
+		else if(action.toLowerCase().contains("getText"))
+		{
+			System.out.println(d.until(ExpectedConditions.alertIsPresent()).getText());
+			logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+			test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");}
+		
+		else {
+			logger.error(" user provided wrong action \n for alert(String action, int waitPeriod). Following action are used :- \n 1.dismiss \n 2. accept  \n 3. sendKeys \n 4. getText ");
+			Assert.fail(" user provided wrong action \n for alert(String action, int waitPeriod). Following action are used :- \n 1.dismiss \n 2. accept  \n 3. sendKeys \n 4. getText ");
+			
+		}
+		
+
+	}
+	
+	
+
+	
 }
+
 

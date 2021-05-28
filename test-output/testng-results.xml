@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Customer Suite" duration-ms="17624" started-at="2021-05-27T11:02:36Z" finished-at="2021-05-27T11:02:53Z">
+  <suite name="Customer Suite" duration-ms="2386" started-at="2021-05-28T05:14:02Z" finished-at="2021-05-28T05:14:05Z">
     <groups>
     </groups>
-    <test name="Add Customers" duration-ms="17610" started-at="2021-05-27T11:02:36Z" finished-at="2021-05-27T11:02:53Z">
+    <test name="Add Customers" duration-ms="2368" started-at="2021-05-28T05:14:02Z" finished-at="2021-05-28T05:14:05Z">
       <class name="com.personal.testcases.AddCustomer">
-        <test-method status="PASS" signature="loginAsmanagerTest()[pri:0, instance:com.personal.testcases.AddCustomer@4229bb3f]" name="loginAsmanagerTest" duration-ms="4321" started-at="2021-05-27T11:02:36Z" description="clicking on login button and checkeding availability of buttons on screen" finished-at="2021-05-27T11:02:40Z">
+        <test-method status="PASS" signature="loginAsmanagerTest()[pri:0, instance:com.personal.testcases.AddCustomer@73e22a3d]" name="loginAsmanagerTest" duration-ms="1148" started-at="2021-05-28T05:14:02Z" description="clicking on login button and checking availability of buttons on screen" finished-at="2021-05-28T05:14:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsmanagerTest -->
-        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomer@4229bb3f]" status="PASS" duration-ms="4165" finished-at="2021-05-27T11:02:45Z" started-at="2021-05-27T11:02:41Z" depends-on-methods="com.personal.testcases.AddCustomer.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomer@73e22a3d]" status="PASS" duration-ms="167" finished-at="2021-05-28T05:14:04Z" started-at="2021-05-28T05:14:04Z" depends-on-methods="com.personal.testcases.AddCustomer.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMultipleCustomerTest -->
-        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomer@4229bb3f]" status="PASS" duration-ms="4127" finished-at="2021-05-27T11:02:49Z" started-at="2021-05-27T11:02:45Z" depends-on-methods="com.personal.testcases.AddCustomer.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomer@73e22a3d]" status="PASS" duration-ms="125" finished-at="2021-05-28T05:14:04Z" started-at="2021-05-28T05:14:04Z" depends-on-methods="com.personal.testcases.AddCustomer.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMultipleCustomerTest -->
-        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomer@4229bb3f]" status="PASS" duration-ms="4136" finished-at="2021-05-27T11:02:53Z" started-at="2021-05-27T11:02:49Z" depends-on-methods="com.personal.testcases.AddCustomer.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomer@73e22a3d]" status="PASS" duration-ms="96" finished-at="2021-05-28T05:14:05Z" started-at="2021-05-28T05:14:04Z" depends-on-methods="com.personal.testcases.AddCustomer.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
           <params>
             <param index="0">
               <value>
@@ -76,13 +76,13 @@
         </test-method> <!-- addMultipleCustomerTest -->
       </class> <!-- com.personal.testcases.AddCustomer -->
     </test> <!-- Add Customers -->
-    <test name="Open Account" duration-ms="0" started-at="2021-05-27T11:02:53Z" finished-at="2021-05-27T11:02:53Z">
+    <test name="Open Account" duration-ms="0" started-at="2021-05-28T05:14:05Z" finished-at="2021-05-28T05:14:05Z">
       <class name="com.personal.base.BaseClass">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@7fee8714]" name="setUp" is-config="true" duration-ms="4858" started-at="2021-05-27T11:02:31Z" finished-at="2021-05-27T11:02:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@3232a28a]" name="setUp" is-config="true" duration-ms="4945" started-at="2021-05-28T05:13:57Z" finished-at="2021-05-28T05:14:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@7fee8714]" name="tearDown" is-config="true" duration-ms="687" started-at="2021-05-27T11:02:53Z" finished-at="2021-05-27T11:02:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@3232a28a]" name="tearDown" is-config="true" duration-ms="677" started-at="2021-05-28T05:14:05Z" finished-at="2021-05-28T05:14:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

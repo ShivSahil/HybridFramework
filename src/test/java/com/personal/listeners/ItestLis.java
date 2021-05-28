@@ -36,7 +36,7 @@ public class ItestLis extends BaseClass implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		
 		//***** keep  getMethodName and getThrowable separate
-		logger.error("$$$$$$$ " + result.getMethod().getMethodName() + " HAS FAILED " );
+		logger.error("$$$$$$$ " + result.getMethod().getMethodName() + " HAS FAILED ");
 		logger.error(result.getThrowable());
 		
 		try {

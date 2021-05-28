@@ -2,11 +2,7 @@ package com.personal.testcases;
 
 
 
-import java.io.IOException;
-import java.lang.reflect.Method;
-
 import org.testng.annotations.*;
-
 import com.personal.base.BaseClass;
 import com.personal.utilities.ExcelRead;
 
@@ -16,15 +12,16 @@ public class AddCustomer extends BaseClass{
 	
 	
 	
-	@Test(description="clicking on login button and checkeding availability of buttons on screen")
+	@Test(description="clicking on login button and checking availability of buttons on screen")
 	public void loginAsmanagerTest() throws InterruptedException
 	{
-		Thread.sleep(4000);
-		click("BankMangLogin_css");
+
+		click("BankMangLogin_css", 10, "visibilityOfElementLocated");
 		checkPageTitle("Protractor practice website - Banking App");
 		
 		isElementPresent("AddCustomerButton_xpath");
 		click("AddCustomerButton_xpath");
+	
 	}
 	
 	 
@@ -34,15 +31,11 @@ public class AddCustomer extends BaseClass{
 		type("FirstName_css", firstName );
 		type("LastName_css", lastName );
 		type("PinCode_css", pincode );
-	
-		// EXPLCIIT WAITTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
-		Thread.sleep(4000);  
-		
-		
 		click("AddCustomer_xpath");
-		doesAlertContainsText("Customer added successfully with customer id :");
 		
-		alert("accept");
+		
+		doesAlertContainsText("Customer added successfully with customer id :");	
+		alert("accept", 4);
 	}
 	
 	
