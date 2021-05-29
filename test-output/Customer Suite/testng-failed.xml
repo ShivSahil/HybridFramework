@@ -6,10 +6,18 @@
   </listeners>
   <test thread-count="5" name="Add Customers(failed)">
     <classes>
+      <class name="com.personal.testcases.AddCustomerTest">
+        <methods>
+          <include name="loginAsmanagerTest"/>
+          <include name="tearDown"/>
+          <include name="addMultipleCustomerTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.personal.testcases.AddCustomerTest -->
       <class name="com.personal.testcases.OpenAccountTest">
         <methods>
           <include name="tearDown"/>
-          <include name="openAccountMethod" invocation-numbers="1"/>
+          <include name="openAccountMethod" invocation-numbers="0 1"/>
           <include name="setUp"/>
           <include name="openAccountTab"/>
         </methods>

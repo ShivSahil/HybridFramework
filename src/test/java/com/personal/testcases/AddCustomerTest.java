@@ -10,9 +10,9 @@ public class AddCustomerTest extends BaseClass {
 	public void loginAsmanagerTest() throws InterruptedException {
 
 		click("BankMangLogin_css", 10, "visibilityOfElementLocated");
-		checkPageTitle("Protractor practice website - Banking App");
+		checkPageTitle("Protractor practice website - Banking App","softAssert");
 
-		isElementPresent("AddCustomerButton_xpath");
+		isElementPresent("AddCustomerButton_xpath", "hardAssert");
 		click("AddCustomerButton_xpath");
 
 	}
@@ -24,7 +24,7 @@ public class AddCustomerTest extends BaseClass {
 		type("PinCode_css", pincode);
 		Thread.sleep(2000);
 		click("AddCustomer_xpath");
-		doesAlertContainsText("Customer added successfully with customer id :");
+		doesAlertContainsText("Customer added successfully with customer id :", "softAssert");
 		alert("accept", 4);
 	}
 

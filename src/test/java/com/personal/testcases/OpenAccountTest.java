@@ -19,11 +19,9 @@ public class OpenAccountTest extends BaseClass{
 	{
 		staticDropDown("CustomerDropDown_id", name);
 		staticDropDown("CurrencyDropDown_id", currency);
-		Thread.sleep(2000);
 		click("Submit_css");
 		
-		doesAlertContainsText("Account created successfully with account Number :");
+		doesAlertContainsText("Account created successfully with account Number :","softAssert");
 		alert("accept");
-		Thread.sleep(2000);
 	}
 }
