@@ -1,7 +1,11 @@
 package com.personal.testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
+
+import com.aventstack.extentreports.Status;
 import com.personal.base.BaseClass;
+import com.personal.listeners.RetryAnalyzer;
 import com.personal.utilities.ExcelRead;
 
 public class AddCustomerTest extends BaseClass {
@@ -16,16 +20,19 @@ public class AddCustomerTest extends BaseClass {
 		click("AddCustomerButton_xpath");
 
 	}
-
+	
 	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", dependsOnMethods = "loginAsmanagerTest", description = "adding multiple customers from excel")
 	public void addMultipleCustomerTest(String firstName, String lastName, String pincode) throws InterruptedException {
 		type("FirstName_css", firstName);
 		type("LastName_css", lastName);
 		type("PinCode_css", pincode);
-		Thread.sleep(2000);
 		click("AddCustomer_xpath");
-		doesAlertContainsText("Customer added successfully with customer id :", "softAssert");
+		
+		
+		doesAlertContainsText("1Customer added successfully with customer id :", "softAssert");
 		alert("accept", 4);
+		
+		
 	}
 
 }

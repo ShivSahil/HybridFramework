@@ -125,9 +125,9 @@ public class BaseClass {
 	}
 	
 	
-	
-// ---------------------------REUSEABLE METHODS --------------------------------------------------------------
-		
+//-----------------------------------------------------------------------------------------------------------------------	
+// -------------------------------------------REUSEABLE METHODS ---------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------		
 	
 	public void click(String key)  // REUSEABLE CLICK METHOD
 	{
@@ -302,10 +302,9 @@ public class BaseClass {
 	
 	
 	
-
-	
-// -------------------------------EXPLCIT WAIT REUSEABLE METHODS---------------------------	
-	
+//-----------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------EXPLCIT WAIT REUSEABLE METHODS-------------------------------------------------	
+//-----------------------------------------------------------------------------------------------------------------------	
 	
 			
 
@@ -520,10 +519,19 @@ public class BaseClass {
 	
 	
 
+//-------------------------------------------------------------------------------------------------------------------------
+// -----------------------------------VERIFICATION/HARD ASSERT IMPLEMENTATION----------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------
 
-// -----------------------------------SOFT/HARD ASSERT IMPLEMENTATION
-
-
+	
+	
+	/*
+	 * code is written such that for verification screenshots not taken screenshots needs to be added then change
+	 * test.log(Status.ERROR,"VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE"); 
+	 * to following
+	 * Assert.fail("VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE"); 
+	 * 
+	 */
 public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE METHOD FOR CHECKING TITLE 
 {
 	
@@ -544,12 +552,14 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 		
 		//test.log(Status.FAIL,"ASSERTED that title of Page :- '"+driver.getTitle()+ "' is INCORRECT");
 		Assert.fail("ASSERT :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
+		
 	}
 	
 	else if (driver.getTitle().equals(expectedtitle) && assertType.toLowerCase().contains("softassert")) {
 
 		logger.info( "VERIFY :- '"+driver.getTitle()+ "' is correct title");
 		test.log(Status.PASS,"VERIFY :- '"+driver.getTitle()+ "' is correct title");
+		
 	}
 	else if (!(driver.getTitle().equals(expectedtitle)) && assertType.toLowerCase().contains("softassert"))
 	{
@@ -559,6 +569,7 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 		
 		logger.error( "VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
 		test.log(Status.ERROR,"VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
+
 		
 	}
 	
