@@ -6,7 +6,8 @@
       <class name="com.personal.testcases.AddCustomer">
         <methods>
           <include name="tearDown"/>
-          <include name="loginAsmanager"/>
+          <include name="addMultipleCustomerTest"/>
+          <include name="loginAsmanagerTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.AddCustomer -->

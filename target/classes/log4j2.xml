@@ -19,7 +19,7 @@
 
 			<!-- maximum size of each file before data is filled in next file -->
 			<Policies>
-				<SizeBasedTriggeringPolicy size="500" />
+				<SizeBasedTriggeringPolicy size="5MB" />
 			</Policies>
 
 			<!-- maximum back up files can be only 25 -->

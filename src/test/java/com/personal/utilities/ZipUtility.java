@@ -9,7 +9,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
-import org.apache.poi.util.SystemOutLogger;
 
 import com.personal.base.BaseClass;
 
@@ -19,18 +18,27 @@ public class ZipUtility extends BaseClass {
 
 	static String path;
 	static String Reports;
-	public static void zipFolder() {
+	
+	
+	
+	public static void zip()
+	{
+		if(configuration.getProperty("ZipEmailables").contains("true"))
+		{
+			zipFolder();
+		}
+	}
+	
+	private static void zipFolder() {
 		try {
 			
 			
 			Date date = new Date();  		    
 			SimpleDateFormat simpledate=new SimpleDateFormat("dd_MMMM_hh_a_mm_");
-			String Reports="Report_"+simpledate.format(date);
+			Reports="Report_"+simpledate.format(date);
 			
 
 			path =System.getProperty("user.dir")+"\\src\\test\\resources\\"+Reports+".zip";
-			
-			
 			
 			
 			File inFolder = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\emailables");
@@ -53,8 +61,8 @@ public class ZipUtility extends BaseClass {
 			logger.info("Report generated with name "+Reports+".zip");
 
 		} catch (Exception e) {
-			logger.error("Exception occured for Report generated with name "+Reports+".zip");
-			e.printStackTrace();
+			logger.error("Exception occured for Report generated with name "+Reports+".zip. error msg is"+ e.getMessage());
+			
 		}
 		
 		

@@ -3,6 +3,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
@@ -16,11 +17,14 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.personal.utilities.ExtentReporter;
+import com.personal.utilities.MailUtility;
 
 
 
@@ -28,20 +32,27 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public static Logger logger = LogManager.getLogger(BaseClass.class);
-	
 	public static FileInputStream fis;
 	public static Properties configuration = new Properties();
 	public static Properties objRepo = new Properties();
 	public static String baseLoc = System.getProperty("user.dir");
-	
 	public static ExtentTest test;
 	public static ExtentReports extentVar = ExtentReporter.configuration();
-	
+	public static MailUtility mail;
 	
 	
 	@BeforeSuite
 	public void setUp() throws IOException
 	{
+		
+		
+		// java is unable to delete the log4j file as "it is being used by another process"
+		/*
+		 * try { ClearFolders.delete(); } catch (IOException e) { e.printStackTrace();
+		 * logger.error("unable to delete the contents of folder due to "+
+		 * e.getMessage()); }
+		 */ 
+		
 		
 		
 		fis = new FileInputStream(baseLoc + "\\src\\test\\resources\\properties\\Configuration.properties");
@@ -300,8 +311,8 @@ public class BaseClass {
 		// **** no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
 			
 	   
-		 logger.error("ASSERT :- locator(" +key+ ") is NOT present on page ]");
-		 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page");
+		 logger.error("ASSERT :- locator(" +key+ ") is NOT present on page. error msg is "+ e.getMessage());
+		 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page. error msg is "+ e.getMessage());
 		 }
 	}
 	
@@ -325,9 +336,9 @@ public class BaseClass {
 			} catch (NoAlertPresentException e) { // ****NoAlertPresentException is apt for here
 				
 				
-				logger.error("NO alert is present on screen");
+				logger.error("NO alert is present on screen. error message is "+e.getMessage());
 				
-				Assert.fail("NO alert is present on screen");
+				Assert.fail("NO alert is present on screen. error message is "+e.getMessage());
 				
 			}
 			
