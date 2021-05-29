@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" name="Add Customers(failed)">
     <classes>
-      <class name="com.personal.testcases.AddCustomer">
+      <class name="com.personal.testcases.OpenAccountTest">
         <methods>
           <include name="tearDown"/>
-          <include name="addMultipleCustomerTest" invocation-numbers="0 1 2"/>
-          <include name="loginAsmanagerTest"/>
+          <include name="openAccountMethod" invocation-numbers="1"/>
           <include name="setUp"/>
+          <include name="openAccountTab"/>
         </methods>
-      </class> <!-- com.personal.testcases.AddCustomer -->
+      </class> <!-- com.personal.testcases.OpenAccountTest -->
     </classes>
   </test> <!-- Add Customers(failed) -->
 </suite> <!-- Failed suite [Customer Suite] -->

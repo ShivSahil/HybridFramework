@@ -15,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
@@ -134,10 +135,8 @@ public class BaseClass {
 		// can't use switch here. switch can't be used for contains
 		if(key.toLowerCase().contains("_css") )
 		{
-			
 			driver.findElement(By.cssSelector(objRepo.getProperty(key))).click();
-			
-			
+
 		}
 		
 		
@@ -369,7 +368,57 @@ public class BaseClass {
 		test.log(Status.INFO, (" Action("+ action +") successfully taken on alert, present on page "));
 	}
 	
-	
+	public void staticDropDown(String key, String selectOption)  // REUSEABLE CLICK METHOD
+	{
+		
+		Select s;
+		
+		// can't use switch here. switch can't be used for contains
+		if(key.toLowerCase().contains("_css") )
+		{
+			s = new Select(driver.findElement(By.cssSelector(objRepo.getProperty(key))));
+			s.selectByVisibleText(selectOption);
+
+		}
+
+		else if (key.toLowerCase().contains("_xpath"))
+		{
+			s = new Select(driver.findElement(By.xpath(objRepo.getProperty(key))));
+			s.selectByVisibleText(selectOption);	
+		}
+		else if (key.toLowerCase().contains("_id"))
+		{
+			s = new Select(driver.findElement(By.id(objRepo.getProperty(key))));
+			s.selectByVisibleText(selectOption);
+		}
+		else if (key.toLowerCase().contains("_link"))
+		{
+			s = new Select(driver.findElement(By.linkText(objRepo.getProperty(key))));
+			s.selectByVisibleText(selectOption);
+		}
+		
+		else if (key.toLowerCase().contains("_partiallink"))
+		{
+			s = new Select(driver.findElement(By.partialLinkText(objRepo.getProperty(key))));
+			s.selectByVisibleText(selectOption);
+		}
+		else if (key.toLowerCase().contains("_name"))
+		{
+			s = new Select(driver.findElement(By.name(objRepo.getProperty(key))));
+			s.selectByVisibleText(selectOption);
+		}
+		else if (key.toLowerCase().contains("_class"))
+		{
+			s = new Select(driver.findElement(By.className(objRepo.getProperty(key))));
+			s.selectByVisibleText(selectOption);
+		}
+		
+		// **** DON'T WRITE driver.getTitle(), in case there is a alert box. you will get error on driver.getTitle()
+		
+		logger.debug("option(" +selectOption+ ") selected successfully on dropdown("+key+")");
+		test.log(Status.INFO, "option(" +selectOption+ ") selected successfully on dropdown("+key+")");
+
+	}
 	
 // -------------------------------EXPLCIT WAIT REUSEABLE METHODS---------------------------	
 	

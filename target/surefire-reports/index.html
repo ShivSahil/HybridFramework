@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Customer_Suite">
-              <span class="suite-name border-passed">Customer Suite</span>
+              <span class="suite-name border-failed">Customer Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Customer_Suite" class="hide-methods failed suite-Customer_Suite"> (hide)</a> <!-- hide-methods failed suite-Customer_Suite -->
+                      <a href="#" panel-name="suite-Customer_Suite" class="show-methods failed suite-Customer_Suite"> (show)</a> <!-- show-methods failed suite-Customer_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Customer_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Customer_Suite" title="com.personal.testcases.AddCustomer" hash-for-method="addMultipleCustomerTest(xyz, sample, 00001)">addMultipleCustomerTest(xyz, sample, 00001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Customer_Suite" title="com.personal.testcases.AddCustomer" hash-for-method="addMultipleCustomerTest(Guleri, Rahul, 176033)">addMultipleCustomerTest(Guleri, Rahul, 176033)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Customer_Suite" title="com.personal.testcases.AddCustomer" hash-for-method="addMultipleCustomerTest(Shiv, Sahil, 160014)">addMultipleCustomerTest(Shiv, Sahil, 160014)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Customer_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +141,113 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Customer_Suite" class="panel Customer_Suite">
+          <div class="suite-Customer_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.personal.testcases.AddCustomer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMultipleCustomerTest(xyz, sample, 00001)">
+                  </a> <!-- addMultipleCustomerTest(xyz, sample, 00001) -->
+                  <span class="method-name">addMultipleCustomerTest</span>
+                  <span class="parameters">(xyz, sample, 00001)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button11[@type=&apos;submit&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ba42cb957776b9212363227bd0b240c
+*** Element info: {Using=xpath, value=//button11[@type=&apos;submit&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.personal.base.BaseClass.click(BaseClass.java:146)
+	at com.personal.testcases.AddCustomer.addMultipleCustomerTest(AddCustomer.java:25)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(adding multiple customers from excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMultipleCustomerTest(Guleri, Rahul, 176033)">
+                  </a> <!-- addMultipleCustomerTest(Guleri, Rahul, 176033) -->
+                  <span class="method-name">addMultipleCustomerTest</span>
+                  <span class="parameters">(Guleri, Rahul, 176033)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button11[@type=&apos;submit&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ba42cb957776b9212363227bd0b240c
+*** Element info: {Using=xpath, value=//button11[@type=&apos;submit&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.personal.base.BaseClass.click(BaseClass.java:146)
+	at com.personal.testcases.AddCustomer.addMultipleCustomerTest(AddCustomer.java:25)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(adding multiple customers from excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMultipleCustomerTest(Shiv, Sahil, 160014)">
+                  </a> <!-- addMultipleCustomerTest(Shiv, Sahil, 160014) -->
+                  <span class="method-name">addMultipleCustomerTest</span>
+                  <span class="parameters">(Shiv, Sahil, 160014)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button11[@type=&apos;submit&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ba42cb957776b9212363227bd0b240c
+*** Element info: {Using=xpath, value=//button11[@type=&apos;submit&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.personal.base.BaseClass.click(BaseClass.java:146)
+	at com.personal.testcases.AddCustomer.addMultipleCustomerTest(AddCustomer.java:25)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(adding multiple customers from excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Customer_Suite-class-failed -->
           <div class="suite-Customer_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -195,16 +326,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginAsmanagerTest')
+data.setCell(0, 1, 'addMultipleCustomerTest')
 data.setCell(0, 2, 'com.personal.testcases.AddCustomer')
-data.setCell(0, 3, 1099);
+data.setCell(0, 3, 4312);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addMultipleCustomerTest')
+data.setCell(1, 2, 'com.personal.testcases.AddCustomer')
+data.setCell(1, 3, 4182);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addMultipleCustomerTest')
+data.setCell(2, 2, 'com.personal.testcases.AddCustomer')
+data.setCell(2, 3, 4165);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginAsmanagerTest')
+data.setCell(3, 2, 'com.personal.testcases.AddCustomer')
+data.setCell(3, 3, 451);
 window.suiteTableData['Customer_Suite']= { tableData: data, tableDiv: 'times-div-Customer_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Customer_Suite">
               </div> <!-- times-div-Customer_Suite -->
             </div> <!-- times-div -->
@@ -249,14 +392,32 @@ return data;
               <div class="chronological-class-name">com.personal.testcases.AddCustomer</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginAsmanagerTest</span>
-                <span class="method-start">4428 ms</span>
+                <span class="method-start">4740 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addMultipleCustomerTest(Shiv, Sahil, 160014)</span>
+                <span class="method-start">6046 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addMultipleCustomerTest(Guleri, Rahul, 176033)</span>
+                <span class="method-start">10466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addMultipleCustomerTest(xyz, sample, 00001)</span>
+                <span class="method-start">14743 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.personal.base.BaseClass</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21383 ms</span>
+                <span class="method-start">33729 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -43,7 +43,7 @@ public class ItestLis extends BaseClass implements ITestListener{
 		
 		//***** keep  getMethodName and getThrowable separate
 		logger.error("$$$$$$$ " + result.getMethod().getMethodName() + " HAS FAILED ");
-		logger.error(result.getThrowable());
+		logger.fatal(result.getThrowable());
 		
 		try {
 			screenshotPath = ScreenshotUtility.screenshot(result.getMethod().getMethodName());

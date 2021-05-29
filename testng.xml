@@ -9,7 +9,8 @@
 <test name="Add Customers"> 
 	<classes>
 		<class name="com.personal.base.BaseClass"/>
-		<class name="com.personal.testcases.AddCustomer"/>
+		<class name="com.personal.testcases.AddCustomerTest"/>
+		<class name="com.personal.testcases.OpenAccountTest"/>
 	</classes>
 </test>
 

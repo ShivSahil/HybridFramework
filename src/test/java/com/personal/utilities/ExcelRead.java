@@ -15,7 +15,10 @@ import com.personal.base.BaseClass;
 
 public class ExcelRead extends BaseClass{
 
-		
+	
+// **** when deleting an existing row from excel use, control + '-'. else this excel utlity is picking up empty rows as data!
+// ***  " '1000 " makes 1000 as string
+	
 	public static String[][] excelData(String sheetName) throws IOException {
 		
 		File f= new File(baseLoc+ "\\src\\test\\resources\\excel\\testdata.xlsx"); 

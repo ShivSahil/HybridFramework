@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 import com.personal.base.BaseClass;
 import com.personal.utilities.ExcelRead;
 
-public class AddCustomer extends BaseClass {
+public class AddCustomerTest extends BaseClass {
 
 	@Test(description = "clicking on login button and checking availability of buttons on screen")
 	public void loginAsmanagerTest() throws InterruptedException {
@@ -22,6 +22,7 @@ public class AddCustomer extends BaseClass {
 		type("FirstName_css", firstName);
 		type("LastName_css", lastName);
 		type("PinCode_css", pincode);
+		Thread.sleep(2000);
 		click("AddCustomer_xpath");
 		doesAlertContainsText("Customer added successfully with customer id :");
 		alert("accept", 4);
