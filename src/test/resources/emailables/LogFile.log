@@ -103,3 +103,458 @@ Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
 16:43:51.962 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
 16:43:52.673 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
 16:43:52.673 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+17:00:42.372 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+17:00:42.393 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+17:00:42.402 [main] DEBUG com.personal.base.BaseClass - window maximized
+17:00:42.445 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+17:00:42.446 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+17:00:43.399 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+17:00:43.409 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+17:00:43.417 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+17:00:43.510 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+17:00:43.517 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+17:00:44.366 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:00:44.366 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:00:44.402 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+17:00:44.436 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+17:00:44.475 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+17:00:44.520 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+17:00:44.540 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(yyyyyyyyyyyyyy Customer added successfully with customer id) is NOT present in Alert Box .
+ Message in AlertBox is Customer added successfully with customer id :6
+17:00:44.551 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:00:44.552 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: ASSERT :- text(yyyyyyyyyyyyyy Customer added successfully with customer id) is NOT present in Alert Box .
+ Message in AlertBox is Customer added successfully with customer id :6
+17:00:44.571 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:00:44.571 [main] FATAL com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 8172, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6e2d0727-cad4-4c0d-8986-99f72f990625
+17:00:44.624 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_00_44_571ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:00:44.625 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:00:44.731 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+17:00:44.732 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+17:00:44.732 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+17:00:45.519 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+17:00:45.519 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+17:01:43.342 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+17:01:43.362 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+17:01:43.371 [main] DEBUG com.personal.base.BaseClass - window maximized
+17:01:43.426 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+17:01:43.427 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+17:01:43.633 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+17:01:43.646 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+17:01:43.655 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+17:01:43.728 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+17:01:43.732 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+17:01:44.612 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:01:44.613 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:01:44.638 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+17:01:44.655 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+17:01:44.728 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+17:01:44.770 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+17:01:44.778 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+17:01:44.801 [main] ERROR com.personal.base.BaseClass -  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+17:01:44.807 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:01:44.811 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+17:01:44.868 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_01_44_812ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:01:44.868 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:01:44.891 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:01:44.891 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:01:44.909 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+17:01:44.926 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+17:01:44.943 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+17:01:44.962 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+17:01:44.968 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+17:01:44.987 [main] ERROR com.personal.base.BaseClass -  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+17:01:44.990 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:01:44.990 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+17:01:45.022 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_01_44_991ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:01:45.023 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:01:45.032 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:01:45.032 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:01:45.052 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+17:01:45.071 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+17:01:45.089 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+17:01:45.120 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+17:01:45.125 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+17:01:45.141 [main] ERROR com.personal.base.BaseClass -  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+17:01:45.145 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:01:45.145 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+17:01:45.178 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_01_45_145ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:01:45.179 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:01:45.357 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+17:01:45.359 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+17:01:45.359 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+17:01:46.481 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+17:01:46.481 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+17:02:41.081 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+17:02:41.100 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+17:02:41.105 [main] DEBUG com.personal.base.BaseClass - window maximized
+17:02:41.143 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+17:02:41.143 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+17:02:42.064 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+17:02:42.077 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+17:02:42.086 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+17:02:42.172 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+17:02:42.176 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+17:02:42.986 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:02:42.986 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:02:43.022 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+17:02:43.047 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+17:02:43.101 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+17:02:43.150 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+17:02:43.159 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+17:02:43.180 [main] ERROR com.personal.base.BaseClass -  user provided wrong action for alert(String action, int waitPeriod).
+ Following action are used :- 
+ 	 1.dismiss 
+ 	 2. accept  
+ 	 3. getText 
+17:02:43.185 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:02:43.186 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong action for alert(String action, int waitPeriod).
+ Following action are used :- 
+ 	 1.dismiss 
+ 	 2. accept  
+ 	 3. getText 
+17:02:43.228 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_02_43_186ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:02:43.229 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:02:43.248 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:02:43.248 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:02:43.281 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+17:02:43.309 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+17:02:43.333 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+17:02:43.372 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+17:02:43.379 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+17:02:43.402 [main] ERROR com.personal.base.BaseClass -  user provided wrong action for alert(String action, int waitPeriod).
+ Following action are used :- 
+ 	 1.dismiss 
+ 	 2. accept  
+ 	 3. getText 
+17:02:43.404 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:02:43.404 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong action for alert(String action, int waitPeriod).
+ Following action are used :- 
+ 	 1.dismiss 
+ 	 2. accept  
+ 	 3. getText 
+17:02:43.456 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_02_43_404ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:02:43.457 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:02:43.466 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:02:43.466 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:02:43.502 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+17:02:43.524 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+17:02:43.549 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+17:02:43.588 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+17:02:43.595 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+17:02:43.615 [main] ERROR com.personal.base.BaseClass -  user provided wrong action for alert(String action, int waitPeriod).
+ Following action are used :- 
+ 	 1.dismiss 
+ 	 2. accept  
+ 	 3. getText 
+17:02:43.617 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:02:43.617 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong action for alert(String action, int waitPeriod).
+ Following action are used :- 
+ 	 1.dismiss 
+ 	 2. accept  
+ 	 3. getText 
+17:02:43.649 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_02_43_617ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:02:43.649 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:02:43.751 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+17:02:43.752 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+17:02:43.752 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+17:02:44.594 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+17:02:44.594 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+17:03:59.294 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+17:03:59.310 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+17:03:59.317 [main] DEBUG com.personal.base.BaseClass - window maximized
+17:03:59.351 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+17:03:59.351 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+17:04:00.249 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+17:04:00.261 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+17:04:00.271 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+17:04:00.363 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+17:04:00.368 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+17:04:01.172 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:04:01.172 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:04:01.199 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+17:04:01.221 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+17:04:01.232 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 5188, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa6dd191-fe47-4485-9eb5-c3d76f07b216
+17:04:01.238 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:04:01.239 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 5188, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa6dd191-fe47-4485-9eb5-c3d76f07b216
+17:04:01.291 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_04_01_241ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:04:01.292 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:04:01.318 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:04:01.319 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:04:01.354 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+17:04:01.381 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+17:04:01.384 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 5188, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa6dd191-fe47-4485-9eb5-c3d76f07b216
+17:04:01.387 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:04:01.387 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 5188, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa6dd191-fe47-4485-9eb5-c3d76f07b216
+17:04:01.421 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_04_01_387ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:04:01.421 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:04:01.438 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:04:01.438 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:04:01.458 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+17:04:01.477 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+17:04:01.481 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 5188, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa6dd191-fe47-4485-9eb5-c3d76f07b216
+17:04:01.482 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:04:01.482 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 5188, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa6dd191-fe47-4485-9eb5-c3d76f07b216
+17:04:01.524 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_04_01_482ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:04:01.524 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:04:01.631 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+17:04:01.633 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+17:04:01.633 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+17:04:02.454 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+17:04:02.454 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+17:04:43.681 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+17:04:43.698 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+17:04:43.704 [main] DEBUG com.personal.base.BaseClass - window maximized
+17:04:43.741 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+17:04:43.741 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+17:04:43.946 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+17:04:43.955 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+17:04:43.963 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+17:04:44.038 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+17:04:44.042 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+17:04:44.858 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:04:44.858 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:04:44.905 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+17:04:44.936 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+17:04:44.948 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2852, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 02f22ae7-3a46-4f63-aae1-d9d1d2ff68d0
+17:04:44.953 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:04:44.954 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2852, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 02f22ae7-3a46-4f63-aae1-d9d1d2ff68d0
+17:04:45.025 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_04_44_955ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:04:45.026 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:04:45.053 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:04:45.053 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:04:45.083 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+17:04:45.119 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+17:04:45.124 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2852, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 02f22ae7-3a46-4f63-aae1-d9d1d2ff68d0
+17:04:45.127 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:04:45.127 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2852, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 02f22ae7-3a46-4f63-aae1-d9d1d2ff68d0
+17:04:45.168 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_04_45_127ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:04:45.168 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:04:45.178 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:04:45.178 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:04:45.200 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+17:04:45.220 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+17:04:45.224 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2852, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 02f22ae7-3a46-4f63-aae1-d9d1d2ff68d0
+17:04:45.225 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:04:45.227 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is either NOT present on page or (3 second) waitperiod of conditon(alertIsPresent) timed out 
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2852, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 02f22ae7-3a46-4f63-aae1-d9d1d2ff68d0
+17:04:45.261 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_04_45_227ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:04:45.261 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:04:45.365 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+17:04:45.367 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+17:04:45.367 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+17:04:46.072 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+17:04:46.072 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+17:05:11.712 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+17:05:11.730 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+17:05:11.735 [main] DEBUG com.personal.base.BaseClass - window maximized
+17:05:11.768 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+17:05:11.768 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+17:05:12.658 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+17:05:12.668 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+17:05:12.676 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+17:05:12.756 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+17:05:12.759 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+17:05:13.541 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:05:13.542 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:05:13.569 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+17:05:13.590 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+17:05:13.603 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f
+17:05:13.611 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:05:13.612 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f
+17:05:13.674 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_05_13_613ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:05:13.675 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:05:13.695 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:05:13.695 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:05:13.716 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+17:05:13.736 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+17:05:13.740 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f
+17:05:13.741 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:05:13.742 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f
+17:05:13.778 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_05_13_742ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:05:13.778 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:05:13.789 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+17:05:13.789 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+17:05:13.816 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+17:05:13.836 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+17:05:13.839 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f
+17:05:13.841 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+17:05:13.841 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f
+17:05:13.875 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_05_PM_05_13_841ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+17:05:13.875 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+17:05:13.976 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+17:05:13.978 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+17:05:13.978 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+17:05:14.682 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+17:05:14.682 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------

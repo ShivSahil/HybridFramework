@@ -34,12 +34,16 @@ public class AddCustomerTest extends BaseClass {
 	public void addMultipleCustomerTest(String firstName, String lastName, String pincode) throws InterruptedException {
 		type("FirstName_css", firstName);  
 		type("LastName_css", lastName);
+		
+		alert("1111111");
+		
+		
 		type("PinCode_css", pincode);
 		click("AddCustomer_xpath");
 		
 		
-		doesAlertContainsText("Customer added successfully with customer id", "softAssert");
-		alert("accept");
+		doesAlertContainsText("Customer added successfully with customer id", "hardAssert");
+		alert("1111111",3);
 		
 	}
 

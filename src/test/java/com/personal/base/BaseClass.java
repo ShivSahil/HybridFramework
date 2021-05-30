@@ -266,8 +266,9 @@ public class BaseClass {
 			else if(action.toLowerCase().contains("getText"))
 			System.out.println(al.getText());
 			
-			else
-			{
+				else
+				{
+				al.accept();    //if I don't give this I get unhandleable exception in next run of dataprovider methods
 				logger.error(" user provided wrong condition for alert(String action)."
 						+ "\n Following conditions are used :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
 				
@@ -275,8 +276,8 @@ public class BaseClass {
 						+ "\n Following conditions are used :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
 				}
 			
-			logger.debug(" Action("+ action +") successfully taken on Alert, present on page");
-			test.log(Status.INFO, " Action("+ action +") successfully taken on alert, present on page ");
+		logger.debug(" Action("+ action +") successfully taken on Alert, present on page");
+		test.log(Status.INFO, " Action("+ action +") successfully taken on alert, present on page ");
 			
 		
 		}
@@ -595,13 +596,14 @@ public class BaseClass {
 			test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");}
 		
 		else {
+			driver.switchTo().alert().accept();  //if I don't give this I get unhandleable exception in next run of dataprovider methods
 			logger.error(" user provided wrong action for alert(String action, int waitPeriod).\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
 			Assert.fail(" user provided wrong action for alert(String action, int waitPeriod).\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
 			
 			}
 		}
 		
-		catch (Exception e) {     // NoAlertPresentException is replaced by Exception
+		catch (NoAlertPresentException e) {     
 			
 			logger.error(" Action("+ action +") can't be successfully taken on Alert, as Alert is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon(alertIsPresent) timed out "
 					+ "\n \n \n Error msg is :-   "+ e.getMessage());

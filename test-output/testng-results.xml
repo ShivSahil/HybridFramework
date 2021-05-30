@@ -2,19 +2,19 @@
 <testng-results skipped="1" failed="3" ignored="4" total="9" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Customer Suite" duration-ms="2518" started-at="2021-05-30T16:43:49 IST" finished-at="2021-05-30T16:43:52 IST">
+  <suite name="Customer Suite" duration-ms="2308" started-at="2021-05-30T17:05:11 IST" finished-at="2021-05-30T17:05:14 IST">
     <groups>
       <group name="openAccountMethodPrerequisites">
         <method signature="AddCustomerTest.addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@26e356f0]" name="addMultipleCustomerTest" class="com.personal.testcases.AddCustomerTest"/>
       </group> <!-- openAccountMethodPrerequisites -->
     </groups>
-    <test name="Add Customers" duration-ms="2475" started-at="2021-05-30T16:43:49 IST" finished-at="2021-05-30T16:43:51 IST">
+    <test name="Add Customers" duration-ms="2244" started-at="2021-05-30T17:05:11 IST" finished-at="2021-05-30T17:05:13 IST">
       <class name="com.personal.testcases.OpenAccountTest">
-        <test-method status="PASS" signature="openAccountTab()[pri:0, instance:com.personal.testcases.OpenAccountTest@47d9a273]" name="openAccountTab" is-config="true" duration-ms="104" started-at="2021-05-30T16:43:51 IST" finished-at="2021-05-30T16:43:51 IST">
+        <test-method status="PASS" signature="openAccountTab()[pri:0, instance:com.personal.testcases.OpenAccountTest@47d9a273]" name="openAccountTab" is-config="true" duration-ms="94" started-at="2021-05-30T17:05:13 IST" finished-at="2021-05-30T17:05:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAccountTab -->
-        <test-method name="openAccountMethod" signature="openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@47d9a273]" depends-on-groups="openAccountMethodPrerequisites" status="SKIP" duration-ms="0" finished-at="2021-05-30T16:43:51 IST" started-at="2021-05-30T16:43:51 IST" data-provider="excelData" description="opening multiple customers account from excel">
+        <test-method name="openAccountMethod" signature="openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@47d9a273]" depends-on-groups="openAccountMethodPrerequisites" status="SKIP" duration-ms="0" finished-at="2021-05-30T17:05:13 IST" started-at="2021-05-30T17:05:13 IST" data-provider="excelData" description="opening multiple customers account from excel">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@47d9a273] depends on not successfully finished methods in group "openAccountMethodPrerequisites"]]>
@@ -48,11 +48,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- openAccountMethod -->
       </class> <!-- com.personal.testcases.OpenAccountTest -->
       <class name="com.personal.testcases.AddCustomerTest">
-        <test-method status="PASS" signature="loginAsmanagerTest()[pri:0, instance:com.personal.testcases.AddCustomerTest@26e356f0]" name="loginAsmanagerTest" duration-ms="966" started-at="2021-05-30T16:43:49 IST" description="clicking on login button and checking availability of buttons on screen" finished-at="2021-05-30T16:43:50 IST">
+        <test-method status="PASS" signature="loginAsmanagerTest()[pri:0, instance:com.personal.testcases.AddCustomerTest@26e356f0]" name="loginAsmanagerTest" duration-ms="995" started-at="2021-05-30T17:05:11 IST" description="clicking on login button and checking availability of buttons on screen" finished-at="2021-05-30T17:05:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsmanagerTest -->
-        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@26e356f0]" status="FAIL" duration-ms="134" finished-at="2021-05-30T16:43:51 IST" started-at="2021-05-30T16:43:51 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@26e356f0]" status="FAIL" duration-ms="66" finished-at="2021-05-30T17:05:13 IST" started-at="2021-05-30T17:05:13 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
           <params>
             <param index="0">
               <value>
@@ -72,32 +72,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+              <![CDATA[ Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
  
  
- Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+ Error msg is :-   
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
-*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+              <![CDATA[java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
  
  
- Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+ Error msg is :-   
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
-*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f
 at org.testng.Assert.fail(Assert.java:97)
-at com.personal.base.BaseClass.click(BaseClass.java:183)
+at com.personal.base.BaseClass.alert(BaseClass.java:290)
 at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:38)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -133,7 +129,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMultipleCustomerTest -->
-        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@26e356f0]" status="FAIL" duration-ms="101" finished-at="2021-05-30T16:43:51 IST" started-at="2021-05-30T16:43:51 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@26e356f0]" status="FAIL" duration-ms="46" finished-at="2021-05-30T17:05:13 IST" started-at="2021-05-30T17:05:13 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
           <params>
             <param index="0">
               <value>
@@ -153,32 +149,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+              <![CDATA[ Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
  
  
- Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+ Error msg is :-   
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
-*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+              <![CDATA[java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
  
  
- Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+ Error msg is :-   
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
-*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f
 at org.testng.Assert.fail(Assert.java:97)
-at com.personal.base.BaseClass.click(BaseClass.java:183)
+at com.personal.base.BaseClass.alert(BaseClass.java:290)
 at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:38)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -214,7 +206,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMultipleCustomerTest -->
-        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@26e356f0]" status="FAIL" duration-ms="134" finished-at="2021-05-30T16:43:51 IST" started-at="2021-05-30T16:43:51 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@26e356f0]" status="FAIL" duration-ms="52" finished-at="2021-05-30T17:05:13 IST" started-at="2021-05-30T17:05:13 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="adding multiple customers from excel">
           <params>
             <param index="0">
               <value>
@@ -234,32 +226,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+              <![CDATA[ Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
  
  
- Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+ Error msg is :-   
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
-*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+              <![CDATA[java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
  
  
- Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+ Error msg is :-   
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
-*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9060, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 387f44d2-322b-46a3-b74e-bf06f431958f
 at org.testng.Assert.fail(Assert.java:97)
-at com.personal.base.BaseClass.click(BaseClass.java:183)
+at com.personal.base.BaseClass.alert(BaseClass.java:290)
 at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:38)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -297,13 +285,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- addMultipleCustomerTest -->
       </class> <!-- com.personal.testcases.AddCustomerTest -->
     </test> <!-- Add Customers -->
-    <test name="Open Account" duration-ms="1" started-at="2021-05-30T16:43:52 IST" finished-at="2021-05-30T16:43:52 IST">
+    <test name="Open Account" duration-ms="3" started-at="2021-05-30T17:05:14 IST" finished-at="2021-05-30T17:05:14 IST">
       <class name="com.personal.base.BaseClass">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@54a7079e]" name="setUp" is-config="true" duration-ms="4786" started-at="2021-05-30T16:43:44 IST" finished-at="2021-05-30T16:43:49 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@54a7079e]" name="setUp" is-config="true" duration-ms="4787" started-at="2021-05-30T17:05:06 IST" finished-at="2021-05-30T17:05:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@54a7079e]" name="tearDown" is-config="true" duration-ms="659" started-at="2021-05-30T16:43:52 IST" finished-at="2021-05-30T16:43:52 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@54a7079e]" name="tearDown" is-config="true" duration-ms="628" started-at="2021-05-30T17:05:14 IST" finished-at="2021-05-30T17:05:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
