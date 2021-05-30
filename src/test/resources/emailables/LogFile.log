@@ -1,0 +1,105 @@
+16:43:49.459 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:43:49.481 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:43:49.487 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:43:49.533 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:43:49.533 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:43:50.392 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:43:50.403 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:43:50.410 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:43:50.487 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:43:50.490 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:43:51.237 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:43:51.237 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:43:51.271 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:43:51.311 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:43:51.350 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:43:51.366 [main] ERROR com.personal.base.BaseClass - locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+ 
+ 
+ Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
+*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}
+16:43:51.372 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:43:51.373 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+ 
+ 
+ Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
+*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}
+16:43:51.486 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_43_51_374ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:43:51.487 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:43:51.507 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:43:51.507 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:43:51.536 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+16:43:51.571 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+16:43:51.598 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+16:43:51.606 [main] ERROR com.personal.base.BaseClass - locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+ 
+ 
+ Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
+*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}
+16:43:51.609 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:43:51.609 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+ 
+ 
+ Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
+*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}
+16:43:51.654 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_43_51_612ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:43:51.654 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:43:51.672 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:43:51.672 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:43:51.707 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+16:43:51.732 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+16:43:51.765 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+16:43:51.804 [main] ERROR com.personal.base.BaseClass - locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+ 
+ 
+ Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
+*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}
+16:43:51.806 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:43:51.806 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(AddCustomer_xpath) can't be clicked as it's NOT present on page.
+ 
+ 
+ Error msg is :-   Given xpath expression "//button[@type='submit']1111111111" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 1136, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 956445ad-5d8c-4483-b0ed-cbdeba636471
+*** Element info: {Using=xpath, value=//button[@type='submit']1111111111}
+16:43:51.849 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_43_51_807ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:43:51.849 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:43:51.960 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:43:51.961 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:43:51.962 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:43:52.673 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:43:52.673 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------

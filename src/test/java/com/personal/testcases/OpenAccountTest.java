@@ -12,10 +12,10 @@ public class OpenAccountTest extends BaseClass{
 	@BeforeClass
 	public void openAccountTab()
 	{
-		
+		click("OpenAccountTab_xpath");
 	}
 	
-	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", description = "opening multiple customers account from excel")
+	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", description = "opening multiple customers account from excel", dependsOnGroups={"openAccountMethodPrerequisites"})
 	public void openAccountMethod(String name, String currency) throws InterruptedException
 	{
 		staticDropDown("CustomerDropDown_id", name);  

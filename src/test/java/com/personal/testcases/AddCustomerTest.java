@@ -30,7 +30,7 @@ public class AddCustomerTest extends BaseClass {
 
 	}
 	
-	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", dependsOnMethods = "loginAsmanagerTest", description = "adding multiple customers from excel")
+	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", dependsOnMethods = "loginAsmanagerTest", description = "adding multiple customers from excel",groups={"openAccountMethodPrerequisites"})
 	public void addMultipleCustomerTest(String firstName, String lastName, String pincode) throws InterruptedException {
 		type("FirstName_css", firstName);  
 		type("LastName_css", lastName);
