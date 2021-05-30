@@ -10,6 +10,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -129,10 +130,11 @@ public class BaseClass {
 // -------------------------------------------REUSEABLE METHODS ---------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------		
 	
+	
 	public void click(String key)  // REUSEABLE CLICK METHOD
 	{
 		
-		// can't use switch here. switch can't be used for contains
+	try {	// can't use switch here. switch can't be used for contains
 		if(key.toLowerCase().contains("_css") )
 		{
 			driver.findElement(By.cssSelector(objRepo.getProperty(key))).click();
@@ -170,12 +172,26 @@ public class BaseClass {
 		
 		logger.debug("locator(" +key+ ") clicked successfully");
 		test.log(Status.INFO, "locator(" +key+ ") clicked successfully");
+		
+		}
+	 catch (NoSuchElementException e) { // NoSuchElementException is apt for here
+			
+		 
+			 logger.error("locator(" +key+ ") can't be clicked as it's NOT present on page."
+			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
+			 
+			 Assert.fail("locator(" +key+ ") can't be clicked as it's NOT present on page."
+			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
+			}
+		 
 
 	}
 
+	
 	public void type(String key, String data)  // REUSEABLE TYPE METHOD
 	{
 		
+	try {
 		// can't use switch here. switch can't be used for contains
 		if(key.toLowerCase().contains("_css"))
 		{
@@ -220,37 +236,68 @@ public class BaseClass {
 		logger.debug("locator(" +key+ ") filled with value '"+ data+"' successfully");
 		test.log(Status.INFO, "locator(" +key+ ") filled with value '"+ data+"' successfully");
 
+		}
+	catch (NoSuchElementException e) { // NoSuchElementException is apt for here
+		
+		 
+		 logger.error("locator(" +key+ ") can't filled with value '"+ data+"' as locator is NOT present on page."
+		 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
+		 Assert.fail("locator(" +key+ ") can't filled with value '"+ data+"' as locator is NOT present on page."
+		 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
+		}
 		
 	}
 
+	
 	public void  alert(String action)  // RESUABLE ACTION METHOD
 	{
-		Alert al= driver.switchTo().alert();
-		
-		if (action.toLowerCase().contains("accept")) {
-			al.accept();
+		try {
+			Alert al= driver.switchTo().alert();
 			
-		}
-		else if (action.toLowerCase().contains("dismiss")) {
-			al.dismiss();
+			if (action.toLowerCase().contains("accept")) {
+				al.accept();
+				
+			}
+			else if (action.toLowerCase().contains("dismiss")) {
+				al.dismiss();
+				
+			}
 			
-		}
-		
-		else if (action.toLowerCase().contains("sendKeys")) {
-			al.sendKeys(action);
+			else if(action.toLowerCase().contains("getText"))
+			System.out.println(al.getText());
 			
+			else
+			{
+				logger.error(" user provided wrong condition for alert(String action)."
+						+ "\n Following conditions are used :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
+				
+				Assert.fail(" user provided wrong condition for alert(String action)."
+						+ "\n Following conditions are used :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
+				}
+			
+			logger.debug(" Action("+ action +") successfully taken on Alert, present on page");
+			test.log(Status.INFO, " Action("+ action +") successfully taken on alert, present on page ");
+			
+		
 		}
-		else if(action.toLowerCase().contains("getText"))
-		System.out.println(al.getText());
-		
-		
-		logger.debug(" Action("+ action +") successfully taken on alert, present on page");
-		test.log(Status.INFO, (" Action("+ action +") successfully taken on alert, present on page "));
-	}
+			catch (NoAlertPresentException e) {
+			
+
+				logger.error(" Action("+ action +") can't be successfully taken on Alert, as Alert is NOT present on page."
+						+ "\n \n \n Error msg is :-   "+ e.getMessage());
+				
+				Assert.fail(" Action("+ action +") can't be successfully taken on Alert, as Alert is NOT present on page."
+						+ "\n \n \n Error msg is :-   "+ e.getMessage());
+						
+			}
+		}
+	
 	
 	public void staticDropDown(String key, String selectOption)  // REUSEABLE CLICK METHOD
 	{
 		
+		try {
+			
 		Select s;
 		
 		// can't use switch here. switch can't be used for contains
@@ -298,6 +345,17 @@ public class BaseClass {
 		logger.debug("option(" +selectOption+ ") selected successfully on dropdown("+key+")");
 		test.log(Status.INFO, "option(" +selectOption+ ") selected successfully on dropdown("+key+")");
 
+		
+		
+		} catch (NoSuchElementException e) {
+			logger.error("option(" +selectOption+ ") is NOT selected on dropdown("+key+"). Either dropdown("+key+") or option(" +selectOption+ ") is NOT present on page."
+					+ "\n \n \n Error msg is :-   "+ e.getMessage());
+			
+			Assert.fail("option(" +selectOption+ ") is NOT selected on dropdown("+key+"). Either dropdown("+key+") or option(" +selectOption+ ") is NOT present on page."
+					+ "\n \n \n Error msg is :-   "+ e.getMessage());
+			
+		}
+		
 	}
 	
 	
@@ -307,9 +365,11 @@ public class BaseClass {
 //-----------------------------------------------------------------------------------------------------------------------	
 	
 			
-
+	
 	public void click(String key, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT CLICK METHOD
 	{
+		
+		try {
 		
 		WebDriverWait d = new WebDriverWait(driver, waitPeriod);
 		By byVar=null;
@@ -379,20 +439,34 @@ public class BaseClass {
 		
 		
 		default:{
-			logger.error(" user provided wrong condition \n for click(String key, int waitPeriod, String nameOfCondition). Following conditions are used :- \n 1.elementToBeClickable \n 2.presenceOfElementLocated \n 3.visibilityOfElementLocated");
-			Assert.fail(" user provided wrong condition \n for click(String key, int waitPeriod, String nameOfCondition). Following conditions are used :- \n 1.elementToBeClickable \n 2.presenceOfElementLocated \n 3.visibilityOfElementLocated");
+			logger.error(" user provided wrong condition for click(String key, int waitPeriod, String nameOfCondition)."
+					+ "\n Following conditions are used :- \n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
+			
+			Assert.fail(" user provided wrong condition for click(String key, int waitPeriod, String nameOfCondition).\n Following conditions are used :- "
+					+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
 			
 			break;}
 
 		}
 		
 		
-
-	}
+		}
+		catch (TimeoutException e) { // NoSuchElementException is apt for here
 			
+			 
+			 logger.error("locator(" +key+ ") can't be clicked as locator is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon("+nameOfCondition+") timed out "
+			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
+			 
+			 Assert.fail("locator(" +key+ ") can't be clicked as locator is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon("+nameOfCondition+") timed out "
+				 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
+			}
+	}
+		
+	
 	public void type(String key, String data, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT TYPE METHOD
 	{
 		
+		try {
 		WebDriverWait d = new WebDriverWait(driver, waitPeriod);
 		By byVar=null;
 		
@@ -466,55 +540,78 @@ public class BaseClass {
 		
 		
 		default:{
-			logger.error(" user provided wrong condition \n for type(String key, String data, int waitPeriod, String nameOfCondition). Following conditions are used :- \n 1.elementToBeClickable \n 2.presenceOfElementLocated \n 3.visibilityOfElementLocated");
-			Assert.fail(" user provided wrong condition \n for type(String key, String data, int waitPeriod, String nameOfCondition). Following conditions are used :- \n 1.elementToBeClickable \n 2.presenceOfElementLocated \n 3.visibilityOfElementLocated");
+			logger.error(" user provided wrong condition for type(String key, String data, int waitPeriod, String nameOfCondition).\n Following conditions are used :- "
+					+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
 			
+			Assert.fail(" user provided wrong condition for type(String key, String data, int waitPeriod, String nameOfCondition).\n Following conditions are used :- "
+					+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
 			break;}
-
+			}
 		}
-
+		catch (TimeoutException e) { // NoSuchElementException is apt for here
+			
+			 
+			logger.error("locator(" +key+ ") can't be filled with data("+data+") as locator is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon("+nameOfCondition+") timed out "
+			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
+			 
+			Assert.fail("locator(" +key+ ") can't be filled with data("+data+") as locator is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon("+nameOfCondition+") timed out "
+			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
+			 
+			}
+		
 	}
 
+	
 	public void alert(String action, int waitPeriod)  // REUSEABLE EXPLICIT WAIT ALERT METHOD
 	{
+		try {
 		
-		WebDriverWait d = new WebDriverWait(driver, waitPeriod);
-
+		
 		
 		
 		if (action.toLowerCase().contains("accept")) {
+			WebDriverWait d = new WebDriverWait(driver, waitPeriod);
 			 d.until(ExpectedConditions.alertIsPresent()).accept();
-			 
+			
 			 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
 			 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
 			
 		}
 		else if (action.toLowerCase().contains("dismiss")) {
+			WebDriverWait d = new WebDriverWait(driver, waitPeriod);
 			d.until(ExpectedConditions.alertIsPresent()).dismiss();
+		
 			 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
 			 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
 			
 		}
 		
-		else if (action.toLowerCase().contains("sendKeys")) {
-			d.until(ExpectedConditions.alertIsPresent()).sendKeys(action);
-			 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
-			 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
-			
-		}
 		else if(action.toLowerCase().contains("getText"))
 		{
+			WebDriverWait d = new WebDriverWait(driver, waitPeriod);
 			System.out.println(d.until(ExpectedConditions.alertIsPresent()).getText());
+			
 			logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
 			test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");}
 		
 		else {
-			logger.error(" user provided wrong action \n for alert(String action, int waitPeriod). Following action are used :- \n 1.dismiss \n 2. accept  \n 3. sendKeys \n 4. getText ");
-			Assert.fail(" user provided wrong action \n for alert(String action, int waitPeriod). Following action are used :- \n 1.dismiss \n 2. accept  \n 3. sendKeys \n 4. getText ");
+			logger.error(" user provided wrong action for alert(String action, int waitPeriod).\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
+			Assert.fail(" user provided wrong action for alert(String action, int waitPeriod).\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
 			
+			}
 		}
 		
-
+		catch (Exception e) {     // NoAlertPresentException is replaced by Exception
+			
+			logger.error(" Action("+ action +") can't be successfully taken on Alert, as Alert is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon(alertIsPresent) timed out "
+					+ "\n \n \n Error msg is :-   "+ e.getMessage());
+			
+			Assert.fail(" Action("+ action +") can't be successfully taken on Alert, as Alert is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon(alertIsPresent) timed out "
+					+ "\n \n \n Error msg is :-   "+ e.getMessage());
+					
+		}
+		
+		
 	}
 	
 	
@@ -532,6 +629,11 @@ public class BaseClass {
 	 * Assert.fail("VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE"); 
 	 * 
 	 */
+	
+	
+	
+	
+	
 public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE METHOD FOR CHECKING TITLE 
 {
 	
@@ -549,8 +651,6 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 		
 		
 		logger.error( "ASSERT :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
-		
-		//test.log(Status.FAIL,"ASSERTED that title of Page :- '"+driver.getTitle()+ "' is INCORRECT");
 		Assert.fail("ASSERT :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
 		
 	}
@@ -558,7 +658,7 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 	else if (driver.getTitle().equals(expectedtitle) && assertType.toLowerCase().contains("softassert")) {
 
 		logger.info( "VERIFY :- '"+driver.getTitle()+ "' is correct title");
-		test.log(Status.PASS,"VERIFY :- '"+driver.getTitle()+ "' is correct title");
+		test.log(Status.INFO,"VERIFY :- '"+driver.getTitle()+ "' is correct title");
 		
 	}
 	else if (!(driver.getTitle().equals(expectedtitle)) && assertType.toLowerCase().contains("softassert"))
@@ -582,13 +682,16 @@ public void isElementPresent(String key, String assertType) { // REUSEABLE ELEME
 	
 	
 	try {
+		
+		 
 			if(key.toLowerCase().contains("_css"))
 			{	
 				driver.findElement(By.cssSelector(objRepo.getProperty(key)));	// no isDisplayed or isSelected etc etc
 			}
 			else if (key.toLowerCase().contains("_xpath"))
-			{
+			{ 
 				driver.findElement(By.xpath(objRepo.getProperty(key)));	
+				
 			}
 			else if (key.toLowerCase().contains("_id"))
 			{
@@ -617,42 +720,36 @@ public void isElementPresent(String key, String assertType) { // REUSEABLE ELEME
 			{	
 				logger.info("ASSERT :- locator(" +key+ ") is present on page");
 				test.log(Status.PASS, "ASSERT :- locator(" +key+ ") is present on page");
+				
 			}
 			else if(assertType.toLowerCase().contains("softassert"))
 			 {
 				
 				logger.info("VERIFY :- locator(" +key+ ") is present on page");
-				test.log(Status.PASS, "VERIFY :- locator(" +key+ ") is present on page");
+				test.log(Status.INFO, "VERIFY :- locator(" +key+ ") is present on page");
 			 }
 	
-	
+			
 	}
 	 catch (NoSuchElementException e) { // NoSuchElementException is apt for here
 		
-
 		
-	// **** keep Assert.fail as last statement**
-	// **** no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
+		
 		 if(assertType.toLowerCase().contains("hardassert"))
 			{
 			 
-			 logger.error("ASSERT :- locator(" +key+ ") is NOT present on page. error msg is "+ e.getMessage());
-			 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page. error msg is "+ e.getMessage());
-			
+		
+			 logger.error("ASSERT :- locator(" +key+ ") is NOT present on page.\n \n \n Error msg is :-   "+ e.getMessage());
+			 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page.\n \n \n Error msg is :-   "+ e.getMessage());
 			}
 		 
 		 else if(assertType.toLowerCase().contains("softassert"))
 		 {
-			 logger.error("VERIFY :- locator(" +key+ ") is NOT present on page. error msg is "+ e.getMessage());
-			 test.log(Status.ERROR,"VERIFY :- locator(" +key+ ") is NOT present on page. error msg is "+ e.getMessage());
+			 logger.error("VERIFY :- locator(" +key+ ") is NOT present on page.\n \n \n Error msg is :-   "+ e.getMessage());
+			 test.log(Status.ERROR,"VERIFY :- locator(" +key+ ") is NOT present on page.\n \n \n Error msg is :-   "+ e.getMessage());
 			 
 		 }
-   
-	 
 	 }
-	
-
-	
 	
 }
 
@@ -661,6 +758,7 @@ public void doesAlertContainsText(String message, String assertType) { // REUSEA
 		try {
 			if (driver.switchTo().alert().getText().contains(message) && assertType.toLowerCase().contains("hardassert")) {
 				
+				
 				logger.info("ASSERT :- text(" +message+ ") is present in Alert Box");
 				test.log(Status.PASS, "ASSERT :- text(" +message+ ") is present in Alert Box");
 	
@@ -668,32 +766,33 @@ public void doesAlertContainsText(String message, String assertType) { // REUSEA
 			
 			else if (!(driver.switchTo().alert().getText().contains(message)) && assertType.toLowerCase().contains("hardassert")) {
 				
-				logger.error("ASSERT :- text(" +message+ ") is NOT present in Alert Box ");
-				Assert.fail("ASSERT :- text(" +message+ ") is NOT present in Alert Box ");
+				
+				logger.error("ASSERT :- text(" +message+ ") is NOT present in Alert Box .\n Message in AlertBox is "+driver.switchTo().alert().getText());
+				Assert.fail("ASSERT :- text(" +message+ ") is NOT present in Alert Box .\n Message in AlertBox is "+driver.switchTo().alert().getText());
 	
 			} 
 			
 			else if(driver.switchTo().alert().getText().contains(message) && assertType.toLowerCase().contains("softassert")) {
 				
 				logger.info("VERIFY :- text(" +message+ ") is present in Alert Box");
-				test.log(Status.PASS, "VERIFY :- text(" +message+ ") is present in Alert Box");	
+				test.log(Status.INFO, "VERIFY :- text(" +message+ ") is present in Alert Box");	
 					
 			}	
 			else if(!(driver.switchTo().alert().getText().contains(message)) && assertType.toLowerCase().contains("softassert")) 
 			{
 					
-						logger.error("VERIFY :- text(" +message+ ") is NOT present in Alert Box ");
-						test.log(Status.ERROR, "VERIFY :- text(" +message+ ") is NOT present in Alert Box ");
-				}
+				logger.error("ASSERT :- text(" +message+ ") is NOT present in Alert Box .\n Message in AlertBox is "+driver.switchTo().alert().getText());
+				test.log(Status.ERROR,"ASSERT :- text(" +message+ ") is NOT present in Alert Box .\n Message in AlertBox is "+driver.switchTo().alert().getText());
+	}
 			
 		}
 			
 			
-		 catch (NoAlertPresentException e) { // ****NoAlertPresentException is apt for here
+		 catch (Exception e) { // NoAlertPresentException
 			
 			
-				logger.error("NO alert is present on screen. error message is "+e.getMessage());
-				Assert.fail("NO alert is present on screen. error message is "+e.getMessage());
+				logger.error("NO alert is present on screen.\n \n \n error message is "+e.getMessage());
+				Assert.fail("NO alert is present on screen.\n \n \n error message is "+e.getMessage());
 			}
 		
 		

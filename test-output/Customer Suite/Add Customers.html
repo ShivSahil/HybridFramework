@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Add Customers</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 29 17:42:45 IST 2021</td>
+<td>Started on:</td><td>Sun May 30 16:33:32 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3826 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2984 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,76 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: adding multiple customers from excel</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :8: 
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 3460, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 970b6b5d-5e14-4ad9-bc82-2539c5ab8781
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.personal.utilities.ScreenshotUtility.screenshot(ScreenshotUtility.java:24)
+	at com.personal.listeners.ItestLis.onTestFailure(ItestLis.java:49)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace311185452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace311185452'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :8: 
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 3460, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 970b6b5d-5e14-4ad9-bc82-2539c5ab8781
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.personal.utilities.ScreenshotUtility.screenshot(ScreenshotUtility.java:24)
+	at com.personal.listeners.ItestLis.onTestFailure(ItestLis.java:49)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.personal.testcases.AddCustomerTest@26e356f0</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,32 +148,27 @@ function toggleAllBoxes() {
 <td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: adding multiple customers from excel<br>Parameters: Shiv, Sahil, 160014</td>
 <td></td>
 <td>0</td>
-<td>com.personal.testcases.AddCustomerTest@201a4587</td></tr>
+<td>com.personal.testcases.AddCustomerTest@26e356f0</td></tr>
 <tr>
 <td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: adding multiple customers from excel<br>Parameters: Sahil, Guleri, 3967</td>
 <td></td>
 <td>0</td>
-<td>com.personal.testcases.AddCustomerTest@201a4587</td></tr>
-<tr>
-<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: adding multiple customers from excel<br>Parameters: Keyword, Driven, 1332</td>
-<td></td>
-<td>0</td>
-<td>com.personal.testcases.AddCustomerTest@201a4587</td></tr>
+<td>com.personal.testcases.AddCustomerTest@26e356f0</td></tr>
 <tr>
 <td title='com.personal.testcases.AddCustomerTest.loginAsmanagerTest()'><b>loginAsmanagerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: clicking on login button and checking availability of buttons on screen</td>
 <td></td>
-<td>1</td>
-<td>com.personal.testcases.AddCustomerTest@201a4587</td></tr>
+<td>0</td>
+<td>com.personal.testcases.AddCustomerTest@26e356f0</td></tr>
 <tr>
 <td title='com.personal.testcases.OpenAccountTest.openAccountMethod()'><b>openAccountMethod</b><br>Test class: com.personal.testcases.OpenAccountTest<br>Test method: opening multiple customers account from excel<br>Parameters: Sahil Guleri, Pound</td>
 <td></td>
 <td>0</td>
-<td>com.personal.testcases.OpenAccountTest@61001b64</td></tr>
+<td>com.personal.testcases.OpenAccountTest@47d9a273</td></tr>
 <tr>
 <td title='com.personal.testcases.OpenAccountTest.openAccountMethod()'><b>openAccountMethod</b><br>Test class: com.personal.testcases.OpenAccountTest<br>Test method: opening multiple customers account from excel<br>Parameters: Shiv Sahil, Rupee</td>
 <td></td>
 <td>0</td>
-<td>com.personal.testcases.OpenAccountTest@61001b64</td></tr>
+<td>com.personal.testcases.OpenAccountTest@47d9a273</td></tr>
 </table><p>
 </body>
 </html>

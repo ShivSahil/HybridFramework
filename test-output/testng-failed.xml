@@ -3,7 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Customer Suite]">
   <listeners>
     <listener class-name="com.personal.listeners.ItestLis"/>
-    <listener class-name="com.personal.listeners.AnnotationTransformer"/>
   </listeners>
   <test thread-count="5" name="Add Customers(failed)">
     <classes>
@@ -11,7 +10,7 @@
         <methods>
           <include name="loginAsmanagerTest"/>
           <include name="tearDown"/>
-          <include name="addMultipleCustomerTest" invocation-numbers="0 0 1 1 2 2"/>
+          <include name="addMultipleCustomerTest" invocation-numbers="2"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.AddCustomerTest -->

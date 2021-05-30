@@ -62,9 +62,11 @@ public class ItestLis extends BaseClass implements ITestListener{
 		}
 
 		
-		
-		test.fail( result.getMethod().getMethodName() + " HAS FAILED ");
 		test.fail(result.getThrowable());
+		test.fail( result.getMethod().getMethodName() + " HAS FAILED ");
+		
+
+	
 		extentVar.flush();
 	}
 

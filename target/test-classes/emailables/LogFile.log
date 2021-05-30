@@ -1,0 +1,731 @@
+15:25:45.964 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+15:25:45.984 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+15:25:45.991 [main] DEBUG com.personal.base.BaseClass - window maximized
+15:25:46.022 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+15:25:46.022 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+15:25:49.209 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+15:25:49.229 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+15:25:51.443 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+15:25:51.609 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+15:25:51.616 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+15:25:52.329 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+15:25:52.329 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+15:25:52.361 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+15:25:52.391 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+15:25:52.424 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+15:25:52.470 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+15:25:52.490 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box 
+15:25:52.497 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+15:25:52.498 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box 
+15:25:52.518 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+15:25:52.518 [main] FATAL com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 4768, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 644b1644-732e-48e4-9436-f03984e1c5d6
+15:25:52.560 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_03_PM_25_52_519ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+15:25:52.561 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+15:25:52.799 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+15:25:52.819 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+15:25:52.819 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+15:26:01.426 [main] ERROR com.personal.base.BaseClass - option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+ 
+ 
+ Error msg is :-   Cannot locate element with text: Sahil Guleri
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+15:26:01.429 [main] ERROR com.personal.base.BaseClass - $$$$$$$ openAccountMethod HAS FAILED 
+15:26:01.429 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+ 
+ 
+ Error msg is :-   Cannot locate element with text: Sahil Guleri
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+15:26:01.468 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_03_PM_26_01_429OPENACCOUNTMETHOD.png] of openAccountMethod method taken successfully
+15:26:01.468 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+15:26:01.497 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+15:26:01.498 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+15:26:01.752 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+15:26:02.005 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+15:26:02.030 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+15:26:02.046 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+15:26:02.065 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+15:26:02.066 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+15:26:02.905 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+15:26:02.905 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+16:07:25.936 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:07:25.959 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:07:25.963 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:07:25.997 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:07:25.998 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:07:30.442 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:07:30.462 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:07:30.709 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:07:30.865 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:07:30.870 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:07:31.766 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:07:31.766 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:07:31.813 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:07:31.837 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:07:31.883 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:07:31.981 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:08:12.802 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box 
+16:08:28.315 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:08:28.328 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box 
+16:08:30.669 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:08:30.679 [main] FATAL com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 4788, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 52d730f4-29a4-4e3a-9bab-48d557da7ae8
+16:08:32.682 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_08_30_705ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:08:32.694 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:11:37.993 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:11:38.054 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:11:38.055 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:12:03.379 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:12:03.394 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:12:03.399 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:12:03.433 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:12:03.433 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:12:08.774 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:12:08.787 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:12:08.797 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:12:09.016 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:12:09.023 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:12:09.964 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:12:09.964 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:12:10.002 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:12:10.045 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:12:10.088 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:12:10.142 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:12:22.757 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :6
+16:13:07.552 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:13:07.565 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :6
+16:13:09.269 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:13:09.281 [main] FATAL com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 6808, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 270ddffd-b7e8-4472-8db8-0e4e3fb03908
+16:13:11.307 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_13_09_313ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:13:11.319 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:17:34.520 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:17:34.537 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:17:34.543 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:17:34.573 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:17:34.573 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:17:37.458 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:17:37.500 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:17:37.507 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:17:37.698 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:17:37.702 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:17:38.417 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:17:38.418 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:17:38.449 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:17:38.470 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:17:38.499 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:17:38.552 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:17:38.570 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:17:38.572 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:17:38.583 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:17:38.584 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:17:38.613 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+16:17:38.640 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+16:17:38.672 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+16:17:38.709 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:17:38.724 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:17:38.725 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:17:38.735 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:17:38.735 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:17:38.779 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+16:17:38.803 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+16:17:38.836 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+16:17:38.868 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:17:38.889 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:17:38.890 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:17:39.134 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:17:39.173 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:17:39.173 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:17:39.674 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+16:17:39.933 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+16:17:39.968 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:17:39.984 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:17:39.994 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:17:39.996 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:17:40.006 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:17:40.007 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:17:40.247 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+16:17:40.509 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+16:17:40.543 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:17:40.563 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:17:40.582 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:17:40.583 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:17:41.412 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:17:41.412 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+16:19:11.845 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:19:11.861 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:19:11.869 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:19:11.902 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:19:11.903 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:19:12.816 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:19:12.828 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:19:12.836 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:19:12.934 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:19:12.940 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:19:13.723 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:19:13.723 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:19:13.757 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:19:13.784 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:19:13.822 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:19:13.898 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:19:13.915 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :6
+16:19:13.925 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:19:13.926 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :6
+16:19:13.950 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:19:13.950 [main] FATAL com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7112, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f84a1f7a-816d-4b75-ad20-8d8b99676a53
+16:19:13.996 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_19_13_950ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:19:13.997 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:19:14.143 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:19:14.164 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:19:14.164 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:19:22.245 [main] ERROR com.personal.base.BaseClass - option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+ 
+ 
+ Error msg is :-   Cannot locate element with text: Sahil Guleri
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+16:19:22.247 [main] ERROR com.personal.base.BaseClass - $$$$$$$ openAccountMethod HAS FAILED 
+16:19:22.247 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+ 
+ 
+ Error msg is :-   Cannot locate element with text: Sahil Guleri
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+16:19:22.285 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_19_22_247OPENACCOUNTMETHOD.png] of openAccountMethod method taken successfully
+16:19:22.285 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+16:19:22.309 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:19:22.310 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:19:22.564 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+16:19:22.801 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+16:19:22.835 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:19:22.854 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:19:22.870 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:19:22.871 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:19:23.558 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:19:23.558 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+16:19:51.827 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:19:51.845 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:19:51.852 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:19:51.896 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:19:51.896 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:19:52.151 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:19:52.162 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:19:52.170 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:19:52.263 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:19:52.266 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:19:53.083 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:19:53.083 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:19:53.123 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:19:53.159 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:19:53.203 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:19:53.249 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:19:53.277 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :6
+16:19:53.294 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:19:53.295 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:19:53.307 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:19:53.307 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:19:53.329 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+16:19:53.349 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+16:19:53.371 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+16:19:53.405 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:19:53.432 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :7
+16:19:53.458 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:19:53.459 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:19:53.467 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:19:53.467 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:19:53.492 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+16:19:53.515 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+16:19:53.537 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+16:19:53.567 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:19:53.592 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :8
+16:19:53.611 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:19:53.612 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:19:53.758 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:19:53.781 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:19:53.782 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:19:54.055 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+16:19:54.394 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+16:19:54.416 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:19:54.431 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:19:54.447 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:19:54.448 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:19:54.455 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:19:54.455 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:19:54.690 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+16:19:54.927 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+16:19:54.947 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:19:54.962 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:19:54.977 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:19:54.978 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:19:55.671 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:19:55.671 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+16:20:12.541 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:20:12.557 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:20:12.562 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:20:12.596 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:20:12.596 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:20:12.830 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:20:12.842 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:20:12.850 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:20:12.936 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:20:12.939 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:20:13.670 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:20:13.670 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:20:13.702 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:20:13.725 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:20:13.766 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:20:13.812 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:20:13.842 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :6
+16:20:13.859 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:20:13.861 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:20:13.872 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:20:13.873 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:20:13.900 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+16:20:13.923 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+16:20:13.950 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+16:20:13.980 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:20:14.007 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :7
+16:20:14.025 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:20:14.027 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:20:14.047 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:20:14.048 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:20:14.070 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+16:20:14.098 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+16:20:14.118 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+16:20:14.147 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:20:14.170 [main] ERROR com.personal.base.BaseClass - ASSERT :- text(YYYYYYY Customer added successfully with customer id :) is NOT present in Alert Box .
+ Message in AlertBox isCustomer added successfully with customer id :8
+16:20:14.188 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:20:14.189 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:20:14.305 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:20:14.332 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:20:14.332 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:20:14.574 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+16:20:14.827 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+16:20:14.891 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:20:14.908 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:20:14.929 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:20:14.930 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:20:14.938 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:20:14.938 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:20:15.178 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+16:20:15.459 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+16:20:15.503 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:20:15.526 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:20:15.542 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:20:15.543 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:20:16.393 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:20:16.393 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+16:25:03.425 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:25:03.442 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:25:03.451 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:25:03.486 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:25:03.486 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:25:04.418 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:25:04.429 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:25:04.439 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:25:04.530 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:25:04.535 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:25:05.194 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:25:05.194 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:25:05.229 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:25:05.258 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:25:05.300 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:25:05.351 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:25:05.366 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:25:05.369 [main] ERROR com.personal.base.BaseClass -  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+16:25:05.376 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:25:05.378 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+16:25:05.399 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:25:05.400 [main] FATAL com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7608, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 28d01ffc-aa9f-4398-a5fa-64d9f55199f8
+16:25:05.450 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_25_05_400ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:25:05.451 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:25:05.578 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:25:05.601 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:25:05.601 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:25:13.643 [main] ERROR com.personal.base.BaseClass - option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+ 
+ 
+ Error msg is :-   Cannot locate element with text: Sahil Guleri
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+16:25:13.648 [main] ERROR com.personal.base.BaseClass - $$$$$$$ openAccountMethod HAS FAILED 
+16:25:13.649 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+ 
+ 
+ Error msg is :-   Cannot locate element with text: Sahil Guleri
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+16:25:13.685 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_25_13_649OPENACCOUNTMETHOD.png] of openAccountMethod method taken successfully
+16:25:13.685 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+16:25:13.713 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:25:13.713 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:25:13.989 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+16:25:14.264 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+16:25:14.303 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:25:14.324 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:25:14.343 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:25:14.344 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:25:15.178 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:25:15.178 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+16:26:27.754 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:26:27.773 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:26:27.778 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:26:27.824 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:26:27.824 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:26:28.752 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:26:28.766 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:26:28.775 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:26:28.887 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:26:28.892 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:26:29.728 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:26:29.728 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:26:29.776 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:26:29.809 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:26:29.852 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:26:29.895 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:26:29.914 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:26:44.015 [main] ERROR com.personal.base.BaseClass -  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+16:27:02.384 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:27:02.397 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+16:27:07.338 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:27:07.348 [main] FATAL com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 6856, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8ba5bef3-6f92-483a-a704-b1594109a5a2
+16:27:09.182 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_27_07_372ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:27:09.194 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:29:54.607 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:29:54.622 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:29:54.629 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:29:54.664 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:29:54.664 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:29:55.606 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:29:55.617 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:29:55.625 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:29:55.720 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:29:55.724 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:29:56.483 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:29:56.483 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:29:56.511 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:29:56.533 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:29:56.559 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:29:56.596 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:29:56.621 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:29:56.637 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:29:56.639 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:29:56.646 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:29:56.647 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:29:56.665 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+16:29:56.685 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+16:29:56.703 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+16:29:56.727 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:29:56.743 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:29:56.756 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:29:56.764 [main] ERROR com.personal.base.BaseClass -  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7404, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a5aaed25-7ed4-4d03-95ef-febb96c8f32e
+16:29:56.769 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:29:56.770 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  Action(1111111) can't be successfully taken on Alert, as Alert is NOT present on page.
+ 
+ 
+ Error msg is :-   
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7404, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a5aaed25-7ed4-4d03-95ef-febb96c8f32e
+16:29:56.810 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_29_56_771ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:29:56.811 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:29:56.834 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:29:56.834 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:29:56.866 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+16:29:56.891 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+16:29:56.918 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+16:29:56.953 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:29:56.970 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:29:56.992 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:29:56.993 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:29:57.104 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:29:57.129 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:29:57.130 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:29:57.372 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+16:29:57.726 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+16:29:57.783 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:29:57.808 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:29:57.825 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:29:57.826 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:29:57.842 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:29:57.842 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:29:58.087 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+16:29:58.363 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+16:29:58.396 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:29:58.412 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:29:58.426 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:29:58.427 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:29:59.140 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:29:59.140 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+16:31:34.848 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:31:34.861 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:31:34.869 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:31:34.897 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:31:34.897 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:31:35.800 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:31:35.812 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:31:35.820 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:31:35.912 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:31:35.917 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:31:36.750 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:31:36.751 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:31:36.778 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:31:36.801 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:31:36.821 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:31:36.863 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:31:36.878 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:31:36.899 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:31:36.901 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:31:36.909 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:31:36.910 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:31:36.930 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+16:31:36.949 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+16:31:36.966 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+16:31:36.991 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:31:37.006 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:31:37.010 [main] ERROR com.personal.base.BaseClass -  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+16:31:37.014 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:31:37.015 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+16:31:37.035 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:31:37.035 [main] FATAL com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :7: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9664, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 225bfc67-b7a6-4ec7-b081-b0b33fc05eda
+16:31:37.071 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_31_37_036ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:31:37.071 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:31:37.174 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:31:37.197 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:31:37.197 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:31:37.447 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+16:31:37.713 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+16:31:37.763 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:31:37.786 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:31:37.805 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:31:37.806 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:31:37.815 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:31:37.815 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:31:38.165 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+16:31:38.403 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+16:31:38.496 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:31:38.513 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:31:38.537 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:31:38.538 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:31:41.338 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:31:41.338 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+16:32:58.454 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:32:58.471 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:32:58.476 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:32:58.510 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:32:58.510 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:32:59.458 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:32:59.468 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:32:59.477 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:32:59.579 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:32:59.581 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:33:00.348 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:33:00.348 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:33:00.378 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:33:00.401 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:33:00.428 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:33:00.474 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:33:00.489 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:33:00.504 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:33:00.505 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:33:00.514 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:33:00.514 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:33:00.533 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+16:33:00.553 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+16:33:00.572 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+16:33:00.596 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:33:00.613 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:33:00.632 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:33:00.633 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:33:00.642 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:33:00.642 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:33:00.663 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+16:33:00.682 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+16:33:00.700 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+16:33:00.723 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:33:00.736 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:33:00.752 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:33:00.753 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:33:00.875 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:33:00.900 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:33:00.900 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:33:01.141 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+16:33:01.414 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+16:33:01.448 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:33:01.463 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:33:01.480 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:33:01.481 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:33:01.489 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:33:01.489 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:33:01.727 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+16:33:02.071 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+16:33:02.090 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:33:02.104 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:33:02.116 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:33:02.118 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:33:02.823 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:33:02.823 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+16:33:32.042 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER OPENED http://www.way2automation.com/angularjs-protractor/banking/#/login WEBSITE SUCCESSFULLY
+16:33:32.062 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
+16:33:32.073 [main] DEBUG com.personal.base.BaseClass - window maximized
+16:33:32.119 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF loginAsmanagerTest HAS BEGUN
+16:33:32.119 [main] INFO  com.personal.base.BaseClass - description of testcase:- clicking on login button and checking availability of buttons on screen
+16:33:32.319 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+16:33:32.331 [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+16:33:32.339 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+16:33:32.426 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+16:33:32.429 [main] INFO  com.personal.base.BaseClass - @@@@ loginAsmanagerTest HAS PASSED
+16:33:33.253 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:33:33.253 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:33:33.300 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+16:33:33.324 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+16:33:33.351 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+16:33:33.402 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:33:33.422 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:33:33.446 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:33:33.448 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:33:33.459 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:33:33.459 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:33:33.489 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+16:33:33.519 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+16:33:33.546 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+16:33:33.581 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:33:33.599 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:33:33.611 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:33:33.612 [main] INFO  com.personal.base.BaseClass - @@@@ addMultipleCustomerTest HAS PASSED
+16:33:33.622 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF addMultipleCustomerTest HAS BEGUN
+16:33:33.623 [main] INFO  com.personal.base.BaseClass - description of testcase:- adding multiple customers from excel
+16:33:33.655 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Keyword' successfully
+16:33:33.678 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Driven' successfully
+16:33:33.703 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+16:33:33.746 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+16:33:33.762 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+16:33:33.767 [main] ERROR com.personal.base.BaseClass -  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+16:33:33.772 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:33:33.773 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError:  user provided wrong condition for alert(String action).
+ Following conditions are used :- 
+ 	 1.accept 
+ 	 2.dismiss 
+ 	 3.getText
+16:33:33.793 [main] ERROR com.personal.base.BaseClass - $$$$$$$ addMultipleCustomerTest HAS FAILED 
+16:33:33.793 [main] FATAL com.personal.base.BaseClass - org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :8: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 3460, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 970b6b5d-5e14-4ad9-bc82-2539c5ab8781
+16:33:33.840 [main] DEBUG com.personal.base.BaseClass - Screenshot[30_May_04_PM_33_33_794ADDMULTIPLECUSTOMERTEST.png] of addMultipleCustomerTest method taken successfully
+16:33:33.841 [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+16:33:33.956 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+16:33:33.979 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:33:33.979 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:33:34.221 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+16:33:34.455 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+16:33:34.476 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:33:34.491 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:33:34.507 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:33:34.508 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:33:34.516 [main] INFO  com.personal.base.BaseClass - ##### EXECUTION OF openAccountMethod HAS BEGUN
+16:33:34.516 [main] INFO  com.personal.base.BaseClass - description of testcase:- opening multiple customers account from excel
+16:33:34.757 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+16:33:34.991 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+16:33:35.014 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+16:33:35.028 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+16:33:35.047 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+16:33:35.048 [main] INFO  com.personal.base.BaseClass - @@@@ openAccountMethod HAS PASSED
+16:33:35.755 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+16:33:35.755 [main] INFO  com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
