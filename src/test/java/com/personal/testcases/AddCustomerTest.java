@@ -10,13 +10,6 @@ import com.personal.utilities.ExcelRead;
 public class AddCustomerTest extends BaseClass {
 
 	
-	int i=0;
-	
-	
-	
-	
-	
-	
 	
 	
 	@Test(description = "clicking on login button and checking availability of buttons on screen")
@@ -43,7 +36,7 @@ public class AddCustomerTest extends BaseClass {
 		
 		
 		doesAlertContainsText("Customer added successfully with customer id", "hardAssert");
-		alert("1111111",3);
+		alert("accept");
 		
 	}
 

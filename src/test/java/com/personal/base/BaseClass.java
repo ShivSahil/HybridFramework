@@ -597,8 +597,11 @@ public class BaseClass {
 		
 		else {
 			driver.switchTo().alert().accept();  //if I don't give this I get unhandleable exception in next run of dataprovider methods
-			logger.error(" user provided wrong action for alert(String action, int waitPeriod).\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
-			Assert.fail(" user provided wrong action for alert(String action, int waitPeriod).\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
+			logger.error(" user provided wrong action for alert(String action, int waitPeriod)."
+					+ "\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
+			
+			Assert.fail(" user provided wrong action for alert(String action, int waitPeriod)."
+					+ "\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
 			
 			}
 		}
