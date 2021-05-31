@@ -20,7 +20,8 @@ public boolean retry(ITestResult iTestResult) {
 		
 		if (count < maxTry) { //Check if maxtry count is reached
 		
-			logger.warn(iTestResult.getMethod().getMethodName()+ " method is being re-run for count ("+(count+1)+")");
+			logger.warn(iTestResult.getMethod().getMethodName()+ " method is being re-run for count ("+(count+1)+").Check exception below :---  ");
+			logger.warn( iTestResult.getThrowable());
 			test.log(Status.WARNING, iTestResult.getMethod().getMethodName()+ " method is being re-run for count ("+(count+1)+"). Check exception below :---   ");
 			test.log(Status.WARNING, iTestResult.getThrowable());
 			
@@ -31,7 +32,7 @@ public boolean retry(ITestResult iTestResult) {
 			
 			
 			try {
-				Thread.sleep(800); // thread.sleep has been placed deliberately by me. if not execution steps were getting missed
+				Thread.sleep(1500); // thread.sleep has been placed deliberately by me. if not execution steps were getting missed
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

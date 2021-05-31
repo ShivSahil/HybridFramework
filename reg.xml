@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Customer Suite">
+	<listeners>
+		<listener class-name="com.personal.listeners.ItestLis" />
+		<listener class-name="com.personal.listeners.AnnotationTransformer" />
+	</listeners>
+
+	<test name="Bank Manager Login">
+		<classes>
+			<class name="com.personal.base.BaseClass" />
+			<class name="com.personal.testcases.AddCustomerTest" />
+			<class name="com.personal.testcases.OpenAccountTest" /> 
+		</classes>
+	</test>
+	
+	<test name="Customer Login">
+		<classes>
+			<class name="com.personal.base.BaseClass" />
+			<class name="com.personal.testcases.CustomerLoginTest" /> 
+		</classes>
+	</test>
+	
+
+</suite> <!-- Suite -->

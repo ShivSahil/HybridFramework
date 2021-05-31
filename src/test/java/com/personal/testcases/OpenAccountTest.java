@@ -1,6 +1,7 @@
 package com.personal.testcases;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -15,7 +16,7 @@ public class OpenAccountTest extends BaseClass{
 		click("OpenAccountTab_xpath");
 	}
 	
-	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", description = "opening multiple customers account from excel", dependsOnGroups={"openAccountMethodPrerequisites"})
+	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", description = "BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account", dependsOnGroups={"openAccountMethodPrerequisites"})
 	public void openAccountMethod(String name, String currency) throws InterruptedException
 	{
 		staticDropDown("CustomerDropDown_id", name);  
@@ -26,5 +27,12 @@ public class OpenAccountTest extends BaseClass{
 	
 		
 	
+	}
+	
+	
+	@AfterClass
+	public void HometTab()
+	{
+		click("Hometab_xpath");
 	}
 }

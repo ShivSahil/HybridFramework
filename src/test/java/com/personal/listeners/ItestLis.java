@@ -23,7 +23,7 @@ public class ItestLis extends BaseClass implements ITestListener{
 		
 		
 		test = extentVar.createTest(result.getMethod().getMethodName());
-		logger.info("##### EXECUTION OF " + result.getMethod().getMethodName() + " HAS BEGUN");
+		logger.info("EXECUTION OF " + result.getMethod().getMethodName() + " HAS BEGUN");
 		logger.info("description of testcase:- "+result.getMethod().getDescription());
 		
 		test.log(Status.INFO, "description of testcase:- "+result.getMethod().getDescription());
@@ -33,7 +33,7 @@ public class ItestLis extends BaseClass implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		
-		logger.info("@@@@ " + result.getMethod().getMethodName() + " HAS PASSED");
+		logger.info(result.getMethod().getMethodName() + " HAS PASSED");
 		test.pass(result.getMethod().getMethodName() + " HAS PASSED");
 		extentVar.flush();
 	}
@@ -42,22 +42,25 @@ public class ItestLis extends BaseClass implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		
 		//***** keep  getMethodName and getThrowable separate
-		logger.error("$$$$$$$ " + result.getMethod().getMethodName() + " HAS FAILED ");
+		
 		logger.fatal(result.getThrowable());
+		logger.error(result.getMethod().getMethodName() + " HAS FAILED ");
 		
 		try {
 			screenshotPath = ScreenshotUtility.screenshot(result.getMethod().getMethodName());
 		
 		} catch (IOException e) {
-			logger.error("unable to take screenshot of "+result.getMethod().getMethodName()+" method. error msg is "+e.getMessage() );
+			logger.error("unable to take screenshot of "+result.getMethod().getMethodName()+" method.\n Error msg is "+e.getMessage() );
 			
 		}
+		
+		
 		try {
 			test.addScreenCaptureFromPath(screenshotPath, result.getMethod().getMethodName());
 			logger.debug("Screenshot of "+result.getMethod().getMethodName()+" method successfully attached to report ");
 		
 		} catch (IOException e) {
-			logger.error("unable to attach screenshot to "+ result.getMethod().getMethodName()+ " method. error msg is"+e.getMessage());
+			logger.error("Unable to attach screenshot to "+ result.getMethod().getMethodName()+ " method.\n Error msg is"+e.getMessage());
 			e.printStackTrace();
 		}
 
@@ -98,9 +101,9 @@ public class ItestLis extends BaseClass implements ITestListener{
         	mail =  new MailUtility();
 			mail.mailSend();
 		} catch (AddressException e) {
-			logger.error("Invalid email address. reason is "+ e.getMessage());
+			logger.error("Invalid email address.\n Reason is "+ e.getMessage());
 		} catch (MessagingException e) {
-			logger.error("Mail Not sent. reason is "+ e.getMessage());
+			logger.error("Mail Not sent.\n Reason is "+ e.getMessage());
 		}
         
 		

@@ -5,12 +5,13 @@
     <listener class-name="com.personal.listeners.ItestLis"/>
     <listener class-name="com.personal.listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" name="Add Customers(failed)">
+  <test thread-count="5" name="Bank Manager Login(failed)">
     <classes>
       <class name="com.personal.testcases.OpenAccountTest">
         <methods>
+          <include name="HometTab"/>
           <include name="tearDown"/>
-          <include name="openAccountMethod"/>
+          <include name="openAccountMethod" invocation-numbers="0 0 1 1"/>
           <include name="setUp"/>
           <include name="openAccountTab"/>
         </methods>
@@ -19,10 +20,10 @@
         <methods>
           <include name="loginAsmanagerTest"/>
           <include name="tearDown"/>
-          <include name="addMultipleCustomerTest" invocation-numbers="0 0 0 0 1 1 1 1 2 2 2 2"/>
+          <include name="addMultipleCustomerTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.AddCustomerTest -->
     </classes>
-  </test> <!-- Add Customers(failed) -->
+  </test> <!-- Bank Manager Login(failed) -->
 </suite> <!-- Failed suite [Customer Suite] -->

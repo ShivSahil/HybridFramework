@@ -61,7 +61,7 @@ public class ZipUtility extends BaseClass {
 			logger.info("Report generated with name "+Reports+".zip");
 
 		} catch (Exception e) {
-			logger.error("Exception occured for Report generated with name "+Reports+".zip. error msg is"+ e.getMessage());
+			logger.error("Exception occured for Report generated with name "+Reports+".zip.\n Error msg is:-- "+ e.getMessage());
 			
 		}
 		

@@ -23,7 +23,7 @@ public class ScreenshotUtility extends BaseClass{
 		
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(src, new File(System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\"+ name + ".png"));
-		logger.debug("Screenshot["+name+".png] of "+methodName+" method taken successfully");
+		logger.debug("Screenshot("+name+".png) of "+methodName+" method taken successfully");
 		
 		
 		return (System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\"+ name + ".png");

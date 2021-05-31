@@ -72,7 +72,7 @@ public class BaseClass {
 
 			driver.get(configuration.getProperty("AUT"));
 			logger.info(configuration.getProperty("browser").toUpperCase() + 
-					" BROWSER OPENED "+ configuration.getProperty("AUT") +  " WEBSITE SUCCESSFULLY");
+					" browser opened '"+ configuration.getProperty("AUT") +  "' website successfully");
 		}
 		
 		else if (browser.contains("firefox")) {
@@ -83,7 +83,7 @@ public class BaseClass {
 			
 			driver.get(configuration.getProperty("AUT"));
 			logger.info(configuration.getProperty("browser").toUpperCase() + 
-					" BROWSER OPENED "+ configuration.getProperty("AUT") +  " WEBSITE SUCCESSFULLY");
+					" browser opened '"+ configuration.getProperty("AUT") +  "' website successfully");
 		}
 		
 		else {
@@ -93,7 +93,7 @@ public class BaseClass {
 			
 			driver.get(configuration.getProperty("AUT"));
 			logger.info(configuration.getProperty("browser").toUpperCase() + 
-					" BROWSER OPENED "+ configuration.getProperty("AUT") +  " WEBSITE SUCCESSFULLY");
+					" browser opened '"+ configuration.getProperty("AUT") +  "' website successfully");
 		}
 		
 		
@@ -120,7 +120,7 @@ public class BaseClass {
 			logger.info(configuration.getProperty("browser").toUpperCase() + 
 					" BROWSER CLOSED");
 			
-			logger.info("-------------------------------------------------------------------------------------------------");
+			logger.debug("-------------------------------------------------------------------------------------------------");
 			
 		}
 	}
@@ -129,7 +129,6 @@ public class BaseClass {
 //-----------------------------------------------------------------------------------------------------------------------	
 // -------------------------------------------REUSEABLE METHODS ---------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------		
-	
 	
 	public void click(String key)  // REUSEABLE CLICK METHOD
 	{
@@ -166,6 +165,11 @@ public class BaseClass {
 		else if (key.toLowerCase().contains("_class"))
 		{
 			driver.findElement(By.className(objRepo.getProperty(key))).click();
+		}
+		else
+		{
+			logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+			Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
 		}
 		
 		// **** DON'T WRITE driver.getTitle(), in case there is a alert box. you will get error on driver.getTitle()
@@ -231,7 +235,11 @@ public class BaseClass {
 			driver.findElement(By.className(objRepo.getProperty(key))).sendKeys(data);
 			
 		}
-		
+		else
+		{
+			logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+			Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+		}
 		
 		logger.debug("locator(" +key+ ") filled with value '"+ data+"' successfully");
 		test.log(Status.INFO, "locator(" +key+ ") filled with value '"+ data+"' successfully");
@@ -266,15 +274,15 @@ public class BaseClass {
 			else if(action.toLowerCase().contains("getText"))
 			System.out.println(al.getText());
 			
-				else
-				{
+			else
+			{
 				al.accept();    //if I don't give this I get unhandleable exception in next run of dataprovider methods
-				logger.error(" user provided wrong condition for alert(String action)."
-						+ "\n Following conditions are used :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
+				logger.error(" user provided wrong action ["+action+"] for alert(String action)."
+						+ "\n Following conditions are acceptable :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
 				
-				Assert.fail(" user provided wrong condition for alert(String action)."
-						+ "\n Following conditions are used :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
-				}
+				Assert.fail(" user provided wrong action["+action+"] for alert(String action)."
+						+ "\n Following conditions are acceptable :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
+			}
 			
 		logger.debug(" Action("+ action +") successfully taken on Alert, present on page");
 		test.log(Status.INFO, " Action("+ action +") successfully taken on alert, present on page ");
@@ -299,53 +307,59 @@ public class BaseClass {
 		
 		try {
 			
-		Select s;
-		
-		// can't use switch here. switch can't be used for contains
-		if(key.toLowerCase().contains("_css") )
-		{
-			s = new Select(driver.findElement(By.cssSelector(objRepo.getProperty(key))));
-			s.selectByVisibleText(selectOption);
-
-		}
-
-		else if (key.toLowerCase().contains("_xpath"))
-		{
-			s = new Select(driver.findElement(By.xpath(objRepo.getProperty(key))));
-			s.selectByVisibleText(selectOption);	
-		}
-		else if (key.toLowerCase().contains("_id"))
-		{
-			s = new Select(driver.findElement(By.id(objRepo.getProperty(key))));
-			s.selectByVisibleText(selectOption);
-		}
-		else if (key.toLowerCase().contains("_link"))
-		{
-			s = new Select(driver.findElement(By.linkText(objRepo.getProperty(key))));
-			s.selectByVisibleText(selectOption);
-		}
-		
-		else if (key.toLowerCase().contains("_partiallink"))
-		{
-			s = new Select(driver.findElement(By.partialLinkText(objRepo.getProperty(key))));
-			s.selectByVisibleText(selectOption);
-		}
-		else if (key.toLowerCase().contains("_name"))
-		{
-			s = new Select(driver.findElement(By.name(objRepo.getProperty(key))));
-			s.selectByVisibleText(selectOption);
-		}
-		else if (key.toLowerCase().contains("_class"))
-		{
-			s = new Select(driver.findElement(By.className(objRepo.getProperty(key))));
-			s.selectByVisibleText(selectOption);
-		}
-		
-		// **** DON'T WRITE driver.getTitle(), in case there is a alert box. you will get error on driver.getTitle()
-		
-		logger.debug("option(" +selectOption+ ") selected successfully on dropdown("+key+")");
-		test.log(Status.INFO, "option(" +selectOption+ ") selected successfully on dropdown("+key+")");
-
+			Select s;
+			
+			// can't use switch here. switch can't be used for contains
+			if(key.toLowerCase().contains("_css") )
+			{
+				s = new Select(driver.findElement(By.cssSelector(objRepo.getProperty(key))));
+				s.selectByVisibleText(selectOption);
+	
+			}
+	
+			else if (key.toLowerCase().contains("_xpath"))
+			{
+				s = new Select(driver.findElement(By.xpath(objRepo.getProperty(key))));
+				s.selectByVisibleText(selectOption);	
+			}
+			else if (key.toLowerCase().contains("_id"))
+			{
+				s = new Select(driver.findElement(By.id(objRepo.getProperty(key))));
+				s.selectByVisibleText(selectOption);
+			}
+			else if (key.toLowerCase().contains("_link"))
+			{
+				s = new Select(driver.findElement(By.linkText(objRepo.getProperty(key))));
+				s.selectByVisibleText(selectOption);
+			}
+			
+			else if (key.toLowerCase().contains("_partiallink"))
+			{
+				s = new Select(driver.findElement(By.partialLinkText(objRepo.getProperty(key))));
+				s.selectByVisibleText(selectOption);
+			}
+			else if (key.toLowerCase().contains("_name"))
+			{
+				s = new Select(driver.findElement(By.name(objRepo.getProperty(key))));
+				s.selectByVisibleText(selectOption);
+			}
+			else if (key.toLowerCase().contains("_class"))
+			{
+				s = new Select(driver.findElement(By.className(objRepo.getProperty(key))));
+				s.selectByVisibleText(selectOption);
+			}
+			
+			else
+			{
+				logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+				Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+			}
+			
+			// **** DON'T WRITE driver.getTitle(), in case there is a alert box. you will get error on driver.getTitle()
+			
+			logger.debug("option(" +selectOption+ ") selected successfully on dropdown("+key+")");
+			test.log(Status.INFO, "option(" +selectOption+ ") selected successfully on dropdown("+key+")");
+			
 		
 		
 		} catch (NoSuchElementException e) {
@@ -367,86 +381,93 @@ public class BaseClass {
 	
 			
 	
+	
 	public void click(String key, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT CLICK METHOD
 	{
 		
 		try {
 		
-		WebDriverWait d = new WebDriverWait(driver, waitPeriod);
-		By byVar=null;
-		
-		
-		if(key.toLowerCase().contains("_css"))
-		{
-			
-			byVar=By.cssSelector(objRepo.getProperty(key));
-			
-		}
-		else if (key.toLowerCase().contains("_xpath"))
-		{
-			byVar=By.xpath(objRepo.getProperty(key));
-		}
-		else if (key.toLowerCase().contains("_id"))
-		{
-			byVar=By.id(objRepo.getProperty(key));
-		}
-		else if (key.toLowerCase().contains("_link"))
-		{
-			byVar=By.linkText(objRepo.getProperty(key));
-		}
-		
-		else if (key.toLowerCase().contains("_partiallink"))
-		{
-			byVar=By.partialLinkText(objRepo.getProperty(key));
-		}
-		else if (key.toLowerCase().contains("_name"))
-		{
-			byVar=By.name(objRepo.getProperty(key));
-		}
-		else if (key.toLowerCase().contains("_class"))
-		{
-			byVar=By.className(objRepo.getProperty(key));
-		}
-		
+					WebDriverWait d = new WebDriverWait(driver, waitPeriod);
+					By byVar=null;
+					
+					
+					if(key.toLowerCase().contains("_css"))
+					{
+						
+						byVar=By.cssSelector(objRepo.getProperty(key));
+						
+					}
+					else if (key.toLowerCase().contains("_xpath"))
+					{
+						byVar=By.xpath(objRepo.getProperty(key));
+					}
+					else if (key.toLowerCase().contains("_id"))
+					{
+						byVar=By.id(objRepo.getProperty(key));
+					}
+					else if (key.toLowerCase().contains("_link"))
+					{
+						byVar=By.linkText(objRepo.getProperty(key));
+					}
+					
+					else if (key.toLowerCase().contains("_partiallink"))
+					{
+						byVar=By.partialLinkText(objRepo.getProperty(key));
+					}
+					else if (key.toLowerCase().contains("_name"))
+					{
+						byVar=By.name(objRepo.getProperty(key));
+					}
+					else if (key.toLowerCase().contains("_class"))
+					{
+						byVar=By.className(objRepo.getProperty(key));
+					}
+					
+					else
+					{
+						logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+						Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+					}
 		
 		
 		switch (nameOfCondition) {
-		case "elementToBeClickable": {
-			 d.until(ExpectedConditions.elementToBeClickable(byVar)).click();
-			logger.debug("elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-			test.log(Status.INFO, "elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-			break;
-			
-		}
 		
-		case "visibilityOfElementLocated": {
+			case "elementToBeClickable": {
+				 d.until(ExpectedConditions.elementToBeClickable(byVar)).click();
+				logger.debug("elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+				test.log(Status.INFO, "elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+				break;
+				
+			}
+			
+			case "visibilityOfElementLocated": {
+				
+				
+				d.until(ExpectedConditions.visibilityOfElementLocated(byVar)).click();		
+				logger.debug("visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+				test.log(Status.INFO, "visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+				
+				break;
+			}
+			
+			case "presenceOfElementLocated": {
+				 d.until(ExpectedConditions.presenceOfElementLocated(byVar)).click();
+				 
+				logger.debug("presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+				test.log(Status.INFO, "presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
+				
+				break;
+			}
 			
 			
-			d.until(ExpectedConditions.visibilityOfElementLocated(byVar)).click();		
-			logger.debug("visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-			test.log(Status.INFO, "visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-			
-			break;
-		}
-		
-		case "presenceOfElementLocated": {
-			 d.until(ExpectedConditions.presenceOfElementLocated(byVar)).click();
-			 
-			logger.debug("presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-			test.log(Status.INFO, "presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-			
-			break;
-		}
-		
-		
-		default:{
-			logger.error(" user provided wrong condition for click(String key, int waitPeriod, String nameOfCondition)."
-					+ "\n Following conditions are used :- \n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
-			
-			Assert.fail(" user provided wrong condition for click(String key, int waitPeriod, String nameOfCondition).\n Following conditions are used :- "
-					+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
-			
-			break;}
+			default:{
+				logger.error(" user provided wrong condition ["+nameOfCondition+"] for click(String key, int waitPeriod, String nameOfCondition)."
+						+ "\n Following conditions are acceptable :- \n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
+				
+				Assert.fail(" user provided wrong condition ["+nameOfCondition+"] for click(String key, int waitPeriod, String nameOfCondition).\n Following conditions are acceptable :- "
+						+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
+				
+				break;}
 
 		}
 		
@@ -468,87 +489,100 @@ public class BaseClass {
 	{
 		
 		try {
-		WebDriverWait d = new WebDriverWait(driver, waitPeriod);
-		By byVar=null;
-		
-		
-		if(key.toLowerCase().contains("_css"))
-		{
-			
-			byVar=By.cssSelector(objRepo.getProperty(key));
-			
-		}
-		else if (key.toLowerCase().contains("_xpath"))
-		{
-			byVar=By.xpath(objRepo.getProperty(key));
-		}
-		else if (key.toLowerCase().contains("_id"))
-		{
-			byVar=By.id(objRepo.getProperty(key));
-		}
-		else if (key.toLowerCase().contains("_link"))
-		{
-			byVar=By.linkText(objRepo.getProperty(key));
-		}
-		
-		else if (key.toLowerCase().contains("_partiallink"))
-		{
-			byVar=By.partialLinkText(objRepo.getProperty(key));
-		}
-		else if (key.toLowerCase().contains("_name"))
-		{
-			byVar=By.name(objRepo.getProperty(key));
-		}
-		else if (key.toLowerCase().contains("_class"))
-		{
-			byVar=By.className(objRepo.getProperty(key));
-		}
-		
-		
-		
-		switch (nameOfCondition) {
-		case "elementToBeClickable": {
-			 d.until(ExpectedConditions.elementToBeClickable(byVar)).sendKeys(data);
-			
-			
-			logger.debug("elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-			test.log(Status.INFO,"elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-			
-			break;
-			
-		}
-		
-		case "visibilityOfElementLocated": {
-			
-			
-			d.until(ExpectedConditions.visibilityOfElementLocated(byVar)).sendKeys(data);
-			
-			
-			logger.debug("visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-			test.log(Status.INFO,"visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-			
-			break;
-		}
-		
-		case "presenceOfElementLocated": {
-			 d.until(ExpectedConditions.presenceOfElementLocated(byVar)).sendKeys(data);
-
-			 logger.debug("presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-			 test.log(Status.INFO,"presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+				WebDriverWait d = new WebDriverWait(driver, waitPeriod);
+				By byVar=null;
 				
-			break;
-		}
-		
-		
-		default:{
-			logger.error(" user provided wrong condition for type(String key, String data, int waitPeriod, String nameOfCondition).\n Following conditions are used :- "
-					+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
+				
+				if(key.toLowerCase().contains("_css"))
+				{
+					
+					byVar=By.cssSelector(objRepo.getProperty(key));
+					
+				}
+				else if (key.toLowerCase().contains("_xpath"))
+				{
+					byVar=By.xpath(objRepo.getProperty(key));
+				}
+				else if (key.toLowerCase().contains("_id"))
+				{
+					byVar=By.id(objRepo.getProperty(key));
+				}
+				else if (key.toLowerCase().contains("_link"))
+				{
+					byVar=By.linkText(objRepo.getProperty(key));
+				}
+				
+				else if (key.toLowerCase().contains("_partiallink"))
+				{
+					byVar=By.partialLinkText(objRepo.getProperty(key));
+				}
+				else if (key.toLowerCase().contains("_name"))
+				{
+					byVar=By.name(objRepo.getProperty(key));
+				}
+				else if (key.toLowerCase().contains("_class"))
+				{
+					byVar=By.className(objRepo.getProperty(key));
+				}
+				
+				else
+				{
+					logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+					Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+				}	
 			
-			Assert.fail(" user provided wrong condition for type(String key, String data, int waitPeriod, String nameOfCondition).\n Following conditions are used :- "
-					+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
-			break;}
+			
+			
+			
+			
+			switch (nameOfCondition) {
+			
+			case "elementToBeClickable": {
+				 d.until(ExpectedConditions.elementToBeClickable(byVar)).sendKeys(data);
+				
+				
+				logger.debug("elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+				test.log(Status.INFO,"elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+				
+				break;
+				
 			}
+			
+			case "visibilityOfElementLocated": {
+				
+				
+				d.until(ExpectedConditions.visibilityOfElementLocated(byVar)).sendKeys(data);
+				
+				
+				logger.debug("visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+				test.log(Status.INFO,"visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+				
+				break;
+			}
+			
+			case "presenceOfElementLocated": {
+				 d.until(ExpectedConditions.presenceOfElementLocated(byVar)).sendKeys(data);
+	
+				 logger.debug("presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+				 test.log(Status.INFO,"presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
+					
+				break;
+			}
+			
+			
+			default:{
+				logger.error(" user provided wrong condition ["+nameOfCondition+"] for type(String key, String data, int waitPeriod, String nameOfCondition).\n Following conditions are acceptable :- "
+						+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
+				
+				Assert.fail(" user provided wrong condition ["+nameOfCondition+"] for type(String key, String data, int waitPeriod, String nameOfCondition).\n Following conditions are acceptable :- "
+						+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
+				break;}
+				}
+		
+		
 		}
+		
+		
 		catch (TimeoutException e) { // NoSuchElementException is apt for here
 			
 			 
@@ -569,41 +603,41 @@ public class BaseClass {
 		
 		
 		
-		
-		if (action.toLowerCase().contains("accept")) {
-			WebDriverWait d = new WebDriverWait(driver, waitPeriod);
-			 d.until(ExpectedConditions.alertIsPresent()).accept();
 			
-			 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
-			 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
-			
-		}
-		else if (action.toLowerCase().contains("dismiss")) {
-			WebDriverWait d = new WebDriverWait(driver, waitPeriod);
-			d.until(ExpectedConditions.alertIsPresent()).dismiss();
-		
-			 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
-			 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
-			
-		}
-		
-		else if(action.toLowerCase().contains("getText"))
-		{
-			WebDriverWait d = new WebDriverWait(driver, waitPeriod);
-			System.out.println(d.until(ExpectedConditions.alertIsPresent()).getText());
-			
-			logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
-			test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");}
-		
-		else {
-			driver.switchTo().alert().accept();  //if I don't give this I get unhandleable exception in next run of dataprovider methods
-			logger.error(" user provided wrong action for alert(String action, int waitPeriod)."
-					+ "\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
-			
-			Assert.fail(" user provided wrong action for alert(String action, int waitPeriod)."
-					+ "\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
-			
+			if (action.toLowerCase().contains("accept")) {
+				WebDriverWait d = new WebDriverWait(driver, waitPeriod);
+				 d.until(ExpectedConditions.alertIsPresent()).accept();
+				
+				 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+				 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+				
 			}
+			else if (action.toLowerCase().contains("dismiss")) {
+				WebDriverWait d = new WebDriverWait(driver, waitPeriod);
+				d.until(ExpectedConditions.alertIsPresent()).dismiss();
+			
+				 logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+				 test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+				
+			}
+			
+			else if(action.toLowerCase().contains("getText"))
+			{
+				WebDriverWait d = new WebDriverWait(driver, waitPeriod);
+				System.out.println(d.until(ExpectedConditions.alertIsPresent()).getText());
+				
+				logger.debug("alertIsPresent timeout for Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");
+				test.log(Status.INFO, "alertIsPresent timeout Alert set to "+ waitPeriod+" seconds. Action("+action+") taken on Alert Successfully");}
+			
+			else {
+				driver.switchTo().alert().accept();  //if I don't give this I get unhandleable exception in next run of dataprovider methods
+				logger.error(" user provided wrong action ["+action+"] for alert(String action, int waitPeriod)."
+						+ "\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
+				
+				Assert.fail(" user provided wrong action ["+action+"] for alert(String action, int waitPeriod)."
+						+ "\n Following action are used :- \n \t 1.dismiss \n \t 2. accept  \n \t 3. getText ");
+				
+				}
 		}
 		
 		catch (NoAlertPresentException e) {     
@@ -675,10 +709,13 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 		logger.error( "VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
 		test.log(Status.ERROR,"VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
 
-		
 	}
 	
-		
+	else
+	{
+		logger.error("In checkPageTitle(String expectedtitle, String assertType); value of inputed assertType ["+assertType+"] is neither 'hardassert' or 'softassert'");
+		Assert.fail("In checkPageTitle(String expectedtitle, String assertType); value of inputed assertType ["+assertType+"] is neither 'hardassert' or 'softassert'");
+	}
 	
 	
 }
@@ -720,6 +757,14 @@ public void isElementPresent(String key, String assertType) { // REUSEABLE ELEME
 				driver.findElement(By.className(objRepo.getProperty(key)));
 			}
 			
+			else
+			{
+				logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+				Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
+			}
+
+			
+			
 			
 			if(assertType.toLowerCase().contains("hardassert"))
 			{	
@@ -733,6 +778,12 @@ public void isElementPresent(String key, String assertType) { // REUSEABLE ELEME
 				logger.info("VERIFY :- locator(" +key+ ") is present on page");
 				test.log(Status.INFO, "VERIFY :- locator(" +key+ ") is present on page");
 			 }
+			
+			else
+			{
+				logger.error("In isElementPresent(String key, String assertType); value of inputed assertType ["+assertType+"] is neither 'hardassert' or 'softassert'");
+				Assert.fail("In isElementPresent(String key, String assertType); value of inputed assertType ["+assertType+"] is neither 'hardassert' or 'softassert'");
+			}
 	
 			
 	}
@@ -754,6 +805,8 @@ public void isElementPresent(String key, String assertType) { // REUSEABLE ELEME
 			 test.log(Status.ERROR,"VERIFY :- locator(" +key+ ") is NOT present on page.\n \n \n Error msg is :-   "+ e.getMessage());
 			 
 		 }
+		 
+		 
 	 }
 	
 }
@@ -788,7 +841,13 @@ public void doesAlertContainsText(String message, String assertType) { // REUSEA
 					
 				logger.error("ASSERT :- text(" +message+ ") is NOT present in Alert Box .\n Message in AlertBox is "+driver.switchTo().alert().getText());
 				test.log(Status.ERROR,"ASSERT :- text(" +message+ ") is NOT present in Alert Box .\n Message in AlertBox is "+driver.switchTo().alert().getText());
-	}
+			}
+			
+			else
+			{
+				logger.error("In doesAlertContainsText(String message, String assertType); value of inputed assertType ["+assertType+"] is neither 'hardassert' or 'softassert'");
+				Assert.fail("In doesAlertContainsText(String message, String assertType); value of inputed assertType ["+assertType+"] is neither 'hardassert' or 'softassert'");
+			}
 			
 		}
 			
@@ -802,5 +861,7 @@ public void doesAlertContainsText(String message, String assertType) { // REUSEA
 		
 		
 	}
+
+
 }
 
