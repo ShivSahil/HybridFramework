@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="10.666" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="25.721" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Nishant Guleri\AppData\Local\Temp\surefire8361589748530723797\surefirebooter5848376107254711958.jar C:\Users\Nishant Guleri\AppData\Local\Temp\surefire8361589748530723797 2021-05-31T12-50-32_043-jvmRun1 surefire3429650840601583264tmp surefire_07087405620577648563tmp"/>
+    <property name="sun.java.command" value="C:\Users\Nishant Guleri\AppData\Local\Temp\surefire5460567258045922028\surefirebooter7715403725037927628.jar C:\Users\Nishant Guleri\AppData\Local\Temp\surefire5460567258045922028 2021-05-31T14-15-37_996-jvmRun1 surefire9017713732274187718tmp surefire_06025465389103170481tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\Nishant Guleri\eclipse-workspace\HybridFramework\target\test-classes;C:\Users\Nishant Guleri\eclipse-workspace\HybridFramework\target\classes;C:\Users\Nishant Guleri\.m2\repository\commons-io\commons-io\2.9.0\commons-io-2.9.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Nishant Guleri\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Nishant Guleri\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Nishant Guleri\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Nishant Guleri\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Nishant Guleri\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Nishant Guleri\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\Nishant Guleri\.m2\repository\com\aventstack\extentreports\4.1.7\extentreports-4.1.7.jar;C:\Users\Nishant Guleri\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Nishant Guleri\.m2\repository\org\mongodb\mongodb-driver\3.12.0\mongodb-driver-3.12.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\mongodb\mongodb-driver-core\3.12.0\mongodb-driver-core-3.12.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\mongodb\bson\3.12.0\bson-3.12.0.jar;C:\Users\Nishant Guleri\.m2\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;C:\Users\Nishant Guleri\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Nishant Guleri\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\Nishant Guleri\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\Nishant Guleri\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Nishant Guleri\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Nishant Guleri\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Nishant Guleri\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Nishant Guleri"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Nishant Guleri\AppData\Local\Temp\surefire8361589748530723797\surefirebooter5848376107254711958.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Nishant Guleri\AppData\Local\Temp\surefire5460567258045922028\surefirebooter7715403725037927628.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_271\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,100 +61,108 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="loginAsmanagerTest" classname="com.personal.testcases.AddCustomerTest" time="1.377">
-    <system-out><![CDATA[12:50:37.767 [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
-12:50:37.787 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
-12:50:37.793 [main] DEBUG com.personal.base.BaseClass - window maximized
-12:50:37.827 [main] INFO  com.personal.base.BaseClass - EXECUTION OF loginAsmanagerTest HAS BEGUN
-12:50:37.827 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
-12:50:38.830 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
-12:50:38.837 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
-12:50:38.845 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
-12:50:38.931 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
-12:50:38.937 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+  <testcase name="loginAsmanagerTest" classname="com.personal.testcases.AddCustomerTest" time="1.385">
+    <system-out><![CDATA[14:15:44.254 [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+14:15:44.274 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+14:15:44.281 [main] DEBUG com.personal.base.BaseClass - window maximized
+14:15:44.317 [main] INFO  com.personal.base.BaseClass - EXECUTION OF loginAsmanagerTest HAS BEGUN
+14:15:44.318 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+14:15:45.311 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+14:15:45.317 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+14:15:45.326 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+14:15:45.430 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+14:15:45.432 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
 ]]></system-out>
-    <system-err><![CDATA[1622445633823	geckodriver	INFO	Listening on 127.0.0.1:39674
-1622445634511	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NISHAN~1\\AppData\\Local\\Temp\\rust_mozprofileA90OIM"
-1622445634963	Marionette	INFO	Marionette enabled
+    <system-err><![CDATA[1622450739914	geckodriver	INFO	Listening on 127.0.0.1:4495
+1622450740570	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NISHAN~1\\AppData\\Local\\Temp\\rust_mozprofile5GbGFm"
+1622450741438	Marionette	INFO	Marionette enabled
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1622445636998	Marionette	INFO	Listening on port 65394
-1622445637147	Marionette	WARN	TLS certificate errors will be ignored for this session
-May 31, 2021 12:50:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1622450743631	Marionette	INFO	Listening on port 50312
+1622450743701	Marionette	WARN	TLS certificate errors will be ignored for this session
+May 31, 2021 2:15:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="addMultipleCustomerTest[Shiv, Sahil, 160014](1)" classname="com.personal.testcases.AddCustomerTest" time="0.172">
-    <system-out><![CDATA[12:50:39.707 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-12:50:39.707 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-12:50:39.736 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
-12:50:39.761 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
-12:50:39.799 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
-12:50:39.847 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-12:50:39.853 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
-12:50:39.868 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:39.869 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+  <testcase name="addMultipleCustomerTest[Shiv, Sahil, 160014](1)" classname="com.personal.testcases.AddCustomerTest" time="0.174">
+    <system-out><![CDATA[14:15:46.215 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
+14:15:46.216 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+14:15:46.243 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+14:15:46.282 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+14:15:46.306 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+14:15:46.349 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+14:15:46.357 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+14:15:46.378 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:46.379 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
 ]]></system-out>
   </testcase>
   <testcase name="addMultipleCustomerTest[Sahil, Guleri, 3967](2)" classname="com.personal.testcases.AddCustomerTest" time="0.127">
-    <system-out><![CDATA[12:50:39.875 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-12:50:39.875 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-12:50:39.907 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
-12:50:39.928 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
-12:50:39.950 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
-12:50:39.978 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-12:50:39.983 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
-12:50:39.997 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:39.998 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+    <system-out><![CDATA[14:15:46.386 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
+14:15:46.386 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+14:15:46.413 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+14:15:46.435 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+14:15:46.459 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+14:15:46.488 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+14:15:46.493 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+14:15:46.508 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:46.508 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="addMultipleCustomerTest[No, Cust, 1332](3)" classname="com.personal.testcases.AddCustomerTest" time="0.106">
-    <system-out><![CDATA[12:50:40.005 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-12:50:40.005 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-12:50:40.023 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
-12:50:40.043 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
-12:50:40.061 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
-12:50:40.085 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-12:50:40.092 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
-12:50:40.102 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:40.103 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+  <testcase name="addMultipleCustomerTest[No, Cust, 1332](3)" classname="com.personal.testcases.AddCustomerTest" time="0.104">
+    <system-out><![CDATA[14:15:46.516 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
+14:15:46.516 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+14:15:46.537 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+14:15:46.554 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+14:15:46.572 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+14:15:46.595 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+14:15:46.603 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+14:15:46.612 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:46.612 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="openAccountMethod[Sahil Guleri, Pound](1)" classname="com.personal.testcases.OpenAccountTest" time="0.71">
-    <system-out><![CDATA[12:50:40.261 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
-12:50:40.291 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-12:50:40.291 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-12:50:40.536 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
-12:50:40.928 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
-12:50:40.965 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
-12:50:40.980 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
-12:50:40.996 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:40.997 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
+  <testcase name="openAccountMethod[Sahil Guleri, Pound](1)" classname="com.personal.testcases.OpenAccountTest" time="0.671">
+    <system-out><![CDATA[14:15:46.776 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+14:15:46.806 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
+14:15:46.807 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+14:15:47.054 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+14:15:47.371 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+14:15:47.428 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+14:15:47.452 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+14:15:47.470 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:47.471 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="openAccountMethod[Shiv Sahil, Rupee](2)" classname="com.personal.testcases.OpenAccountTest" time="0.568">
-    <system-out><![CDATA[12:50:41.002 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-12:50:41.002 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-12:50:41.235 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
-12:50:41.473 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
-12:50:41.520 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
-12:50:41.540 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
-12:50:41.560 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:41.560 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
+  <testcase name="openAccountMethod[Shiv Sahil, Rupee](2)" classname="com.personal.testcases.OpenAccountTest" time="0.604">
+    <system-out><![CDATA[14:15:47.477 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
+14:15:47.477 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+14:15:47.716 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+14:15:47.996 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+14:15:48.033 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+14:15:48.062 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+14:15:48.072 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:48.072 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="CustomerLoginMethod" classname="com.personal.testcases.CustomerLoginTest" time="0.97">
-    <system-out><![CDATA[12:50:41.589 [main] DEBUG com.personal.base.BaseClass - locator(Hometab_xpath) clicked successfully
-12:50:41.614 [main] INFO  com.personal.base.BaseClass - EXECUTION OF CustomerLoginMethod HAS BEGUN
-12:50:41.614 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
-12:50:41.733 [main] DEBUG com.personal.base.BaseClass - locator(CustomerLogin_css) clicked successfully
-12:50:41.980 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(YourNameDropDown_name)
-12:50:42.184 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
-12:50:42.196 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(Transaction_css) is present on page
-12:50:42.225 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
-12:50:42.462 [main] DEBUG com.personal.base.BaseClass - option(No Cust) selected successfully on dropdown(YourNameDropDown_name)
-12:50:42.555 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
-12:50:42.576 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
-12:50:42.577 [main] INFO  com.personal.base.BaseClass - CustomerLoginMethod HAS PASSED
+  <testcase name="CustomerLoginMethod" classname="com.personal.testcases.CustomerLoginTest" time="1.05">
+    <system-out><![CDATA[14:15:48.105 [main] DEBUG com.personal.base.BaseClass - locator(Hometab_xpath) clicked successfully
+14:15:48.135 [main] INFO  com.personal.base.BaseClass - Report generated with name Report_31_May_02_PM_15_.zip
+DEBUG: JavaMail version 1.4.7
+DEBUG: successfully loaded resource: /META-INF/javamail.default.providers
+DEBUG: Tables of loaded providers
+DEBUG: Providers Listed By Class Name: {com.sun.mail.smtp.SMTPSSLTransport=javax.mail.Provider[TRANSPORT,smtps,com.sun.mail.smtp.SMTPSSLTransport,Oracle], com.sun.mail.smtp.SMTPTransport=javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle], com.sun.mail.imap.IMAPSSLStore=javax.mail.Provider[STORE,imaps,com.sun.mail.imap.IMAPSSLStore,Oracle], com.sun.mail.pop3.POP3SSLStore=javax.mail.Provider[STORE,pop3s,com.sun.mail.pop3.POP3SSLStore,Oracle], com.sun.mail.imap.IMAPStore=javax.mail.Provider[STORE,imap,com.sun.mail.imap.IMAPStore,Oracle], com.sun.mail.pop3.POP3Store=javax.mail.Provider[STORE,pop3,com.sun.mail.pop3.POP3Store,Oracle]}
+DEBUG: Providers Listed By Protocol: {imaps=javax.mail.Provider[STORE,imaps,com.sun.mail.imap.IMAPSSLStore,Oracle], imap=javax.mail.Provider[STORE,imap,com.sun.mail.imap.IMAPStore,Oracle], smtps=javax.mail.Provider[TRANSPORT,smtps,com.sun.mail.smtp.SMTPSSLTransport,Oracle], pop3=javax.mail.Provider[STORE,pop3,com.sun.mail.pop3.POP3Store,Oracle], pop3s=javax.mail.Provider[STORE,pop3s,com.sun.mail.pop3.POP3SSLStore,Oracle], smtp=javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]}
+DEBUG: successfully loaded resource: /META-INF/javamail.default.address.map
+14:15:55.061 [main] DEBUG com.personal.base.BaseClass - Mail sent successully
+14:15:55.405 [main] INFO  com.personal.base.BaseClass - EXECUTION OF CustomerLoginMethod HAS BEGUN
+14:15:55.406 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+14:15:55.612 [main] DEBUG com.personal.base.BaseClass - locator(CustomerLogin_css) clicked successfully
+14:15:55.855 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(YourNameDropDown_name)
+14:15:56.078 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
+14:15:56.090 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(Transaction_css) is present on page
+14:15:56.123 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
+14:15:56.359 [main] DEBUG com.personal.base.BaseClass - option(No Cust) selected successfully on dropdown(YourNameDropDown_name)
+14:15:56.434 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
+14:15:56.456 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
+14:15:56.456 [main] INFO  com.personal.base.BaseClass - CustomerLoginMethod HAS PASSED
 ]]></system-out>
   </testcase>
 </testsuite>

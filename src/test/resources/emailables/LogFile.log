@@ -1,68 +1,72 @@
-12:50:37.767 [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
-12:50:37.787 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 5seconds
-12:50:37.793 [main] DEBUG com.personal.base.BaseClass - window maximized
-12:50:37.827 [main] INFO  com.personal.base.BaseClass - EXECUTION OF loginAsmanagerTest HAS BEGUN
-12:50:37.827 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
-12:50:38.830 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
-12:50:38.837 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
-12:50:38.845 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
-12:50:38.931 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
-12:50:38.937 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
-12:50:39.707 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-12:50:39.707 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-12:50:39.736 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
-12:50:39.761 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
-12:50:39.799 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
-12:50:39.847 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-12:50:39.853 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
-12:50:39.868 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:39.869 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-12:50:39.875 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-12:50:39.875 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-12:50:39.907 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
-12:50:39.928 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
-12:50:39.950 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
-12:50:39.978 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-12:50:39.983 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
-12:50:39.997 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:39.998 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-12:50:40.005 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-12:50:40.005 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-12:50:40.023 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
-12:50:40.043 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
-12:50:40.061 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
-12:50:40.085 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-12:50:40.092 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
-12:50:40.102 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:40.103 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-12:50:40.261 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
-12:50:40.291 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-12:50:40.291 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-12:50:40.536 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
-12:50:40.928 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
-12:50:40.965 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
-12:50:40.980 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
-12:50:40.996 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:40.997 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
-12:50:41.002 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-12:50:41.002 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-12:50:41.235 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
-12:50:41.473 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
-12:50:41.520 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
-12:50:41.540 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
-12:50:41.560 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-12:50:41.560 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
-12:50:41.589 [main] DEBUG com.personal.base.BaseClass - locator(Hometab_xpath) clicked successfully
-12:50:41.614 [main] INFO  com.personal.base.BaseClass - EXECUTION OF CustomerLoginMethod HAS BEGUN
-12:50:41.614 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
-12:50:41.733 [main] DEBUG com.personal.base.BaseClass - locator(CustomerLogin_css) clicked successfully
-12:50:41.980 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(YourNameDropDown_name)
-12:50:42.184 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
-12:50:42.196 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(Transaction_css) is present on page
-12:50:42.225 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
-12:50:42.462 [main] DEBUG com.personal.base.BaseClass - option(No Cust) selected successfully on dropdown(YourNameDropDown_name)
-12:50:42.555 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
-12:50:42.576 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
-12:50:42.577 [main] INFO  com.personal.base.BaseClass - CustomerLoginMethod HAS PASSED
-12:50:43.270 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
-12:50:43.270 [main] DEBUG com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+14:15:44.254 [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+14:15:44.274 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+14:15:44.281 [main] DEBUG com.personal.base.BaseClass - window maximized
+14:15:44.317 [main] INFO  com.personal.base.BaseClass - EXECUTION OF loginAsmanagerTest HAS BEGUN
+14:15:44.318 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+14:15:45.311 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+14:15:45.317 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+14:15:45.326 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
+14:15:45.430 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+14:15:45.432 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+14:15:46.215 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
+14:15:46.216 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+14:15:46.243 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+14:15:46.282 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+14:15:46.306 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+14:15:46.349 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+14:15:46.357 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+14:15:46.378 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:46.379 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+14:15:46.386 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
+14:15:46.386 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+14:15:46.413 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+14:15:46.435 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+14:15:46.459 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+14:15:46.488 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+14:15:46.493 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+14:15:46.508 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:46.508 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+14:15:46.516 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
+14:15:46.516 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+14:15:46.537 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+14:15:46.554 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+14:15:46.572 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+14:15:46.595 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+14:15:46.603 [main] INFO  com.personal.base.BaseClass - ASSERT :- text(Customer added successfully with customer id) is present in Alert Box
+14:15:46.612 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:46.612 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+14:15:46.776 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+14:15:46.806 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
+14:15:46.807 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+14:15:47.054 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+14:15:47.371 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+14:15:47.428 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+14:15:47.452 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+14:15:47.470 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:47.471 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
+14:15:47.477 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
+14:15:47.477 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+14:15:47.716 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+14:15:47.996 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+14:15:48.033 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+14:15:48.062 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+14:15:48.072 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+14:15:48.072 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
+14:15:48.105 [main] DEBUG com.personal.base.BaseClass - locator(Hometab_xpath) clicked successfully
+14:15:48.135 [main] INFO  com.personal.base.BaseClass - Report generated with name Report_31_May_02_PM_15_.zip
+14:15:55.061 [main] DEBUG com.personal.base.BaseClass - Mail sent successully
+14:15:55.405 [main] INFO  com.personal.base.BaseClass - EXECUTION OF CustomerLoginMethod HAS BEGUN
+14:15:55.406 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+14:15:55.612 [main] DEBUG com.personal.base.BaseClass - locator(CustomerLogin_css) clicked successfully
+14:15:55.855 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(YourNameDropDown_name)
+14:15:56.078 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
+14:15:56.090 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(Transaction_css) is present on page
+14:15:56.123 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
+14:15:56.359 [main] DEBUG com.personal.base.BaseClass - option(No Cust) selected successfully on dropdown(YourNameDropDown_name)
+14:15:56.434 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
+14:15:56.456 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
+14:15:56.456 [main] INFO  com.personal.base.BaseClass - CustomerLoginMethod HAS PASSED
+14:15:56.485 [main] INFO  com.personal.base.BaseClass - Report generated with name Report_31_May_02_PM_15_.zip
+14:16:03.377 [main] DEBUG com.personal.base.BaseClass - Mail sent successully
+14:16:04.391 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+14:16:04.391 [main] DEBUG com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
