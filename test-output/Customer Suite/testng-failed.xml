@@ -11,7 +11,7 @@
         <methods>
           <include name="HometTab"/>
           <include name="tearDown"/>
-          <include name="openAccountMethod" invocation-numbers="0 0 1 1"/>
+          <include name="openAccountMethod"/>
           <include name="setUp"/>
           <include name="openAccountTab"/>
         </methods>
@@ -20,10 +20,21 @@
         <methods>
           <include name="loginAsmanagerTest"/>
           <include name="tearDown"/>
-          <include name="addMultipleCustomerTest"/>
+          <include name="addMultipleCustomerTest" invocation-numbers="0 0 1 1 2 2"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.AddCustomerTest -->
     </classes>
   </test> <!-- Bank Manager Login(failed) -->
+  <test thread-count="5" name="Customer Login(failed)">
+    <classes>
+      <class name="com.personal.testcases.CustomerLoginTest">
+        <methods>
+          <include name="CustomerLoginMethod"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.personal.testcases.CustomerLoginTest -->
+    </classes>
+  </test> <!-- Customer Login(failed) -->
 </suite> <!-- Failed suite [Customer Suite] -->

@@ -12,6 +12,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -42,6 +43,8 @@ public class BaseClass {
 	public static ExtentReports extentVar = ExtentReporter.configuration();
 	public static MailUtility mail;
 	
+	
+	Locators loc;
 	
 	@BeforeSuite
 	public void setUp() throws IOException
@@ -127,262 +130,88 @@ public class BaseClass {
 	
 	
 //-----------------------------------------------------------------------------------------------------------------------	
-// -------------------------------------------REUSEABLE METHODS ---------------------------------------------------------
+// ----------------------REUSEABLE METHODS -----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------		
 	
 	public void click(String key)  // REUSEABLE CLICK METHOD
 	{
-		
-	try {	// can't use switch here. switch can't be used for contains
-		if(key.toLowerCase().contains("_css") )
-		{
-			driver.findElement(By.cssSelector(objRepo.getProperty(key))).click();
-
-		}
-		
-		
-		else if (key.toLowerCase().contains("_xpath"))
-		{
-			driver.findElement(By.xpath(objRepo.getProperty(key))).click();			
-		}
-		else if (key.toLowerCase().contains("_id"))
-		{
-			driver.findElement(By.id(objRepo.getProperty(key))).click();
-		}
-		else if (key.toLowerCase().contains("_link"))
-		{
-			driver.findElement(By.linkText(objRepo.getProperty(key))).click();
-		}
-		
-		else if (key.toLowerCase().contains("_partiallink"))
-		{
-			driver.findElement(By.partialLinkText(objRepo.getProperty(key))).click();
-		}
-		else if (key.toLowerCase().contains("_name"))
-		{
-			driver.findElement(By.name(objRepo.getProperty(key))).click();
-		}
-		else if (key.toLowerCase().contains("_class"))
-		{
-			driver.findElement(By.className(objRepo.getProperty(key))).click();
-		}
-		else
-		{
-			logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-			Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-		}
-		
-		// **** DON'T WRITE driver.getTitle(), in case there is a alert box. you will get error on driver.getTitle()
-		
-		logger.debug("locator(" +key+ ") clicked successfully");
-		test.log(Status.INFO, "locator(" +key+ ") clicked successfully");
-		
-		}
-	 catch (NoSuchElementException e) { // NoSuchElementException is apt for here
-			
-		 
-			 logger.error("locator(" +key+ ") can't be clicked as it's NOT present on page."
-			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
-			 
-			 Assert.fail("locator(" +key+ ") can't be clicked as it's NOT present on page."
-			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
-			}
-		 
-
+		loc= new Locators();
+		loc.locator(key, "click", null).click();
+		loc.passMsg(key, "click", null);
 	}
 
 	
 	public void type(String key, String data)  // REUSEABLE TYPE METHOD
 	{
 		
-	try {
-		// can't use switch here. switch can't be used for contains
-		if(key.toLowerCase().contains("_css"))
-		{
-			
-			driver.findElement(By.cssSelector(objRepo.getProperty(key))).sendKeys(data);
-			
-			
-		}
-		else if (key.toLowerCase().contains("_xpath"))
-		{
-			driver.findElement(By.xpath(objRepo.getProperty(key))).sendKeys(data);
-			
-		}
-		else if (key.toLowerCase().contains("_id"))
-		{
-			driver.findElement(By.id(objRepo.getProperty(key))).sendKeys(data);
-			
-		}
-		else if (key.toLowerCase().contains("_link"))
-		{
-			driver.findElement(By.linkText(objRepo.getProperty(key))).sendKeys(data);
-			
-		}
 		
-		else if (key.toLowerCase().contains("_partiallink"))
-		{
-			driver.findElement(By.partialLinkText(objRepo.getProperty(key))).sendKeys(data);
-			
-		}
-		else if (key.toLowerCase().contains("_name"))
-		{
-			driver.findElement(By.name(objRepo.getProperty(key))).sendKeys(data);
-			
-		}
-		else if (key.toLowerCase().contains("_class"))
-		{
-			driver.findElement(By.className(objRepo.getProperty(key))).sendKeys(data);
-			
-		}
-		else
-		{
-			logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-			Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-		}
-		
-		logger.debug("locator(" +key+ ") filled with value '"+ data+"' successfully");
-		test.log(Status.INFO, "locator(" +key+ ") filled with value '"+ data+"' successfully");
-
-		}
-	catch (NoSuchElementException e) { // NoSuchElementException is apt for here
-		
-		 
-		 logger.error("locator(" +key+ ") can't filled with value '"+ data+"' as locator is NOT present on page."
-		 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
-		 Assert.fail("locator(" +key+ ") can't filled with value '"+ data+"' as locator is NOT present on page."
-		 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
-		}
+		loc= new Locators();
+		loc.locator(key, "type", data).sendKeys(data);
+		loc.passMsg(key, "type", data);
+	
 		
 	}
 
 	
-	public void  alert(String action)  // RESUABLE ACTION METHOD
+	public void  alert(String actionOnAlert)  // RESUABLE ALERT METHOD
 	{
+		loc= new Locators();
 		try {
 			Alert al= driver.switchTo().alert();
 			
-			if (action.toLowerCase().contains("accept")) {
+			if (actionOnAlert.toLowerCase().contains("accept")) {
 				al.accept();
 				
 			}
-			else if (action.toLowerCase().contains("dismiss")) {
+			else if (actionOnAlert.toLowerCase().contains("dismiss")) {
 				al.dismiss();
 				
 			}
 			
-			else if(action.toLowerCase().contains("getText"))
+			else if(actionOnAlert.toLowerCase().contains("getText"))
 			System.out.println(al.getText());
 			
 			else
 			{
 				al.accept();    //if I don't give this I get unhandleable exception in next run of dataprovider methods
-				logger.error(" user provided wrong action ["+action+"] for alert(String action)."
+				logger.error(" user provided wrong action ["+actionOnAlert+"] for alert(String action)."
 						+ "\n Following conditions are acceptable :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
 				
-				Assert.fail(" user provided wrong action["+action+"] for alert(String action)."
+				Assert.fail(" user provided wrong action["+actionOnAlert+"] for alert(String action)."
 						+ "\n Following conditions are acceptable :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
 			}
-			
-		logger.debug(" Action("+ action +") successfully taken on Alert, present on page");
-		test.log(Status.INFO, " Action("+ action +") successfully taken on alert, present on page ");
-			
-		
+				
+			loc.passMsg(null, "alert", actionOnAlert);
 		}
 			catch (NoAlertPresentException e) {
-			
-
-				logger.error(" Action("+ action +") can't be successfully taken on Alert, as Alert is NOT present on page."
-						+ "\n \n \n Error msg is :-   "+ e.getMessage());
-				
-				Assert.fail(" Action("+ action +") can't be successfully taken on Alert, as Alert is NOT present on page."
-						+ "\n \n \n Error msg is :-   "+ e.getMessage());
-						
+				loc.failmsg(null, "alert", actionOnAlert,e.toString());	
 			}
 		}
 	
 	
-	public void staticDropDown(String key, String selectOption)  // REUSEABLE CLICK METHOD
+	public void staticDropDown(String key, String selectOption)  // REUSEABLE STATIC DROPDOWN METHOD
 	{
 		
-		try {
-			
-			Select s;
-			
-			// can't use switch here. switch can't be used for contains
-			if(key.toLowerCase().contains("_css") )
-			{
-				s = new Select(driver.findElement(By.cssSelector(objRepo.getProperty(key))));
-				s.selectByVisibleText(selectOption);
-	
-			}
-	
-			else if (key.toLowerCase().contains("_xpath"))
-			{
-				s = new Select(driver.findElement(By.xpath(objRepo.getProperty(key))));
-				s.selectByVisibleText(selectOption);	
-			}
-			else if (key.toLowerCase().contains("_id"))
-			{
-				s = new Select(driver.findElement(By.id(objRepo.getProperty(key))));
-				s.selectByVisibleText(selectOption);
-			}
-			else if (key.toLowerCase().contains("_link"))
-			{
-				s = new Select(driver.findElement(By.linkText(objRepo.getProperty(key))));
-				s.selectByVisibleText(selectOption);
-			}
-			
-			else if (key.toLowerCase().contains("_partiallink"))
-			{
-				s = new Select(driver.findElement(By.partialLinkText(objRepo.getProperty(key))));
-				s.selectByVisibleText(selectOption);
-			}
-			else if (key.toLowerCase().contains("_name"))
-			{
-				s = new Select(driver.findElement(By.name(objRepo.getProperty(key))));
-				s.selectByVisibleText(selectOption);
-			}
-			else if (key.toLowerCase().contains("_class"))
-			{
-				s = new Select(driver.findElement(By.className(objRepo.getProperty(key))));
-				s.selectByVisibleText(selectOption);
-			}
-			
-			else
-			{
-				logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-				Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-			}
-			
-			// **** DON'T WRITE driver.getTitle(), in case there is a alert box. you will get error on driver.getTitle()
-			
-			logger.debug("option(" +selectOption+ ") selected successfully on dropdown("+key+")");
-			test.log(Status.INFO, "option(" +selectOption+ ") selected successfully on dropdown("+key+")");
-			
 		
-		
-		} catch (NoSuchElementException e) {
-			logger.error("option(" +selectOption+ ") is NOT selected on dropdown("+key+"). Either dropdown("+key+") or option(" +selectOption+ ") is NOT present on page."
-					+ "\n \n \n Error msg is :-   "+ e.getMessage());
-			
-			Assert.fail("option(" +selectOption+ ") is NOT selected on dropdown("+key+"). Either dropdown("+key+") or option(" +selectOption+ ") is NOT present on page."
-					+ "\n \n \n Error msg is :-   "+ e.getMessage());
-			
-		}
+		loc= new Locators();
+		Select s = new Select(loc.locator(key, "staticDropDown", selectOption));
+		loc.checkDropDown(s, selectOption, key);		// this checks if that there is a dropDown name 
+		s.selectByVisibleText(selectOption);
+
+		loc.passMsg(key, "staticDropDown", selectOption);
 		
 	}
 	
 	
 	
 //-----------------------------------------------------------------------------------------------------------------------
-// ----------------------------------------EXPLCIT WAIT REUSEABLE METHODS-------------------------------------------------	
+// ---------------------EXPLCIT WAIT REUSEABLE METHODS-------------------------------------------------------------------	
 //-----------------------------------------------------------------------------------------------------------------------	
 	
 			
 	
 	
-	public void click(String key, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT CLICK METHOD
+	public void click(String key, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT, CLICK METHOD
 	{
 		
 		try {
@@ -485,7 +314,7 @@ public class BaseClass {
 	}
 		
 	
-	public void type(String key, String data, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT TYPE METHOD
+	public void type(String key, String data, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT, TYPE METHOD
 	{
 		
 		try {
@@ -597,7 +426,7 @@ public class BaseClass {
 	}
 
 	
-	public void alert(String action, int waitPeriod)  // REUSEABLE EXPLICIT WAIT ALERT METHOD
+	public void alert(String action, int waitPeriod)  // REUSEABLE EXPLICIT WAIT, ALERT METHOD
 	{
 		try {
 		
@@ -656,7 +485,7 @@ public class BaseClass {
 	
 
 //-------------------------------------------------------------------------------------------------------------------------
-// -----------------------------------VERIFICATION/HARD ASSERT IMPLEMENTATION----------------------------------------------
+// ----------------------VERIFICATION/HARD ASSERT IMPLEMENTATION----------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------
 
 	
@@ -839,7 +668,7 @@ public void doesAlertContainsText(String message, String assertType) { // REUSEA
 			else if(!(driver.switchTo().alert().getText().contains(message)) && assertType.toLowerCase().contains("softassert")) 
 			{
 					
-				logger.error("ASSERT :- text(" +message+ ") is NOT present in Alert Box .\n Message in AlertBox is "+driver.switchTo().alert().getText());
+				logger.error("VERIFY :- text(" +message+ ") is NOT present in Alert Box .\n Message in AlertBox is "+driver.switchTo().alert().getText());
 				test.log(Status.ERROR,"ASSERT :- text(" +message+ ") is NOT present in Alert Box .\n Message in AlertBox is "+driver.switchTo().alert().getText());
 			}
 			

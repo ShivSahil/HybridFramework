@@ -19,7 +19,7 @@ public class OpenAccountTest extends BaseClass{
 	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", description = "BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account", dependsOnGroups={"openAccountMethodPrerequisites"})
 	public void openAccountMethod(String name, String currency) throws InterruptedException
 	{
-		staticDropDown("CustomerDropDown_id", name);  
+		staticDropDown("CustomerDropDown_id",name );  //name
 		staticDropDown("CurrencyDropDown_id", currency);
 		click("Submit_css");	
 		doesAlertContainsText("Account created successfully with account Number :","softAssert");
