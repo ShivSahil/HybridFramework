@@ -14,19 +14,22 @@ public class AddCustomerTest extends BaseClass {
 	public void loginAsmanagerTest() throws InterruptedException {
 
 		
-		click("BankMangLogin_css", 10, "visibilityOfElementLocated");    
-		checkPageTitle("Protractor practice website - Banking App","hardAssert");  
+		click("BankMangLogin_css", 10, "visibilityOfElementLocated");   
+		checkPageTitle("111111111111","softAssert");  //Protractor practice website - Banking App
 
-		isElementPresent("AddCustomerButton_xpath", "softAssert");  
+		isElementPresent("AddCustomerButton_xpath", "hardAssert");  
 		click("AddCustomerButton_xpath");  
 
 	}
 	
 	
 	
-	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", dependsOnMethods = "loginAsmanagerTest", description = "BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers",groups={"openAccountMethodPrerequisites"})
+	@Test(dataProviderClass = ExcelRead.class, dataProvider = "excelData", dependsOnMethods = { "loginAsmanagerTest" }, description = "BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers",groups={"openAccountMethodPrerequisites"})
 	public void addMultipleCustomerTest(String firstName, String lastName, String pincode) throws InterruptedException {
-		type("FirstName_css", firstName);  
+		
+		
+		
+		type("FirstName_css", firstName,4,"elementToBeClickable");  
 		type("LastName_css", lastName);		
 		type("PinCode_css", pincode);
 		click("AddCustomer_xpath");

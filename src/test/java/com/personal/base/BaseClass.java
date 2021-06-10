@@ -9,10 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -136,8 +133,8 @@ public class BaseClass {
 	public void click(String key)  // REUSEABLE CLICK METHOD
 	{
 		loc= new Locators();
-		loc.locator(key, "click", null).click();
-		loc.passMsg(key, "click", null);
+		driver.findElement(loc.locator(key, "click", null)).click();
+		loc.passMsg(key, "click", null, null, 0);
 	}
 
 	
@@ -146,12 +143,27 @@ public class BaseClass {
 		
 		
 		loc= new Locators();
-		loc.locator(key, "type", data).sendKeys(data);
-		loc.passMsg(key, "type", data);
+		driver.findElement(loc.locator(key, "type", data)).sendKeys(data);
+		loc.passMsg(key, "type", data, null, 0);
 	
 		
 	}
 
+	
+	public void staticDropDown(String key, String selectOption)  // REUSEABLE STATIC DROPDOWN METHOD
+	{
+		
+		
+		loc= new Locators();
+		
+		Select s = new Select(driver.findElement(loc.locator(key, "staticDropDown", selectOption)));
+		loc.checkDropDown(s, selectOption, key);		// I can't place this checks, in any other method. so it's stand alone
+		s.selectByVisibleText(selectOption);
+
+		loc.passMsg(key, "staticDropDown", selectOption, null, 0);
+		
+	}
+	
 	
 	public void  alert(String actionOnAlert)  // RESUABLE ALERT METHOD
 	{
@@ -181,28 +193,20 @@ public class BaseClass {
 						+ "\n Following conditions are acceptable :- \n \t 1.accept \n \t 2.dismiss \n \t 3.getText");
 			}
 				
-			loc.passMsg(null, "alert", actionOnAlert);
+			
+			
+			loc.passMsg(null, "alert", actionOnAlert,  null, 0);
+			
+			
 		}
 			catch (NoAlertPresentException e) {
+				
 				loc.failmsg(null, "alert", actionOnAlert,e.toString());	
+				
 			}
 		}
 	
-	
-	public void staticDropDown(String key, String selectOption)  // REUSEABLE STATIC DROPDOWN METHOD
-	{
-		
-		
-		loc= new Locators();
-		Select s = new Select(loc.locator(key, "staticDropDown", selectOption));
-		loc.checkDropDown(s, selectOption, key);		// this checks if that there is a dropDown name 
-		s.selectByVisibleText(selectOption);
 
-		loc.passMsg(key, "staticDropDown", selectOption);
-		
-	}
-	
-	
 	
 //-----------------------------------------------------------------------------------------------------------------------
 // ---------------------EXPLCIT WAIT REUSEABLE METHODS-------------------------------------------------------------------	
@@ -214,215 +218,25 @@ public class BaseClass {
 	public void click(String key, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT, CLICK METHOD
 	{
 		
-		try {
-		
-					WebDriverWait d = new WebDriverWait(driver, waitPeriod);
-					By byVar=null;
-					
-					
-					if(key.toLowerCase().contains("_css"))
-					{
-						
-						byVar=By.cssSelector(objRepo.getProperty(key));
-						
-					}
-					else if (key.toLowerCase().contains("_xpath"))
-					{
-						byVar=By.xpath(objRepo.getProperty(key));
-					}
-					else if (key.toLowerCase().contains("_id"))
-					{
-						byVar=By.id(objRepo.getProperty(key));
-					}
-					else if (key.toLowerCase().contains("_link"))
-					{
-						byVar=By.linkText(objRepo.getProperty(key));
-					}
-					
-					else if (key.toLowerCase().contains("_partiallink"))
-					{
-						byVar=By.partialLinkText(objRepo.getProperty(key));
-					}
-					else if (key.toLowerCase().contains("_name"))
-					{
-						byVar=By.name(objRepo.getProperty(key));
-					}
-					else if (key.toLowerCase().contains("_class"))
-					{
-						byVar=By.className(objRepo.getProperty(key));
-					}
-					
-					else
-					{
-						logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-						Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-					}
+		loc= new Locators();
+		By byEle=loc.locator(key, "click", null);
+		loc.conditionName("click", null, nameOfCondition,  waitPeriod, byEle, key).click();
+		loc.passMsg(key, "click", null, nameOfCondition, waitPeriod);
 		
 		
-		switch (nameOfCondition) {
 		
-			case "elementToBeClickable": {
-				 d.until(ExpectedConditions.elementToBeClickable(byVar)).click();
-				logger.debug("elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-				test.log(Status.INFO, "elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-				break;
-				
-			}
-			
-			case "visibilityOfElementLocated": {
-				
-				
-				d.until(ExpectedConditions.visibilityOfElementLocated(byVar)).click();		
-				logger.debug("visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-				test.log(Status.INFO, "visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-				
-				break;
-			}
-			
-			case "presenceOfElementLocated": {
-				 d.until(ExpectedConditions.presenceOfElementLocated(byVar)).click();
-				 
-				logger.debug("presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-				test.log(Status.INFO, "presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") clicked successfully");
-				
-				break;
-			}
-			
-			
-			default:{
-				logger.error(" user provided wrong condition ["+nameOfCondition+"] for click(String key, int waitPeriod, String nameOfCondition)."
-						+ "\n Following conditions are acceptable :- \n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
-				
-				Assert.fail(" user provided wrong condition ["+nameOfCondition+"] for click(String key, int waitPeriod, String nameOfCondition).\n Following conditions are acceptable :- "
-						+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
-				
-				break;}
-
-		}
-		
-		
-		}
-		catch (TimeoutException e) { // NoSuchElementException is apt for here
-			
-			 
-			 logger.error("locator(" +key+ ") can't be clicked as locator is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon("+nameOfCondition+") timed out "
-			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
-			 
-			 Assert.fail("locator(" +key+ ") can't be clicked as locator is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon("+nameOfCondition+") timed out "
-				 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
-			}
 	}
 		
 	
 	public void type(String key, String data, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT, TYPE METHOD
 	{
 		
-		try {
-				WebDriverWait d = new WebDriverWait(driver, waitPeriod);
-				By byVar=null;
-				
-				
-				if(key.toLowerCase().contains("_css"))
-				{
-					
-					byVar=By.cssSelector(objRepo.getProperty(key));
-					
-				}
-				else if (key.toLowerCase().contains("_xpath"))
-				{
-					byVar=By.xpath(objRepo.getProperty(key));
-				}
-				else if (key.toLowerCase().contains("_id"))
-				{
-					byVar=By.id(objRepo.getProperty(key));
-				}
-				else if (key.toLowerCase().contains("_link"))
-				{
-					byVar=By.linkText(objRepo.getProperty(key));
-				}
-				
-				else if (key.toLowerCase().contains("_partiallink"))
-				{
-					byVar=By.partialLinkText(objRepo.getProperty(key));
-				}
-				else if (key.toLowerCase().contains("_name"))
-				{
-					byVar=By.name(objRepo.getProperty(key));
-				}
-				else if (key.toLowerCase().contains("_class"))
-				{
-					byVar=By.className(objRepo.getProperty(key));
-				}
-				
-				else
-				{
-					logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-					Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-				}	
-			
-			
-			
-			
-			
-			switch (nameOfCondition) {
-			
-			case "elementToBeClickable": {
-				 d.until(ExpectedConditions.elementToBeClickable(byVar)).sendKeys(data);
-				
-				
-				logger.debug("elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-				test.log(Status.INFO,"elementToBeClickable timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-				
-				break;
-				
-			}
-			
-			case "visibilityOfElementLocated": {
-				
-				
-				d.until(ExpectedConditions.visibilityOfElementLocated(byVar)).sendKeys(data);
-				
-				
-				logger.debug("visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-				test.log(Status.INFO,"visibilityOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-				
-				break;
-			}
-			
-			case "presenceOfElementLocated": {
-				 d.until(ExpectedConditions.presenceOfElementLocated(byVar)).sendKeys(data);
-	
-				 logger.debug("presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-				 test.log(Status.INFO,"presenceOfElementLocated timeout for locator(" +key+ ") set to "+ waitPeriod+" seconds. locator(" +key+ ") filled with value '"+ data+"' successfully");
-					
-				break;
-			}
-			
-			
-			default:{
-				logger.error(" user provided wrong condition ["+nameOfCondition+"] for type(String key, String data, int waitPeriod, String nameOfCondition).\n Following conditions are acceptable :- "
-						+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
-				
-				Assert.fail(" user provided wrong condition ["+nameOfCondition+"] for type(String key, String data, int waitPeriod, String nameOfCondition).\n Following conditions are acceptable :- "
-						+ "\n \t 1.elementToBeClickable \n \t 2.presenceOfElementLocated \n \t 3.visibilityOfElementLocated");
-				break;}
-				}
 		
-		
-		}
-		
-		
-		catch (TimeoutException e) { // NoSuchElementException is apt for here
-			
-			 
-			logger.error("locator(" +key+ ") can't be filled with data("+data+") as locator is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon("+nameOfCondition+") timed out "
-			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
-			 
-			Assert.fail("locator(" +key+ ") can't be filled with data("+data+") as locator is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon("+nameOfCondition+") timed out "
-			 		+ "\n \n \n Error msg is :-   "+ e.getMessage());
-			 
-			}
-		
+		loc= new Locators();
+		By byEle=loc.locator(key, "type", data);
+		loc.conditionName("type", data, nameOfCondition,  waitPeriod, byEle, key).sendKeys(data);
+		loc.passMsg(key, "type", data, nameOfCondition, waitPeriod);
+
 	}
 
 	
@@ -509,8 +323,8 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 	
 	if (driver.getTitle().equals(expectedtitle) && assertType.toLowerCase().contains("hardassert")) {
 
-		logger.info( "ASSERT :- '"+driver.getTitle()+ "' is correct title");
-		test.log(Status.PASS,"ASSERT :- '"+driver.getTitle()+ "' is correct title");
+		logger.info( "ASSERT :- '"+expectedtitle+ "' is correct title");
+		test.log(Status.PASS,"ASSERT :- '"+expectedtitle+ "' is correct title");
 	}
 	else if (!(driver.getTitle().equals(expectedtitle)) && assertType.toLowerCase().contains("hardassert"))
 	{
@@ -518,15 +332,15 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 		//**** no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
 		
 		
-		logger.error( "ASSERT :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
-		Assert.fail("ASSERT :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
+		logger.error( "ASSERT :- '"+expectedtitle+ "' is INCORRECT TITLE. Actual Title is :- "+driver.getTitle());
+		Assert.fail("ASSERT :- '"+expectedtitle+ "' is INCORRECT TITLE. Actual Title is :- "+driver.getTitle());
 		
 	}
 	
 	else if (driver.getTitle().equals(expectedtitle) && assertType.toLowerCase().contains("softassert")) {
 
-		logger.info( "VERIFY :- '"+driver.getTitle()+ "' is correct title");
-		test.log(Status.INFO,"VERIFY :- '"+driver.getTitle()+ "' is correct title");
+		logger.info( "VERIFY :- '"+expectedtitle+ "' is correct title");
+		test.log(Status.INFO,"VERIFY :- '"+expectedtitle+ "' is correct title");
 		
 	}
 	else if (!(driver.getTitle().equals(expectedtitle)) && assertType.toLowerCase().contains("softassert"))
@@ -535,8 +349,8 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 		//**** no need to write test.log(Status.FAIL, "xyzxyzxyz") as Assert.fail + onTestFailure doing same
 		
 		
-		logger.error( "VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
-		test.log(Status.ERROR,"VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE");
+		logger.error( "VERIFY :- '"+expectedtitle+ "' is INCORRECT TITLE. Actual Title is :- "+driver.getTitle());
+		test.log(Status.ERROR,"VERIFY :- '"+expectedtitle+ "' is INCORRECT TITLE. Actual Title is :- "+driver.getTitle());
 
 	}
 	
@@ -552,93 +366,16 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 public void isElementPresent(String key, String assertType) { // REUSEABLE ELEMENT AVAILABILITY METHOD
 	
 	
-	try {
-		
-		 
-			if(key.toLowerCase().contains("_css"))
-			{	
-				driver.findElement(By.cssSelector(objRepo.getProperty(key)));	// no isDisplayed or isSelected etc etc
-			}
-			else if (key.toLowerCase().contains("_xpath"))
-			{ 
-				driver.findElement(By.xpath(objRepo.getProperty(key)));	
-				
-			}
-			else if (key.toLowerCase().contains("_id"))
-			{
-				driver.findElement(By.id(objRepo.getProperty(key)));	
-			}
-			else if (key.toLowerCase().contains("_link"))
-			{
-				driver.findElement(By.linkText(objRepo.getProperty(key)));	
-			}
-			
-			else if (key.toLowerCase().contains("_partiallink"))
-			{
-			  driver.findElement(By.partialLinkText(objRepo.getProperty(key)));	
-			}
-			else if (key.toLowerCase().contains("_name"))
-			{
-			driver.findElement(By.name(objRepo.getProperty(key)));	
-			}
-			else if (key.toLowerCase().contains("_class"))
-			{
-				driver.findElement(By.className(objRepo.getProperty(key)));
-			}
-			
-			else
-			{
-				logger.error("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-				Assert.fail("locator(" +key+ ") does NOT have postfix as name, class, link, partiallink, id, css or xpath");
-			}
-
-			
-			
-			
-			if(assertType.toLowerCase().contains("hardassert"))
-			{	
-				logger.info("ASSERT :- locator(" +key+ ") is present on page");
-				test.log(Status.PASS, "ASSERT :- locator(" +key+ ") is present on page");
-				
-			}
-			else if(assertType.toLowerCase().contains("softassert"))
-			 {
-				
-				logger.info("VERIFY :- locator(" +key+ ") is present on page");
-				test.log(Status.INFO, "VERIFY :- locator(" +key+ ") is present on page");
-			 }
-			
-			else
-			{
-				logger.error("In isElementPresent(String key, String assertType); value of inputed assertType ["+assertType+"] is neither 'hardassert' or 'softassert'");
-				Assert.fail("In isElementPresent(String key, String assertType); value of inputed assertType ["+assertType+"] is neither 'hardassert' or 'softassert'");
-			}
+	loc = new Locators();
+	By bol=loc.locator(key, assertType.toLowerCase(),null);
+	
+	if(bol!=null) {
+	loc.passMsg(key, assertType.toLowerCase(), null, null, 0);  	}
 	
 			
 	}
-	 catch (NoSuchElementException e) { // NoSuchElementException is apt for here
-		
-		
-		
-		 if(assertType.toLowerCase().contains("hardassert"))
-			{
-			 
-		
-			 logger.error("ASSERT :- locator(" +key+ ") is NOT present on page.\n \n \n Error msg is :-   "+ e.getMessage());
-			 Assert.fail("ASSERT :- locator(" +key+ ") is NOT present on page.\n \n \n Error msg is :-   "+ e.getMessage());
-			}
-		 
-		 else if(assertType.toLowerCase().contains("softassert"))
-		 {
-			 logger.error("VERIFY :- locator(" +key+ ") is NOT present on page.\n \n \n Error msg is :-   "+ e.getMessage());
-			 test.log(Status.ERROR,"VERIFY :- locator(" +key+ ") is NOT present on page.\n \n \n Error msg is :-   "+ e.getMessage());
-			 
-		 }
-		 
-		 
-	 }
+	 
 	
-}
 
 public void doesAlertContainsText(String message, String assertType) { // REUSEABLE ALERT TEXT AVAILABILITY METHOD
 	

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Bank Manager Login</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/3/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 08 17:02:15 IST 2021</td>
+<td>Started on:</td><td>Thu Jun 10 20:15:47 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7326 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4365 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,46 +75,48 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers<br>Parameters: Shiv, Sahil, 160014</td>
-<td><div><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;Shiv&apos; as locator is NOT present on page.
+<td title='com.personal.testcases.OpenAccountTest.openAccountMethod()'><b>openAccountMethod</b><br>Test class: com.personal.testcases.OpenAccountTest<br>Test method: BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account<br>Parameters: Sahil Guleri, Pound</td>
+<td><div><pre>java.lang.AssertionError: locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c35b7c4e70ef2fc1feba7b9db9d58bfa
+*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111}
+	at com.personal.base.Locators.failmsg(Locators.java:251)
+	at com.personal.base.Locators.locator(Locators.java:77)
+	at com.personal.base.BaseClass.click(BaseClass.java:136)
+	at com.personal.testcases.OpenAccountTest.openAccountMethod(OpenAccountTest.java:18)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace871989809", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace871989809'><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;Shiv&apos; as locator is NOT present on page.
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1066561773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1066561773'><pre>java.lang.AssertionError: locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c35b7c4e70ef2fc1feba7b9db9d58bfa
+*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111}
 	at org.testng.Assert.fail(Assert.java:97)
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
+	at com.personal.base.Locators.failmsg(Locators.java:251)
+	at com.personal.base.Locators.locator(Locators.java:77)
+	at com.personal.base.BaseClass.click(BaseClass.java:136)
+	at com.personal.testcases.OpenAccountTest.openAccountMethod(OpenAccountTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -137,48 +139,50 @@ Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.personal.testcases.AddCustomerTest@54a7079e</td></tr>
+<td>com.personal.testcases.OpenAccountTest@61001b64</td></tr>
 <tr>
-<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers<br>Parameters: Sahil, Guleri, 3967</td>
-<td><div><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;Sahil&apos; as locator is NOT present on page.
+<td title='com.personal.testcases.OpenAccountTest.openAccountMethod()'><b>openAccountMethod</b><br>Test class: com.personal.testcases.OpenAccountTest<br>Test method: BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account<br>Parameters: Shiv Sahil, Rupee</td>
+<td><div><pre>java.lang.AssertionError: locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c35b7c4e70ef2fc1feba7b9db9d58bfa
+*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111}
+	at com.personal.base.Locators.failmsg(Locators.java:251)
+	at com.personal.base.Locators.locator(Locators.java:77)
+	at com.personal.base.BaseClass.click(BaseClass.java:136)
+	at com.personal.testcases.OpenAccountTest.openAccountMethod(OpenAccountTest.java:18)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131096911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace131096911'><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;Sahil&apos; as locator is NOT present on page.
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1403649277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1403649277'><pre>java.lang.AssertionError: locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c35b7c4e70ef2fc1feba7b9db9d58bfa
+*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111}
 	at org.testng.Assert.fail(Assert.java:97)
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
+	at com.personal.base.Locators.failmsg(Locators.java:251)
+	at com.personal.base.Locators.locator(Locators.java:77)
+	at com.personal.base.BaseClass.click(BaseClass.java:136)
+	at com.personal.testcases.OpenAccountTest.openAccountMethod(OpenAccountTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -201,71 +205,7 @@ Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.personal.testcases.AddCustomerTest@54a7079e</td></tr>
-<tr>
-<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers<br>Parameters: No, Cust, 1332</td>
-<td><div><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;No&apos; as locator is NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1070740013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1070740013'><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;No&apos; as locator is NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at org.testng.Assert.fail(Assert.java:97)
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.personal.testcases.AddCustomerTest@54a7079e</td></tr>
+<td>com.personal.testcases.OpenAccountTest@61001b64</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -275,10 +215,25 @@ Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers<br>Parameters: Shiv, Sahil, 160014</td>
+<td></td>
+<td>0</td>
+<td>com.personal.testcases.AddCustomerTest@201a4587</td></tr>
+<tr>
+<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers<br>Parameters: Sahil, Guleri, 3967</td>
+<td></td>
+<td>0</td>
+<td>com.personal.testcases.AddCustomerTest@201a4587</td></tr>
+<tr>
+<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers<br>Parameters: No, Cust, 1332</td>
+<td></td>
+<td>0</td>
+<td>com.personal.testcases.AddCustomerTest@201a4587</td></tr>
+<tr>
 <td title='com.personal.testcases.AddCustomerTest.loginAsmanagerTest()'><b>loginAsmanagerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen</td>
 <td></td>
-<td>1</td>
-<td>com.personal.testcases.AddCustomerTest@54a7079e</td></tr>
+<td>0</td>
+<td>com.personal.testcases.AddCustomerTest@201a4587</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -288,203 +243,11 @@ Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers<br>Parameters: Shiv, Sahil, 160014</td>
-<td><div><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;Shiv&apos; as locator is NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
+<td title='com.personal.testcases.CustomerLoginTest.customerLoginMethod()'><b>customerLoginMethod</b><br>Test class: com.personal.testcases.CustomerLoginTest<br>Test method: CUSTOMER LOGIN - login as customer</td>
+<td><div><pre>java.lang.Throwable: Method CustomerLoginTest.customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@4310d43] depends on not successfully finished methods in group &quot;CustomerLoginMethodPrerequisites&quot;
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1497983329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1497983329'><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;Shiv&apos; as locator is NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at org.testng.Assert.fail(Assert.java:97)
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.personal.testcases.AddCustomerTest@54a7079e</td></tr>
-<tr>
-<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers<br>Parameters: Sahil, Guleri, 3967</td>
-<td><div><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;Sahil&apos; as locator is NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace596299019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace596299019'><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;Sahil&apos; as locator is NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at org.testng.Assert.fail(Assert.java:97)
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.personal.testcases.AddCustomerTest@54a7079e</td></tr>
-<tr>
-<td title='com.personal.testcases.AddCustomerTest.addMultipleCustomerTest()'><b>addMultipleCustomerTest</b><br>Test class: com.personal.testcases.AddCustomerTest<br>Test method: BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers<br>Parameters: No, Cust, 1332</td>
-<td><div><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;No&apos; as locator is NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace313149846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace313149846'><pre>java.lang.AssertionError: locator(FirstName_css) can&apos;t filled with value &apos;No&apos; as locator is NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given css selector expression &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot; is invalid: InvalidSelectorError: Document.querySelector: &apos;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&apos; is not a valid selector: &quot;input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111&quot;
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7700, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
-*** Element info: {Using=css selector, value=input[placeholder=&apos;First Name&apos;]11111111111111111111111111111111}
-	at org.testng.Assert.fail(Assert.java:97)
-	at com.personal.base.Locators.failmsg(Locators.java:138)
-	at com.personal.base.Locators.locator(Locators.java:66)
-	at com.personal.base.BaseClass.type(BaseClass.java:149)
-	at com.personal.testcases.AddCustomerTest.addMultipleCustomerTest(AddCustomerTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.personal.testcases.AddCustomerTest@54a7079e</td></tr>
-<tr>
-<td title='com.personal.testcases.OpenAccountTest.openAccountMethod()'><b>openAccountMethod</b><br>Test class: com.personal.testcases.OpenAccountTest<br>Test method: BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account</td>
-<td><div><pre>java.lang.Throwable: Method OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@26e356f0] depends on not successfully finished methods in group &quot;openAccountMethodPrerequisites&quot;
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2068499906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2068499906'><pre>java.lang.Throwable: Method OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@26e356f0] depends on not successfully finished methods in group &quot;openAccountMethodPrerequisites&quot;
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace337039263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace337039263'><pre>java.lang.Throwable: Method CustomerLoginTest.customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@4310d43] depends on not successfully finished methods in group &quot;CustomerLoginMethodPrerequisites&quot;
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -506,7 +269,7 @@ Session ID: 99f0c30d-70b0-45a7-8aab-3db32a616f61
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.personal.testcases.OpenAccountTest@26e356f0</td></tr>
+<td>com.personal.testcases.CustomerLoginTest@4310d43</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,6 +1,11 @@
 package com.personal.listeners;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.AddressException;
@@ -17,33 +22,40 @@ import com.personal.utilities.ZipUtility;
 
 public class ItestLis extends BaseClass implements ITestListener{
 	
+
+
 	public static String screenshotPath;
+	public static List<String> failedTC=new ArrayList<String>(); // these are failed TC list
+	
 	@Override
 	public void onTestStart(ITestResult result) {
 		
 		
-		test = extentVar.createTest(result.getMethod().getMethodName());
-		logger.info("EXECUTION OF " + result.getMethod().getMethodName() + " HAS BEGUN");
-		logger.info("description of testcase:- "+result.getMethod().getDescription());
-		
-		test.log(Status.INFO, "description of testcase:- "+result.getMethod().getDescription());
-		
+		 test = extentVar.createTest(result.getMethod().getMethodName());
+		  logger.info(" \n \n \n EXECUTION OF " + result.getMethod().getMethodName() +" HAS BEGUN");
+		  logger.info("description of testcase:- "+result.getMethod().getDescription());
+		  test.log(Status.INFO,"description of testcase:- "+result.getMethod().getDescription());
+		  
+
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		
-		logger.info(result.getMethod().getMethodName() + " HAS PASSED");
-		test.pass(result.getMethod().getMethodName() + " HAS PASSED");
-		extentVar.flush();
+		 logger.info(result.getMethod().getMethodName() + " HAS PASSED");
+			test.pass(result.getMethod().getMethodName() + " HAS PASSED");
+		  extentVar.flush();
+		
+		
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
-		//***** keep  getMethodName and getThrowable separate
+			
 		
-		logger.fatal(result.getThrowable());
+		
+		//logger.fatal(result.getThrowable());
 		logger.error(result.getMethod().getMethodName() + " HAS FAILED ");
 		
 		try {
@@ -69,7 +81,6 @@ public class ItestLis extends BaseClass implements ITestListener{
 		test.fail( result.getMethod().getMethodName() + " HAS FAILED ");
 		
 
-	
 		extentVar.flush();
 	}
 
@@ -88,6 +99,8 @@ public class ItestLis extends BaseClass implements ITestListener{
 	@Override
 	public void onStart(ITestContext context) {
 		
+		
+		 
 		
 	}
 

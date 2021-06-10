@@ -1,17 +1,18 @@
 package com.personal.testcases;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.personal.base.BaseClass;
-import com.personal.utilities.ExcelRead;
 
 public class CustomerLoginTest extends BaseClass {
 
 	
-	@Test(description = "CUSTOMER LOGIN - login as customer")
-	public void CustomerLoginMethod() throws InterruptedException {
 
+	
+	@Test(description = "CUSTOMER LOGIN - login as customer", dependsOnGroups={"CustomerLoginMethodPrerequisites"})
+	public void customerLoginMethod() throws InterruptedException {
+
+		click("Hometab_xpath");
 		
 		click("CustomerLogin_css");  
 		

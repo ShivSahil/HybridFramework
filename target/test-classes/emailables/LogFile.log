@@ -1,340 +1,480 @@
-16:37:47.148 [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
-16:37:47.175 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
-16:37:47.192 [main] DEBUG com.personal.base.BaseClass - window maximized
-16:37:47.226 [main] INFO  com.personal.base.BaseClass - EXECUTION OF loginAsmanagerTest HAS BEGUN
-16:37:47.227 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
-16:37:48.258 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
-16:37:48.265 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
-16:37:48.275 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
-16:37:48.383 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
-16:37:48.387 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
-16:37:49.212 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-16:37:49.212 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-16:37:49.274 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
-16:37:49.330 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
-16:37:49.372 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
-16:37:49.435 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-16:37:49.455 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
-16:37:49.471 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-16:37:49.472 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-16:37:49.481 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-16:37:49.481 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-16:37:49.525 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
-16:37:49.558 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
-16:37:49.602 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
-16:37:49.643 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-16:37:49.659 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
-16:37:49.682 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-16:37:49.684 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-16:37:49.694 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-16:37:49.694 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-16:37:49.739 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
-16:37:49.775 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
-16:37:49.807 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
-16:37:49.844 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-16:37:49.858 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
-16:37:49.883 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-16:37:49.884 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-16:37:50.004 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
-16:37:50.031 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-16:37:50.031 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-16:37:50.304 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
-16:37:50.602 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
-16:37:50.663 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
-16:37:50.686 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
-16:37:50.708 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-16:37:50.710 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
-16:37:50.722 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-16:37:50.722 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-16:37:50.989 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
-16:37:51.272 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
-16:37:51.324 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
-16:37:51.342 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
-16:37:51.365 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-16:37:51.366 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
-16:37:51.419 [main] DEBUG com.personal.base.BaseClass - locator(Hometab_xpath) clicked successfully
-16:37:51.449 [main] INFO  com.personal.base.BaseClass - EXECUTION OF CustomerLoginMethod HAS BEGUN
-16:37:51.449 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
-16:37:51.539 [main] DEBUG com.personal.base.BaseClass - locator(CustomerLogin_css) clicked successfully
-16:37:51.800 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(YourNameDropDown_name)
-16:37:52.017 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
-16:37:52.033 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(Transaction_css) is present on page
-16:37:52.078 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
-16:37:52.348 [main] DEBUG com.personal.base.BaseClass - option(No Cust) selected successfully on dropdown(YourNameDropDown_name)
-16:37:52.442 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
-16:37:52.480 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
-16:37:52.481 [main] INFO  com.personal.base.BaseClass - CustomerLoginMethod HAS PASSED
-16:37:53.208 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
-16:37:53.208 [main] DEBUG com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
-16:59:39.266 [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
-16:59:39.303 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
-16:59:39.322 [main] DEBUG com.personal.base.BaseClass - window maximized
-16:59:39.355 [main] INFO  com.personal.base.BaseClass - EXECUTION OF loginAsmanagerTest HAS BEGUN
-16:59:39.356 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
-16:59:40.718 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
-16:59:40.722 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
-16:59:40.748 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
-16:59:40.853 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
-16:59:40.859 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
-16:59:41.630 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-16:59:41.630 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-16:59:41.677 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
-16:59:41.721 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
-16:59:41.753 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
-16:59:41.816 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-16:59:41.835 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
-16:59:41.855 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-16:59:41.857 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-16:59:41.867 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-16:59:41.868 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-16:59:41.905 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
-16:59:41.941 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
-16:59:41.968 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
-16:59:42.011 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-16:59:42.026 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
-16:59:42.044 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-16:59:42.045 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-16:59:42.056 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-16:59:42.057 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-16:59:42.092 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
-16:59:42.128 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
-16:59:42.163 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
-16:59:42.211 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-16:59:42.223 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
-16:59:42.254 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-16:59:42.256 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-16:59:42.426 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
-16:59:42.452 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-16:59:42.452 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-16:59:42.496 [main] ERROR com.personal.base.BaseClass - option($%#%#%#@^) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option($%#%#%#@^) is NOT present on page.
-16:59:42.498 [main] WARN  com.personal.base.BaseClass - openAccountMethod method is being re-run for count (1).Check exception below :---  
-16:59:42.499 [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: option($%#%#%#@^) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option($%#%#%#@^) is NOT present on page.
-16:59:44.056 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-16:59:44.056 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-16:59:44.098 [main] ERROR com.personal.base.BaseClass - option($%#%#%#@^) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option($%#%#%#@^) is NOT present on page.
-16:59:44.100 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: option($%#%#%#@^) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option($%#%#%#@^) is NOT present on page.
-16:59:44.100 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
-16:59:44.154 [main] DEBUG com.personal.base.BaseClass - Screenshot(08_June_04_PM_59_44_100OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
-16:59:44.154 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
-16:59:44.185 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-16:59:44.185 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-16:59:44.225 [main] ERROR com.personal.base.BaseClass - option($%#%#%#@^) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option($%#%#%#@^) is NOT present on page.
-16:59:44.225 [main] WARN  com.personal.base.BaseClass - openAccountMethod method is being re-run for count (1).Check exception below :---  
-16:59:44.225 [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: option($%#%#%#@^) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option($%#%#%#@^) is NOT present on page.
-16:59:45.785 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-16:59:45.785 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-16:59:45.834 [main] ERROR com.personal.base.BaseClass - option($%#%#%#@^) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option($%#%#%#@^) is NOT present on page.
-16:59:45.835 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: option($%#%#%#@^) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option($%#%#%#@^) is NOT present on page.
-16:59:45.836 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
-16:59:45.873 [main] DEBUG com.personal.base.BaseClass - Screenshot(08_June_04_PM_59_45_836OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
-16:59:45.873 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
-16:59:45.927 [main] DEBUG com.personal.base.BaseClass - locator(Hometab_xpath) clicked successfully
-16:59:45.961 [main] INFO  com.personal.base.BaseClass - EXECUTION OF CustomerLoginMethod HAS BEGUN
-16:59:45.961 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
-16:59:46.095 [main] DEBUG com.personal.base.BaseClass - locator(CustomerLogin_css) clicked successfully
-16:59:46.147 [main] ERROR com.personal.base.BaseClass - option(Shiv Sahil) is NOT selected on dropdown(YourNameDropDown_name). Either dropdown(YourNameDropDown_name) or option(Shiv Sahil) is NOT present on page.
-16:59:46.147 [main] WARN  com.personal.base.BaseClass - CustomerLoginMethod method is being re-run for count (1).Check exception below :---  
-16:59:46.147 [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: option(Shiv Sahil) is NOT selected on dropdown(YourNameDropDown_name). Either dropdown(YourNameDropDown_name) or option(Shiv Sahil) is NOT present on page.
-16:59:47.664 [main] INFO  com.personal.base.BaseClass - EXECUTION OF CustomerLoginMethod HAS BEGUN
-16:59:47.665 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
-16:59:51.699 [main] ERROR com.personal.base.BaseClass - locator(CustomerLogin_css) can't be clicked as it's NOT present on page.
+19:41:36.970 [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+19:41:36.998 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+19:41:37.553 [main] DEBUG com.personal.base.BaseClass - window maximized
+19:41:37.585 [main] INFO  com.personal.base.BaseClass -  
  
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: div > div:first-child > button.btn.btn-primary.btn-lg
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ 
+ EXECUTION OF loginAsmanagerTest HAS BEGUN
+19:41:37.585 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+19:41:37.848 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+19:41:37.869 [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+19:41:37.954 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+19:41:38.034 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+19:41:38.037 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+19:41:38.953 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+19:41:38.953 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+19:41:39.127 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+19:41:39.252 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+19:41:39.365 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+19:41:39.471 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+19:41:39.481 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+19:41:39.507 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+19:41:39.509 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+19:41:39.529 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+19:41:39.529 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+19:41:39.636 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+19:41:39.870 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+19:41:39.944 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+19:41:40.010 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+19:41:40.017 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+19:41:40.031 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+19:41:40.033 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+19:41:40.048 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+19:41:40.048 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+19:41:40.144 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+19:41:40.217 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+19:41:40.295 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+19:41:40.364 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+19:41:40.372 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+19:41:40.387 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+19:41:40.388 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+19:41:40.440 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF openAccountMethod HAS BEGUN
+19:41:40.441 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+19:41:40.541 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+19:41:40.912 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+19:41:41.098 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+19:41:41.129 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 11564, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3703d79c-45f8-42ea-9408-1e339e618d81
-*** Element info: {Using=css selector, value=div > div:first-child > button.btn.btn-primary.btn-lg}
-16:59:51.700 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(CustomerLogin_css) can't be clicked as it's NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f429e16c37d7e402923f36efc3ff03
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+19:41:41.134 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(Submit_css) can't be clicked as it's NOT present on page.
  
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: div > div:first-child > button.btn.btn-primary.btn-lg
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 11564, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3703d79c-45f8-42ea-9408-1e339e618d81
-*** Element info: {Using=css selector, value=div > div:first-child > button.btn.btn-primary.btn-lg}
-16:59:51.700 [main] ERROR com.personal.base.BaseClass - CustomerLoginMethod HAS FAILED 
-16:59:51.740 [main] DEBUG com.personal.base.BaseClass - Screenshot(08_June_04_PM_59_51_700CUSTOMERLOGINMETHOD.png) of CustomerLoginMethod method taken successfully
-16:59:51.741 [main] DEBUG com.personal.base.BaseClass - Screenshot of CustomerLoginMethod method successfully attached to report 
-16:59:52.658 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
-16:59:52.658 [main] DEBUG com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
-17:01:01.700 [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
-17:01:01.736 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
-17:01:01.750 [main] DEBUG com.personal.base.BaseClass - window maximized
-17:01:01.791 [main] INFO  com.personal.base.BaseClass - EXECUTION OF loginAsmanagerTest HAS BEGUN
-17:01:01.791 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
-17:01:02.816 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
-17:01:02.820 [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
-17:01:02.843 [main] INFO  com.personal.base.BaseClass - VERIFY :- locator(AddCustomerButton_xpath) is present on page
-17:01:02.960 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
-17:01:02.963 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
-17:01:03.737 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-17:01:03.738 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-17:01:03.787 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
-17:01:03.829 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
-17:01:03.908 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
-17:01:03.957 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-17:01:03.974 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
-17:01:04.000 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-17:01:04.002 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-17:01:04.012 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-17:01:04.012 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-17:01:04.047 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
-17:01:04.082 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
-17:01:04.127 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
-17:01:04.181 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-17:01:04.197 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
-17:01:04.211 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-17:01:04.214 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-17:01:04.226 [main] INFO  com.personal.base.BaseClass - EXECUTION OF addMultipleCustomerTest HAS BEGUN
-17:01:04.226 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
-17:01:04.261 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
-17:01:04.309 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
-17:01:04.338 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
-17:01:04.378 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
-17:01:04.394 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
-17:01:04.422 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
-17:01:04.425 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
-17:01:04.583 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
-17:01:04.632 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-17:01:04.632 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-17:01:08.669 [main] ERROR com.personal.base.BaseClass - option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f429e16c37d7e402923f36efc3ff03
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+19:41:41.134 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+19:41:41.223 [main] DEBUG com.personal.base.BaseClass - Screenshot(10_June_07_PM_41_41_135OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+19:41:41.224 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+19:41:41.240 [main] INFO  com.personal.base.BaseClass -  
  
  
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: #userSelect111111111111111111111111
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ EXECUTION OF openAccountMethod HAS BEGUN
+19:41:41.240 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+19:41:41.296 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+19:41:41.492 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+19:41:41.654 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+19:41:41.677 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=id, value=userSelect111111111111111111111111}
-17:01:08.680 [main] WARN  com.personal.base.BaseClass - openAccountMethod method is being re-run for count (1).Check exception below :---  
-17:01:08.681 [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f429e16c37d7e402923f36efc3ff03
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+19:41:41.679 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(Submit_css) can't be clicked as it's NOT present on page.
  
- 
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: #userSelect111111111111111111111111
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=id, value=userSelect111111111111111111111111}
-17:01:10.251 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-17:01:10.252 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-17:01:14.288 [main] ERROR com.personal.base.BaseClass - option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f429e16c37d7e402923f36efc3ff03
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+19:41:41.679 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+19:41:41.766 [main] DEBUG com.personal.base.BaseClass - Screenshot(10_June_07_PM_41_41_679OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+19:41:41.766 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+19:41:41.778 [main] INFO  com.personal.base.BaseClass -  
  
  
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: #userSelect111111111111111111111111
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ EXECUTION OF customerLoginMethod HAS BEGUN
+19:41:41.778 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+19:41:42.473 [main] INFO  com.personal.base.BaseClass - CHROME BROWSER CLOSED
+19:41:42.473 [main] DEBUG com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+19:45:18.508 [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+19:45:18.541 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+19:45:19.066 [main] DEBUG com.personal.base.BaseClass - window maximized
+19:45:31.443 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF loginAsmanagerTest HAS BEGUN
+19:45:31.443 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+19:45:31.608 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+19:45:31.641 [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+19:45:31.756 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+19:45:31.830 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+19:45:31.833 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+19:45:32.735 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+19:45:32.735 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+19:45:32.862 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+19:45:32.964 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+19:45:33.055 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+19:45:33.139 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+19:45:33.153 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+19:45:33.178 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+19:45:33.180 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+19:45:33.198 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+19:45:33.198 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+19:45:33.313 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+19:45:33.404 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+19:45:33.487 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+19:45:33.546 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+19:45:33.554 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+19:45:33.573 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+19:45:33.574 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+19:45:33.586 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+19:45:33.586 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+19:45:33.739 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+19:45:33.814 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+19:45:33.892 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+19:45:33.959 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+19:45:33.967 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+19:45:33.985 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+19:45:33.986 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+19:45:34.031 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF openAccountMethod HAS BEGUN
+19:45:34.031 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+19:45:34.110 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+19:45:34.425 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+19:45:34.615 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+20:11:34.803 [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+20:11:34.845 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+20:11:35.389 [main] DEBUG com.personal.base.BaseClass - window maximized
+20:11:35.424 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF loginAsmanagerTest HAS BEGUN
+20:11:35.424 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+20:11:35.725 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+20:11:35.745 [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+20:11:35.829 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+20:11:35.914 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+20:11:35.919 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+20:11:36.961 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+20:11:36.961 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+20:11:37.152 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+20:11:37.283 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+20:11:37.415 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+20:11:37.573 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+20:11:37.598 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+20:11:37.618 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+20:11:37.621 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+20:11:37.636 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+20:11:37.636 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+20:11:37.960 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+20:11:38.043 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+20:11:38.124 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+20:11:38.189 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+20:11:38.197 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+20:11:38.220 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+20:11:38.221 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+20:11:38.242 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+20:11:38.242 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+20:11:38.375 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+20:11:38.455 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+20:11:38.535 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+20:11:38.600 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+20:11:38.608 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+20:11:38.626 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+20:11:38.628 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+20:11:38.689 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF openAccountMethod HAS BEGUN
+20:11:38.689 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+20:11:38.798 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+20:11:39.196 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+20:11:39.416 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+20:12:21.262 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=id, value=userSelect111111111111111111111111}
-17:01:14.293 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: option(Sahil Guleri) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Sahil Guleri) is NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dad62d246df0add59674e0f54287f979
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+20:12:48.536 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(Submit_css) can't be clicked as it's NOT present on page.
  
- 
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: #userSelect111111111111111111111111
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=id, value=userSelect111111111111111111111111}
-17:01:14.294 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
-17:01:14.369 [main] DEBUG com.personal.base.BaseClass - Screenshot(08_June_05_PM_01_14_296OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
-17:01:14.370 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
-17:01:14.403 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-17:01:14.404 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-17:01:18.431 [main] ERROR com.personal.base.BaseClass - option(Shiv Sahil) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Shiv Sahil) is NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dad62d246df0add59674e0f54287f979
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+20:12:48.537 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+20:12:48.651 [main] DEBUG com.personal.base.BaseClass - Screenshot(10_June_08_PM_12_48_538OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+20:12:48.652 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+20:12:48.692 [main] INFO  com.personal.base.BaseClass -  
  
  
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: #userSelect111111111111111111111111
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ EXECUTION OF openAccountMethod HAS BEGUN
+20:12:48.692 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+20:12:48.753 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+20:12:48.947 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+20:12:49.105 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+20:13:00.449 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=id, value=userSelect111111111111111111111111}
-17:01:18.433 [main] WARN  com.personal.base.BaseClass - openAccountMethod method is being re-run for count (1).Check exception below :---  
-17:01:18.433 [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: option(Shiv Sahil) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Shiv Sahil) is NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dad62d246df0add59674e0f54287f979
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+20:13:33.557 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(Submit_css) can't be clicked as it's NOT present on page.
  
- 
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: #userSelect111111111111111111111111
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=id, value=userSelect111111111111111111111111}
-17:01:20.013 [main] INFO  com.personal.base.BaseClass - EXECUTION OF openAccountMethod HAS BEGUN
-17:01:20.013 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
-17:01:24.045 [main] ERROR com.personal.base.BaseClass - option(Shiv Sahil) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Shiv Sahil) is NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dad62d246df0add59674e0f54287f979
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+20:13:33.594 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+20:13:35.902 [main] DEBUG com.personal.base.BaseClass - Screenshot(10_June_08_PM_13_33_597OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+20:13:35.908 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+20:14:15.324 [main] INFO  com.personal.base.BaseClass -  
  
  
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: #userSelect111111111111111111111111
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ EXECUTION OF customerLoginMethod HAS BEGUN
+20:14:15.325 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+20:14:18.145 [main] INFO  com.personal.base.BaseClass - CHROME BROWSER CLOSED
+20:14:18.146 [main] DEBUG com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+20:14:40.530 [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+20:14:40.565 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+20:14:41.097 [main] DEBUG com.personal.base.BaseClass - window maximized
+20:14:41.136 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF loginAsmanagerTest HAS BEGUN
+20:14:41.136 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+20:14:41.457 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+20:14:41.477 [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+20:14:41.561 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+20:14:41.641 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+20:14:41.645 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+20:14:42.614 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+20:14:42.615 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+20:14:42.957 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+20:14:43.289 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+20:14:43.465 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+20:14:43.616 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+20:14:43.640 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+20:14:43.690 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+20:14:43.693 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+20:14:43.709 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+20:14:43.709 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+20:14:43.853 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+20:14:43.965 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+20:14:44.048 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+20:14:44.108 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+20:14:44.118 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+20:14:44.138 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+20:14:44.140 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+20:14:44.154 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+20:14:44.154 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+20:14:44.258 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+20:14:44.340 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+20:14:44.424 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+20:14:44.488 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+20:14:44.497 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+20:14:44.517 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+20:14:44.518 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+20:14:44.582 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF openAccountMethod HAS BEGUN
+20:14:44.582 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+20:14:44.826 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+20:14:45.179 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+20:14:45.372 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+20:14:57.954 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=id, value=userSelect111111111111111111111111}
-17:01:24.052 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: option(Shiv Sahil) is NOT selected on dropdown(CustomerDropDown_id). Either dropdown(CustomerDropDown_id) or option(Shiv Sahil) is NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cbefd5615e4833138ac5161572622715
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+20:15:15.701 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(Submit_css) can't be clicked as it's NOT present on page.
  
- 
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: #userSelect111111111111111111111111
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=id, value=userSelect111111111111111111111111}
-17:01:24.053 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
-17:01:24.118 [main] DEBUG com.personal.base.BaseClass - Screenshot(08_June_05_PM_01_24_053OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
-17:01:24.118 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
-17:01:24.189 [main] DEBUG com.personal.base.BaseClass - locator(Hometab_xpath) clicked successfully
-17:01:24.229 [main] INFO  com.personal.base.BaseClass - EXECUTION OF CustomerLoginMethod HAS BEGUN
-17:01:24.229 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
-17:01:24.394 [main] DEBUG com.personal.base.BaseClass - locator(CustomerLogin_css) clicked successfully
-17:01:24.437 [main] ERROR com.personal.base.BaseClass - option(Shiv Sahil) is NOT selected on dropdown(YourNameDropDown_name). Either dropdown(YourNameDropDown_name) or option(Shiv Sahil) is NOT present on page.
-17:01:24.437 [main] WARN  com.personal.base.BaseClass - CustomerLoginMethod method is being re-run for count (1).Check exception below :---  
-17:01:24.438 [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: option(Shiv Sahil) is NOT selected on dropdown(YourNameDropDown_name). Either dropdown(YourNameDropDown_name) or option(Shiv Sahil) is NOT present on page.
-17:01:25.942 [main] INFO  com.personal.base.BaseClass - EXECUTION OF CustomerLoginMethod HAS BEGUN
-17:01:25.943 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
-17:01:29.964 [main] ERROR com.personal.base.BaseClass - locator(CustomerLogin_css) can't be clicked as it's NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cbefd5615e4833138ac5161572622715
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+20:15:46.959 [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+20:15:46.988 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+20:15:47.495 [main] DEBUG com.personal.base.BaseClass - window maximized
+20:15:47.525 [main] INFO  com.personal.base.BaseClass -  
  
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: div > div:first-child > button.btn.btn-primary.btn-lg
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ 
+ EXECUTION OF loginAsmanagerTest HAS BEGUN
+20:15:47.525 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+20:15:47.888 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+20:15:47.907 [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+20:15:47.994 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+20:15:48.073 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+20:15:48.076 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+20:15:48.947 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+20:15:48.948 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+20:15:49.151 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+20:15:49.287 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+20:15:49.408 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+20:15:49.506 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+20:15:49.519 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+20:15:49.542 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+20:15:49.544 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+20:15:49.557 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+20:15:49.557 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+20:15:49.808 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+20:15:49.887 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+20:15:49.982 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+20:15:50.043 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+20:15:50.052 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+20:15:50.072 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+20:15:50.074 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+20:15:50.090 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF addMultipleCustomerTest HAS BEGUN
+20:15:50.090 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+20:15:50.182 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+20:15:50.265 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+20:15:50.343 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+20:15:50.412 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+20:15:50.418 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+20:15:50.438 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+20:15:50.439 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+20:15:50.499 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF openAccountMethod HAS BEGUN
+20:15:50.499 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+20:15:50.604 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+20:15:50.977 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+20:15:51.181 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+20:15:51.211 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=css selector, value=div > div:first-child > button.btn.btn-primary.btn-lg}
-17:01:29.971 [main] FATAL com.personal.base.BaseClass - java.lang.AssertionError: locator(CustomerLogin_css) can't be clicked as it's NOT present on page.
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c35b7c4e70ef2fc1feba7b9db9d58bfa
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+20:15:51.216 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+20:15:51.299 [main] DEBUG com.personal.base.BaseClass - Screenshot(10_June_08_PM_15_51_216OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+20:15:51.300 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+20:15:51.317 [main] INFO  com.personal.base.BaseClass -  
  
- Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: div > div:first-child > button.btn.btn-primary.btn-lg
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+ 
+ EXECUTION OF openAccountMethod HAS BEGUN
+20:15:51.318 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+20:15:51.376 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+20:15:51.576 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+20:15:51.748 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+20:15:51.758 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 20920c03-b60d-4a50-8ea7-4e73e241873d
-*** Element info: {Using=css selector, value=div > div:first-child > button.btn.btn-primary.btn-lg}
-17:01:29.971 [main] ERROR com.personal.base.BaseClass - CustomerLoginMethod HAS FAILED 
-17:01:30.007 [main] DEBUG com.personal.base.BaseClass - Screenshot(08_June_05_PM_01_29_971CUSTOMERLOGINMETHOD.png) of CustomerLoginMethod method taken successfully
-17:01:30.007 [main] DEBUG com.personal.base.BaseClass - Screenshot of CustomerLoginMethod method successfully attached to report 
-17:01:30.824 [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
-17:01:30.824 [main] DEBUG com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c35b7c4e70ef2fc1feba7b9db9d58bfa
+*** Element info: {Using=css selector, value=button[type='submit']1111}
+20:15:51.759 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+20:15:51.849 [main] DEBUG com.personal.base.BaseClass - Screenshot(10_June_08_PM_15_51_759OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+20:15:51.849 [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+20:15:51.860 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ EXECUTION OF customerLoginMethod HAS BEGUN
+20:15:51.860 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+20:15:52.569 [main] INFO  com.personal.base.BaseClass - CHROME BROWSER CLOSED
+20:15:52.569 [main] DEBUG com.personal.base.BaseClass - -------------------------------------------------------------------------------------------------
