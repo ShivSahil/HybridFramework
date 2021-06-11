@@ -1,0 +1,124 @@
+2021-Jun-11 17:23:03 PM [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-11 17:23:03 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-11 17:23:03 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-11 17:23:03 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-11 17:23:03 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-11 17:23:03 PM [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+2021-Jun-11 17:23:03 PM [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+2021-Jun-11 17:23:03 PM [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+2021-Jun-11 17:23:03 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+2021-Jun-11 17:23:03 PM [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+2021-Jun-11 17:23:04 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 17:23:04 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 17:23:04 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+2021-Jun-11 17:23:04 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 17:23:05 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 17:23:05 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 17:23:05 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 17:23:05 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 17:23:05 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 17:23:05 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 17:23:05 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 17:23:05 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+2021-Jun-11 17:23:05 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+2021-Jun-11 17:23:06 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 17:23:06 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 17:23:06 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 17:23:06 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 17:23:06 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[com.personal.testcases.AddCustomerTest.loginAsmanagerTest]' HAS FAILED
+2021-Jun-11 17:23:06 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF customerLoginMethod HAS BEGUN >> 
+2021-Jun-11 17:23:06 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+2021-Jun-11 17:23:06 PM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
+2021-Jun-11 17:23:07 PM [main] INFO  com.personal.base.BaseClass - CHROME BROWSER CLOSED
+2021-Jun-11 17:23:07 PM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+
+2021-Jun-11 17:23:08 PM [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-11 17:23:08 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-11 17:23:09 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-11 17:23:09 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-11 17:23:09 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-11 17:23:09 PM [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+2021-Jun-11 17:23:09 PM [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+2021-Jun-11 17:23:09 PM [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+2021-Jun-11 17:23:09 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+2021-Jun-11 17:23:09 PM [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+2021-Jun-11 17:23:09 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 17:23:09 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 17:23:10 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 17:23:10 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 17:23:10 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 17:23:10 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 17:23:10 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 17:23:10 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 17:23:10 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 17:23:10 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 17:23:10 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+2021-Jun-11 17:23:11 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+2021-Jun-11 17:23:11 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+2021-Jun-11 17:23:11 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 17:23:11 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 17:23:11 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 17:23:11 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 17:23:11 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[com.personal.testcases.AddCustomerTest.loginAsmanagerTest]' HAS FAILED
+2021-Jun-11 17:23:11 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF customerLoginMethod HAS BEGUN >> 
+2021-Jun-11 17:23:11 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+2021-Jun-11 17:23:11 PM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
+2021-Jun-11 17:23:12 PM [main] INFO  com.personal.base.BaseClass - CHROME BROWSER CLOSED
+2021-Jun-11 17:23:12 PM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+

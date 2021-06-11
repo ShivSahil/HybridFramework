@@ -3,23 +3,17 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Customer Suite]">
   <listeners>
     <listener class-name="com.personal.listeners.ItestLis"/>
+    <listener class-name="com.personal.listeners.AnnotationTransformer"/>
   </listeners>
   <test thread-count="5" verbose="0" name="Bank Manager Login(failed)">
     <classes>
-      <class name="com.personal.testcases.CustomerLoginTest">
+      <class name="com.personal.testcases.OpenAccountTest">
         <methods>
           <include name="tearDown"/>
-          <include name="customerLoginMethod"/>
+          <include name="openAccountMethod" invocation-numbers="0 0 1 1"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.personal.testcases.CustomerLoginTest -->
-      <class name="com.personal.testcases.Rough">
-        <methods>
-          <include name="roug"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.personal.testcases.Rough -->
+      </class> <!-- com.personal.testcases.OpenAccountTest -->
       <class name="com.personal.testcases.AddCustomerTest">
         <methods>
           <include name="loginAsmanagerTest"/>
@@ -28,13 +22,39 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.AddCustomerTest -->
+      <class name="com.personal.testcases.CustomerLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="customerLoginMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.personal.testcases.CustomerLoginTest -->
+    </classes>
+  </test> <!-- Bank Manager Login(failed) -->
+  <test thread-count="5" verbose="0" name="ROUGH(failed)">
+    <classes>
       <class name="com.personal.testcases.OpenAccountTest">
         <methods>
           <include name="tearDown"/>
-          <include name="openAccountMethod" invocation-numbers="0 1"/>
+          <include name="openAccountMethod" invocation-numbers="0 0 1 1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.OpenAccountTest -->
+      <class name="com.personal.testcases.AddCustomerTest">
+        <methods>
+          <include name="loginAsmanagerTest"/>
+          <include name="tearDown"/>
+          <include name="addMultipleCustomerTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.personal.testcases.AddCustomerTest -->
+      <class name="com.personal.testcases.CustomerLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="customerLoginMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.personal.testcases.CustomerLoginTest -->
     </classes>
-  </test> <!-- Bank Manager Login(failed) -->
+  </test> <!-- ROUGH(failed) -->
 </suite> <!-- Failed suite [Customer Suite] -->
