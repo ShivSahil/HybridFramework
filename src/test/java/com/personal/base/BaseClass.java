@@ -41,7 +41,7 @@ public class BaseClass {
 	public static MailUtility mail;
 	
 	
-	Locators loc;
+	subClass loc;
 	
 	@BeforeTest
 	public void setUp() throws IOException
@@ -120,7 +120,7 @@ public class BaseClass {
 			logger.info(configuration.getProperty("browser").toUpperCase() + 
 					" BROWSER CLOSED");
 			
-			logger.debug("-------------------------------------------------------------------------------------------------");
+			logger.debug(" \n \n ------------------------------------------------------------------------------------------------- \n \n");
 			
 		}
 	}
@@ -132,7 +132,7 @@ public class BaseClass {
 	
 	public void click(String key)  // REUSEABLE CLICK METHOD
 	{
-		loc= new Locators();
+		loc= new subClass();
 		driver.findElement(loc.locator(key, "click", null)).click();
 		loc.passMsg(key, "click", null, null, 0);
 	}
@@ -142,7 +142,7 @@ public class BaseClass {
 	{
 		
 		
-		loc= new Locators();
+		loc= new subClass();
 		driver.findElement(loc.locator(key, "type", data)).sendKeys(data);
 		loc.passMsg(key, "type", data, null, 0);
 	
@@ -154,7 +154,7 @@ public class BaseClass {
 	{
 		
 		
-		loc= new Locators();
+		loc= new subClass();
 		
 		Select s = new Select(driver.findElement(loc.locator(key, "staticDropDown", selectOption)));
 		loc.checkDropDown(s, selectOption, key);		// I can't place this checks, in any other method. so it's stand alone
@@ -167,7 +167,7 @@ public class BaseClass {
 	
 	public void  alert(String actionOnAlert)  // RESUABLE ALERT METHOD
 	{
-		loc= new Locators();
+		loc= new subClass();
 		try {
 			Alert al= driver.switchTo().alert();
 			
@@ -218,7 +218,7 @@ public class BaseClass {
 	public void click(String key, int waitPeriod, String nameOfCondition)  // REUSEABLE EXPLICIT WAIT, CLICK METHOD
 	{
 		
-		loc= new Locators();
+		loc= new subClass();
 		By byEle=loc.locator(key, "click", null);
 		loc.conditionName("click", null, nameOfCondition,  waitPeriod, byEle, key).click();
 		loc.passMsg(key, "click", null, nameOfCondition, waitPeriod);
@@ -232,7 +232,7 @@ public class BaseClass {
 	{
 		
 		
-		loc= new Locators();
+		loc= new subClass();
 		By byEle=loc.locator(key, "type", data);
 		loc.conditionName("type", data, nameOfCondition,  waitPeriod, byEle, key).sendKeys(data);
 		loc.passMsg(key, "type", data, nameOfCondition, waitPeriod);
@@ -366,7 +366,7 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 public void isElementPresent(String key, String assertType) { // REUSEABLE ELEMENT AVAILABILITY METHOD
 	
 	
-	loc = new Locators();
+	loc = new subClass();
 	By bol=loc.locator(key, assertType.toLowerCase(),null);
 	
 	if(bol!=null) {

@@ -5,7 +5,7 @@
 <suite name="Customer Suite">
 	<listeners>
 		<listener class-name="com.personal.listeners.ItestLis" />
-	<!--	<listener class-name="com.personal.listeners.AnnotationTransformer" /> -->
+	<listener class-name="com.personal.listeners.AnnotationTransformer" />
 	</listeners>
 
 	<test name="Bank Manager Login">
@@ -18,6 +18,14 @@
 		</classes>
 	</test>
 
-	
+	<test name="ROUGH">
+		<classes>
+			<class name="com.personal.base.BaseClass" />
+			<class name="com.personal.testcases.AddCustomerTest" />
+			<class name="com.personal.testcases.OpenAccountTest" /> 
+			<class name="com.personal.testcases.CustomerLoginTest" /> 
+		
+		</classes>
+	</test>
 
 </suite> <!-- Suite -->

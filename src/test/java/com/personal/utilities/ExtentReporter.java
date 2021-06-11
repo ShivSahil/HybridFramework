@@ -15,7 +15,7 @@ public class ExtentReporter extends BaseClass{
     {
     	
     	Date date = new Date();  		    
-		SimpleDateFormat simpledate=new SimpleDateFormat("dd_MMMM_hh_a_mm_");
+		SimpleDateFormat simpledate=new SimpleDateFormat("dd_MMMM_hh_a_mm_ss");
 		String name=simpledate.format(date);
 		
 

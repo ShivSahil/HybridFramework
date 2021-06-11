@@ -15,7 +15,7 @@ public class AddCustomerTest extends BaseClass {
 
 		
 		click("BankMangLogin_css", 10, "visibilityOfElementLocated");  
-		checkPageTitle("111111111111","hardAssert");  //Protractor practice website - Banking App
+		checkPageTitle("111111111111","softAssert");  //Protractor practice website - Banking App
 
 		isElementPresent("AddCustomerButton_xpath", "hardAssert");  
 		click("AddCustomerButton_xpath");  

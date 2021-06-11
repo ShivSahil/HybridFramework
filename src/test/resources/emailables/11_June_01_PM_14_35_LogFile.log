@@ -1,0 +1,340 @@
+2021-Jun-11 13:14:38 PM [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-11 13:14:38 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-11 13:14:38 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-11 13:14:38 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-11 13:14:38 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-11 13:14:39 PM [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+2021-Jun-11 13:14:39 PM [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+2021-Jun-11 13:14:39 PM [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+2021-Jun-11 13:14:39 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+2021-Jun-11 13:14:39 PM [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+2021-Jun-11 13:14:40 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 13:14:40 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 13:14:40 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 13:14:41 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 13:14:41 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 13:14:41 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 13:14:41 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 13:14:41 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 13:14:41 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 13:14:41 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 13:14:41 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+2021-Jun-11 13:14:41 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+2021-Jun-11 13:14:42 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+2021-Jun-11 13:14:42 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 13:14:42 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 13:14:42 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 13:14:42 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 13:14:42 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-11 13:14:42 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-11 13:14:42 PM [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+2021-Jun-11 13:14:42 PM [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+2021-Jun-11 13:14:43 PM [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+2021-Jun-11 13:14:43 PM [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d76a0cd25e1fc2da2eb8bc711653bab
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:43 PM [main] WARN  com.personal.base.BaseClass - openAccountMethod method is being re-run for count (1).Check exception below :---  
+2021-Jun-11 13:14:43 PM [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d76a0cd25e1fc2da2eb8bc711653bab
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:44 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
+2021-Jun-11 13:14:44 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-11 13:14:44 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-11 13:14:44 PM [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+2021-Jun-11 13:14:44 PM [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+2021-Jun-11 13:14:45 PM [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+2021-Jun-11 13:14:45 PM [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d76a0cd25e1fc2da2eb8bc711653bab
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:45 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+2021-Jun-11 13:14:45 PM [main] DEBUG com.personal.base.BaseClass - Screenshot(11_June_01_PM_14_45_030OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+2021-Jun-11 13:14:45 PM [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+2021-Jun-11 13:14:45 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-11 13:14:45 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-11 13:14:45 PM [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+2021-Jun-11 13:14:45 PM [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+2021-Jun-11 13:14:45 PM [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+2021-Jun-11 13:14:45 PM [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d76a0cd25e1fc2da2eb8bc711653bab
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:45 PM [main] WARN  com.personal.base.BaseClass - openAccountMethod method is being re-run for count (1).Check exception below :---  
+2021-Jun-11 13:14:45 PM [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d76a0cd25e1fc2da2eb8bc711653bab
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:47 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
+2021-Jun-11 13:14:47 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-11 13:14:47 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-11 13:14:47 PM [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+2021-Jun-11 13:14:47 PM [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+2021-Jun-11 13:14:47 PM [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+2021-Jun-11 13:14:47 PM [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d76a0cd25e1fc2da2eb8bc711653bab
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:47 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+2021-Jun-11 13:14:47 PM [main] DEBUG com.personal.base.BaseClass - Screenshot(11_June_01_PM_14_47_563OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+2021-Jun-11 13:14:47 PM [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+2021-Jun-11 13:14:47 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF customerLoginMethod HAS BEGUN >> 
+2021-Jun-11 13:14:47 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+2021-Jun-11 13:14:47 PM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
+2021-Jun-11 13:14:47 PM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
+2021-Jun-11 13:14:48 PM [main] INFO  com.personal.base.BaseClass - CHROME BROWSER CLOSED
+2021-Jun-11 13:14:48 PM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+
+2021-Jun-11 13:14:50 PM [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-11 13:14:50 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-11 13:14:50 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-11 13:14:50 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-11 13:14:50 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-11 13:14:50 PM [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+2021-Jun-11 13:14:50 PM [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+2021-Jun-11 13:14:50 PM [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+2021-Jun-11 13:14:50 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
+2021-Jun-11 13:14:50 PM [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+2021-Jun-11 13:14:50 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 13:14:50 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 13:14:50 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 13:14:51 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 13:14:51 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 13:14:51 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 13:14:51 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 13:14:51 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 13:14:51 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 13:14:51 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-11 13:14:51 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+2021-Jun-11 13:14:51 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+2021-Jun-11 13:14:51 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+2021-Jun-11 13:14:52 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-11 13:14:52 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-11 13:14:52 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-11 13:14:52 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-11 13:14:52 PM [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+2021-Jun-11 13:14:52 PM [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+2021-Jun-11 13:14:52 PM [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+2021-Jun-11 13:14:52 PM [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b27fa352358c4f340eb30c8143630f9
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:52 PM [main] WARN  com.personal.base.BaseClass - openAccountMethod method is being re-run for count (1).Check exception below :---  
+2021-Jun-11 13:14:52 PM [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b27fa352358c4f340eb30c8143630f9
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:54 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
+2021-Jun-11 13:14:54 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-11 13:14:54 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-11 13:14:54 PM [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+2021-Jun-11 13:14:54 PM [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+2021-Jun-11 13:14:54 PM [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+2021-Jun-11 13:14:54 PM [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b27fa352358c4f340eb30c8143630f9
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:54 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+2021-Jun-11 13:14:54 PM [main] DEBUG com.personal.base.BaseClass - Screenshot(11_June_01_PM_14_54_483OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+2021-Jun-11 13:14:54 PM [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+2021-Jun-11 13:14:54 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-11 13:14:54 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-11 13:14:54 PM [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+2021-Jun-11 13:14:54 PM [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+2021-Jun-11 13:14:54 PM [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+2021-Jun-11 13:14:54 PM [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b27fa352358c4f340eb30c8143630f9
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:54 PM [main] WARN  com.personal.base.BaseClass - openAccountMethod method is being re-run for count (1).Check exception below :---  
+2021-Jun-11 13:14:54 PM [main] WARN  com.personal.base.BaseClass - java.lang.AssertionError: locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b27fa352358c4f340eb30c8143630f9
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:56 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
+2021-Jun-11 13:14:56 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-11 13:14:56 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-11 13:14:56 PM [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+2021-Jun-11 13:14:56 PM [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+2021-Jun-11 13:14:56 PM [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+2021-Jun-11 13:14:56 PM [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b27fa352358c4f340eb30c8143630f9
+*** Element info: {Using=css selector, value=button[type='submit']1111111}
+2021-Jun-11 13:14:56 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
+2021-Jun-11 13:14:56 PM [main] DEBUG com.personal.base.BaseClass - Screenshot(11_June_01_PM_14_56_844OPENACCOUNTMETHOD.png) of openAccountMethod method taken successfully
+2021-Jun-11 13:14:56 PM [main] DEBUG com.personal.base.BaseClass - Screenshot of openAccountMethod method successfully attached to report 
+2021-Jun-11 13:14:56 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF customerLoginMethod HAS BEGUN >> 
+2021-Jun-11 13:14:56 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+2021-Jun-11 13:14:56 PM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
+2021-Jun-11 13:14:56 PM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
+2021-Jun-11 13:14:57 PM [main] INFO  com.personal.base.BaseClass - CHROME BROWSER CLOSED
+2021-Jun-11 13:14:57 PM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+

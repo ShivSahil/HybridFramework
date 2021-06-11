@@ -4,27 +4,16 @@
 	
 	<Properties>
 		<Property name="basePath">./src/test/resources/emailables</Property>
+		<property name="filePattern">${date:dd_MMMM_hh_a_mm_ss}</property>
 	</Properties>
 
 
 	<Appenders>
 
-		<RollingFile name="File"
-			fileName="${basePath}/LogFile.log"
-			filePattern="${basePath}/OldLogFileOfDate-%d{dd-MMM-hh}.%i.log">
-			<PatternLayout>
-				<Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
-				</Pattern>
-			</PatternLayout>
-
-			<!-- maximum size of each file before data is filled in next file -->
-			<Policies>
-				<SizeBasedTriggeringPolicy size="5MB" />
-			</Policies>
-
-			<!-- maximum back up files can be only 25 -->
-			<DefaultRolloverStrategy max="25" />
-		</RollingFile>
+		<File name="File" fileName="${basePath}/${filePattern}_LogFile.log" append="false">
+            <PatternLayout
+pattern="%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
 
 
 
