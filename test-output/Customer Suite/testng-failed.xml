@@ -16,7 +16,7 @@
       <class name="com.personal.testcases.OpenAccountTest">
         <methods>
           <include name="tearDown"/>
-          <include name="openAccountMethod" invocation-numbers="0 1"/>
+          <include name="openAccountMethod"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.OpenAccountTest -->
@@ -30,4 +30,30 @@
       </class> <!-- com.personal.testcases.AddCustomerTest -->
     </classes>
   </test> <!-- Bank Manager Login(failed) -->
+  <test thread-count="5" name="ROUGH(failed)">
+    <classes>
+      <class name="com.personal.testcases.CustomerLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="customerLoginMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.personal.testcases.CustomerLoginTest -->
+      <class name="com.personal.testcases.OpenAccountTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openAccountMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.personal.testcases.OpenAccountTest -->
+      <class name="com.personal.testcases.AddCustomerTest">
+        <methods>
+          <include name="loginAsmanagerTest"/>
+          <include name="tearDown"/>
+          <include name="addMultipleCustomerTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.personal.testcases.AddCustomerTest -->
+    </classes>
+  </test> <!-- ROUGH(failed) -->
 </suite> <!-- Failed suite [Customer Suite] -->
