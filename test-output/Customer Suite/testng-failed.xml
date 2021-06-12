@@ -5,7 +5,7 @@
     <listener class-name="com.personal.listeners.ItestLis"/>
     <listener class-name="com.personal.listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" name="Bank Manager Login(failed)">
+  <test thread-count="5" name="Test run 1(failed)">
     <classes>
       <class name="com.personal.testcases.AddCustomerTest">
         <methods>
@@ -25,36 +25,10 @@
       <class name="com.personal.testcases.OpenAccountTest">
         <methods>
           <include name="tearDown"/>
-          <include name="openAccountMethod" invocation-numbers="0 0 1 1"/>
+          <include name="openAccountMethod" invocation-numbers="0 0 0 1 1 1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.OpenAccountTest -->
     </classes>
-  </test> <!-- Bank Manager Login(failed) -->
-  <test thread-count="5" name="ROUGH(failed)">
-    <classes>
-      <class name="com.personal.testcases.AddCustomerTest">
-        <methods>
-          <include name="loginAsmanagerTest"/>
-          <include name="tearDown"/>
-          <include name="addMultipleCustomerTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.personal.testcases.AddCustomerTest -->
-      <class name="com.personal.testcases.CustomerLoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="customerLoginMethod"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.personal.testcases.CustomerLoginTest -->
-      <class name="com.personal.testcases.OpenAccountTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="openAccountMethod" invocation-numbers="0 0 1 1"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.personal.testcases.OpenAccountTest -->
-    </classes>
-  </test> <!-- ROUGH(failed) -->
+  </test> <!-- Test run 1(failed) -->
 </suite> <!-- Failed suite [Customer Suite] -->

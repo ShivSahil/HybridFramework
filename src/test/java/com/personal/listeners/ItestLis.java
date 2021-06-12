@@ -100,8 +100,6 @@ public class ItestLis extends BaseClass implements ITestListener{
 		failedTC.add(result.getMethod().getMethodName());
 	 String[] temp= result.getMethod().getGroups();
 	 List<String> tempList = Arrays.asList(temp);
-	
-	 
 	 failedTC.addAll(tempList);		
 	
 	

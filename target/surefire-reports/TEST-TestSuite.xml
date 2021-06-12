@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="22.26" tests="18" errors="0" skipped="6" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="11.285" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Nishant Guleri\AppData\Local\Temp\surefire1249752053610726916\surefirebooter6326760064114532780.jar C:\Users\Nishant Guleri\AppData\Local\Temp\surefire1249752053610726916 2021-06-11T16-46-14_497-jvmRun1 surefire9083414215577562907tmp surefire_03566744416477026380tmp"/>
+    <property name="sun.java.command" value="C:\Users\Nishant Guleri\AppData\Local\Temp\surefire3877539174275362124\surefirebooter5723021954289103453.jar C:\Users\Nishant Guleri\AppData\Local\Temp\surefire3877539174275362124 2021-06-11T22-26-10_955-jvmRun1 surefire5156971235395364238tmp surefire_02069505359392403296tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\Nishant Guleri\eclipse-workspace\HybridFramework\target\test-classes;C:\Users\Nishant Guleri\eclipse-workspace\HybridFramework\target\classes;C:\Users\Nishant Guleri\.m2\repository\commons-io\commons-io\2.9.0\commons-io-2.9.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\Nishant Guleri\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Nishant Guleri\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Nishant Guleri\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Nishant Guleri\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Nishant Guleri\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Nishant Guleri\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Nishant Guleri\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\Nishant Guleri\.m2\repository\com\aventstack\extentreports\4.1.7\extentreports-4.1.7.jar;C:\Users\Nishant Guleri\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Nishant Guleri\.m2\repository\org\mongodb\mongodb-driver\3.12.0\mongodb-driver-3.12.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\mongodb\mongodb-driver-core\3.12.0\mongodb-driver-core-3.12.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\mongodb\bson\3.12.0\bson-3.12.0.jar;C:\Users\Nishant Guleri\.m2\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;C:\Users\Nishant Guleri\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Nishant Guleri\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\Nishant Guleri\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Nishant Guleri\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\Nishant Guleri\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Nishant Guleri\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Nishant Guleri\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Nishant Guleri\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Nishant Guleri\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Nishant Guleri\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Nishant Guleri"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Nishant Guleri\AppData\Local\Temp\surefire1249752053610726916\surefirebooter6326760064114532780.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Nishant Guleri\AppData\Local\Temp\surefire3877539174275362124\surefirebooter5723021954289103453.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_271\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,225 +61,120 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="loginAsmanagerTest" classname="com.personal.testcases.AddCustomerTest" time="0.517">
-    <system-out><![CDATA[16:46:19.205 [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+  <testcase name="loginAsmanagerTest" classname="com.personal.testcases.AddCustomerTest" time="0.499">
+    <system-out><![CDATA[22:26:15.306 [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+22:26:15.336 [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+22:26:15.960 [main] DEBUG com.personal.base.BaseClass - window maximized
+22:26:15.987 [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+22:26:15.987 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+22:26:16.268 [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(BankMangLogin_css) set to 10 seconds. locator(BankMangLogin_css) clicked successfully
+22:26:16.293 [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
+22:26:16.392 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(AddCustomerButton_xpath) is present on page
+22:26:16.488 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerButton_xpath) clicked successfully
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 27542
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 17133
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1623410177.530][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
-Jun 11, 2021 4:46:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1623430574.669][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+Jun 11, 2021 10:26:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="loginAsmanagerTest" classname="com.personal.testcases.AddCustomerTest" time="0.392">
-    <system-out><![CDATA[16:46:26.790 [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
-16:46:29.484 [main] ERROR com.personal.base.BaseClass - VERIFY :- '111111111111' is INCORRECT TITLE. Actual Title is :- Protractor practice website - Banking App
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 5227
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1623410188.625][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
-Jun 11, 2021 4:46:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="addMultipleCustomerTest[Shiv, Sahil, 160014](1)" classname="com.personal.testcases.AddCustomerTest" time="0.612"/>
-  <testcase name="addMultipleCustomerTest[Shiv, Sahil, 160014](1)" classname="com.personal.testcases.AddCustomerTest" time="0.768"/>
-  <testcase name="addMultipleCustomerTest[Sahil, Guleri, 3967](2)" classname="com.personal.testcases.AddCustomerTest" time="0.374"/>
-  <testcase name="addMultipleCustomerTest[Sahil, Guleri, 3967](2)" classname="com.personal.testcases.AddCustomerTest" time="0.353"/>
-  <testcase name="addMultipleCustomerTest[No, Cust, 1332](3)" classname="com.personal.testcases.AddCustomerTest" time="0.377"/>
-  <testcase name="addMultipleCustomerTest[No, Cust, 1332](3)" classname="com.personal.testcases.AddCustomerTest" time="0.388"/>
-  <testcase name="openAccountMethod[Sahil Guleri, Pound](1)" classname="com.personal.testcases.OpenAccountTest" time="0">
-    <skipped message="locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.&#10; &#10; Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e8d3207d03ebbdd977f8a05dd1959747&#10;*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111111}"/>
-    <system-out><![CDATA[16:46:22.322 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+  <testcase name="addMultipleCustomerTest[Shiv, Sahil, 160014](1)" classname="com.personal.testcases.AddCustomerTest" time="0.661">
+    <system-out><![CDATA[22:26:16.490 [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+22:26:17.486 [main] INFO  com.personal.base.BaseClass -  
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8d3207d03ebbdd977f8a05dd1959747
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+22:26:17.487 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+22:26:17.724 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Shiv' successfully
+22:26:17.856 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Sahil' successfully
+22:26:17.980 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '160014' successfully
+22:26:18.080 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+22:26:18.097 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+22:26:18.106 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
 ]]></system-out>
   </testcase>
-  <testcase name="openAccountMethod[Sahil Guleri, Pound](1)" classname="com.personal.testcases.OpenAccountTest" time="0">
-    <skipped message="locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.&#10; &#10; Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f7516941a28dc923a08210abdf47b0d2&#10;*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111111}"/>
-    <system-out><![CDATA[16:46:32.184 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+  <testcase name="addMultipleCustomerTest[Sahil, Guleri, 3967](2)" classname="com.personal.testcases.AddCustomerTest" time="0.426">
+    <system-out><![CDATA[22:26:18.107 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+22:26:18.129 [main] INFO  com.personal.base.BaseClass -  
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f7516941a28dc923a08210abdf47b0d2
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+22:26:18.129 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+22:26:18.286 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'Sahil' successfully
+22:26:18.387 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Guleri' successfully
+22:26:18.472 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '3967' successfully
+22:26:18.534 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+22:26:18.542 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+22:26:18.561 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
 ]]></system-out>
   </testcase>
-  <testcase name="openAccountMethod[Sahil Guleri, Pound](2)" classname="com.personal.testcases.OpenAccountTest" time="0.358">
-    <failure message="locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.&#10; &#10; Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e8d3207d03ebbdd977f8a05dd1959747&#10;*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111111}" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-locator(Submit_css) can't be clicked as it's NOT present on page.
+  <testcase name="addMultipleCustomerTest[No, Cust, 1332](3)" classname="com.personal.testcases.AddCustomerTest" time="0.585">
+    <system-out><![CDATA[22:26:18.561 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+22:26:18.573 [main] INFO  com.personal.base.BaseClass -  
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8d3207d03ebbdd977f8a05dd1959747
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
-	at com.personal.testcases.OpenAccountTest.openAccountMethod(OpenAccountTest.java:18)
-]]></failure>
-    <system-out><![CDATA[16:46:23.831 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
-16:46:24.215 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8d3207d03ebbdd977f8a05dd1959747
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+22:26:18.573 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+22:26:18.698 [main] DEBUG com.personal.base.BaseClass - locator(FirstName_css) filled with value 'No' successfully
+22:26:18.789 [main] DEBUG com.personal.base.BaseClass - locator(LastName_css) filled with value 'Cust' successfully
+22:26:19.032 [main] DEBUG com.personal.base.BaseClass - locator(PinCode_css) filled with value '1332' successfully
+22:26:19.109 [main] DEBUG com.personal.base.BaseClass - locator(AddCustomer_xpath) clicked successfully
+22:26:19.121 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Customer added successfully with customer id) is present in Alert Box
+22:26:19.137 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
 ]]></system-out>
   </testcase>
-  <testcase name="openAccountMethod[Sahil Guleri, Pound](2)" classname="com.personal.testcases.OpenAccountTest" time="0.303">
-    <failure message="locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.&#10; &#10; Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f7516941a28dc923a08210abdf47b0d2&#10;*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111111}" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-locator(Submit_css) can't be clicked as it's NOT present on page.
+  <testcase name="openAccountMethod[Sahil Guleri, Pound](1)" classname="com.personal.testcases.OpenAccountTest" time="1.055">
+    <system-out><![CDATA[22:26:19.138 [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+22:26:19.190 [main] INFO  com.personal.base.BaseClass -  
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f7516941a28dc923a08210abdf47b0d2
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
-	at com.personal.testcases.OpenAccountTest.openAccountMethod(OpenAccountTest.java:18)
-]]></failure>
-    <system-out><![CDATA[16:46:33.697 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
-16:46:34.021 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f7516941a28dc923a08210abdf47b0d2
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+22:26:19.190 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+22:26:19.328 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+22:26:19.824 [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(CustomerDropDown_id)
+22:26:20.092 [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(CurrencyDropDown_id)
+22:26:20.219 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+22:26:20.230 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+22:26:20.239 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
 ]]></system-out>
   </testcase>
-  <testcase name="openAccountMethod[Shiv Sahil, Rupee](3)" classname="com.personal.testcases.OpenAccountTest" time="0">
-    <skipped message="locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.&#10; &#10; Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e8d3207d03ebbdd977f8a05dd1959747&#10;*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111111}"/>
-    <system-out><![CDATA[16:46:24.219 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
-16:46:24.795 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+  <testcase name="openAccountMethod[Shiv Sahil, Rupee](2)" classname="com.personal.testcases.OpenAccountTest" time="0.597">
+    <system-out><![CDATA[22:26:20.241 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
+22:26:20.249 [main] INFO  com.personal.base.BaseClass -  
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8d3207d03ebbdd977f8a05dd1959747
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+22:26:20.249 [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+22:26:20.327 [main] DEBUG com.personal.base.BaseClass - locator(OpenAccountTab_xpath) clicked successfully
+22:26:20.555 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(CustomerDropDown_id)
+22:26:20.748 [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(CurrencyDropDown_id)
+22:26:20.811 [main] DEBUG com.personal.base.BaseClass - locator(Submit_css) clicked successfully
+22:26:20.819 [main] INFO  com.personal.base.BaseClass - VERIFY :- text(Account created successfully with account Number :) is present in Alert Box
+22:26:20.839 [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
 ]]></system-out>
   </testcase>
-  <testcase name="openAccountMethod[Shiv Sahil, Rupee](3)" classname="com.personal.testcases.OpenAccountTest" time="0">
-    <skipped message="locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.&#10; &#10; Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f7516941a28dc923a08210abdf47b0d2&#10;*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111111}"/>
-    <system-out><![CDATA[16:46:34.022 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
-16:46:34.629 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
+  <testcase name="customerLoginMethod" classname="com.personal.testcases.CustomerLoginTest" time="1.568">
+    <system-out><![CDATA[22:26:20.841 [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
+22:26:20.855 [main] INFO  com.personal.base.BaseClass -  
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f7516941a28dc923a08210abdf47b0d2
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
-]]></system-out>
-  </testcase>
-  <testcase name="openAccountMethod[Shiv Sahil, Rupee](4)" classname="com.personal.testcases.OpenAccountTest" time="0.333">
-    <failure message="locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.&#10; &#10; Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e8d3207d03ebbdd977f8a05dd1959747&#10;*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111111}" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-locator(Submit_css) can't be clicked as it's NOT present on page.
  
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8d3207d03ebbdd977f8a05dd1959747
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
-	at com.personal.testcases.OpenAccountTest.openAccountMethod(OpenAccountTest.java:18)
-]]></failure>
-    <system-out><![CDATA[16:46:26.309 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
-16:46:26.710 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8d3207d03ebbdd977f8a05dd1959747
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
-]]></system-out>
-  </testcase>
-  <testcase name="openAccountMethod[Shiv Sahil, Rupee](4)" classname="com.personal.testcases.OpenAccountTest" time="0.328">
-    <failure message="locator(Submit_css) can&apos;t be clicked as it&apos;s NOT present on page.&#10; &#10; Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f7516941a28dc923a08210abdf47b0d2&#10;*** Element info: {Using=css selector, value=button[type=&apos;submit&apos;]1111111}" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-locator(Submit_css) can't be clicked as it's NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f7516941a28dc923a08210abdf47b0d2
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
-	at com.personal.testcases.OpenAccountTest.openAccountMethod(OpenAccountTest.java:18)
-]]></failure>
-    <system-out><![CDATA[16:46:36.135 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
-16:46:36.519 [main] ERROR com.personal.base.BaseClass - locator(Submit_css) can't be clicked as it's NOT present on page.
- 
- Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f7516941a28dc923a08210abdf47b0d2
-*** Element info: {Using=css selector, value=button[type='submit']1111111}
-]]></system-out>
-  </testcase>
-  <testcase name="customerLoginMethod" classname="com.personal.testcases.CustomerLoginTest" time="0">
-    <skipped message="Method CustomerLoginTest.customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@7748410a] depends on not successfully finished methods in group &quot;CustomerLoginMethodPrerequisites&quot;"/>
-    <system-out><![CDATA[16:46:26.711 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
-16:46:26.782 [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
-]]></system-out>
-  </testcase>
-  <testcase name="customerLoginMethod" classname="com.personal.testcases.CustomerLoginTest" time="0">
-    <skipped message="Method CustomerLoginTest.customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@5f683daf] depends on not successfully finished methods in group &quot;CustomerLoginMethodPrerequisites&quot;"/>
-    <system-out><![CDATA[16:46:36.520 [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS FAILED 
-16:46:36.592 [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
+ << EXECUTION OF customerLoginMethod HAS BEGUN >> 
+22:26:20.855 [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+22:26:20.994 [main] DEBUG com.personal.base.BaseClass - locator(Hometab_xpath) clicked successfully
+22:26:21.120 [main] DEBUG com.personal.base.BaseClass - locator(CustomerLogin_css) clicked successfully
+22:26:21.499 [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(YourNameDropDown_name)
+22:26:21.651 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
+22:26:21.746 [main] INFO  com.personal.base.BaseClass - ASSERT :- locator(Transaction_css) is present on page
+22:26:21.842 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
+22:26:22.212 [main] DEBUG com.personal.base.BaseClass - option(No Cust) selected successfully on dropdown(YourNameDropDown_name)
+22:26:22.345 [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(LoginBtn_xpath) set to 1 seconds. locator(LoginBtn_xpath) clicked successfully
+22:26:22.415 [main] DEBUG com.personal.base.BaseClass - locator(LogoutBtn_css) clicked successfully
 ]]></system-out>
   </testcase>
 </testsuite>
